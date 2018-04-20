@@ -82,3 +82,55 @@ VBoxClient: Failed to execurte the xrandr utility.
 
 
 
+## My Custom Kali Linux with i3wm 
+
+```
+
+apt install curl git live-build cdebootstrap
+git clone git://git.kali.org/live-build-config.git
+
+
+cd live-build-config
+
+nano kali-config/variant-i3wm/package-lists/kali.list.chroot
+
+
+kali-dektop-common 
+xorg
+lightdm
+slick-greeter
+sudo
+git 
+curl 
+mc
+vim 
+htop
+terminator
+falkon
+chromium
+feh
+screenfetch
+nitrogen 
+openssh-server
+apt-transport-https
+pcmanfm
+oxygen-icon-theme
+live-build 
+cdebootstrap
+
+
+cd kali-config/common/includes.chroot/
+mkdir opt/
+cd opt/
+git clone https://github.com/jacekkowalczyk82/my-debian.git
+git clone https://jacek_kowalczyk@bitbucket.org/jacek_kowalczyk/walpapers.git
+git clone git://git.kali.org/live-build-config.git
+
+
+#./build.sh --distribution kali-rolling --verbose
+#./build.sh --distribution kali-rolling --variant {gnome,kde,xfce,mate,e17,lxde,i3wm} --verbose
+./build.sh --distribution kali-rolling --variant i3wm --verbose
+
+
+``` 
+
