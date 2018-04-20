@@ -46,7 +46,7 @@ reboot
 * http://wiki.debian.org/WindowManager
 * http://wiki.debian.org/Xorg
 
-### Setup 
+### Setup iceWM
 
 ```
 sudo apt-get install xserver-xorg-core sddm 
@@ -57,4 +57,28 @@ sudo reboot
 ```
 
 * login in gui  :-) 
+
+### Add support for virtualbox guest os 
+
+```
+sudo apt-get install build-essential module-assistant linux-headers-amd64 linux-headers-`uname -r`
+```
+
+* Mount Virtualbox Additions Iso 
+```
+cd /media/cdrom0
+sudo mount /dev/cdrom /media/cdrom0
+ls
+sudo sh VBoxLinuxAdditions.run 
+sudo reboot 
+
+```
+* after login I got 
+```
+VBoxClient: Failed to execurte the xrandr utility. 
+```
+* `sudo apt-get install x11-xserver-utils`
+* reboot 
+
+
 
