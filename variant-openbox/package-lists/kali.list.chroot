@@ -31,14 +31,14 @@ scroot
 openbox-menu
 tint2
 fonts-dejavu
+lightdm
+slick-greeter
 gtk-theme-switch
 gtk2-engines
 # xfce-mcs-manager cannot finf package
 idesk
 leafpad
 light-locker
-lightdm
-slick-greeter
 terminator
 sudo
 git
