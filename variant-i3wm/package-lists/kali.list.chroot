@@ -45,7 +45,10 @@ nitrogen
 feh
 screenfetch
 
-# window manager
+# file manager
+udiskie
+ranger
+rox-filer
 # pcmanfm
 # oxygen-icon-theme
 
