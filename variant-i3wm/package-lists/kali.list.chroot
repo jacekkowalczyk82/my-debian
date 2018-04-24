@@ -25,23 +25,30 @@ xorg
 dmenu
 conky
 i3
+
 lightdm
 slick-greeter
-terminator
+scrot
+
 sudo
 git
 curl
 mc
 vim
 htop
-falkon
-chromium
+openssh-server
+apt-transport-https
+
+#falkon
+#chromium
 nitrogen
 feh
 screenfetch
-openssh-server
-apt-transport-https
-pcmanfm
-oxygen-icon-theme
-live-build
-cdebootstrap
+
+# window manager
+# pcmanfm
+# oxygen-icon-theme
+
+#live-build
+#cdebootstrap
+
