@@ -31,15 +31,15 @@ obsession
 
 #tint2
 #fonts-dejavu
-#lightdm
-#slick-greeter
-#scrot
+lightdm
+slick-greeter
+scrot
 #gtk-theme-switch
 #gtk2-engines
 # xfce-mcs-manager cannot finf package
 #idesk
 #leafpad
-#light-locker
+light-locker
 #terminator
 
 sudo
@@ -53,7 +53,7 @@ apt-transport-https
 
 #falkon
 #chromium
-#nitrogen
+nitrogen
 #feh
 #screenfetch
 # window manager
@@ -62,3 +62,4 @@ apt-transport-https
 #oxygen-icon-theme
 #live-build
 #cdebootstrap
+
