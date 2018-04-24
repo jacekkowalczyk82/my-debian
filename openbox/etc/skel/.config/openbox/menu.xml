@@ -30,6 +30,10 @@
   <item label="Exit">
     <action name="Exit" />
   </item>
+  <separator />
+  <item label="System Exit">
+    <action name="Execute"><execute>wm-logout</execute></action>
+  </item>
 </menu>
 
 </openbox_menu>
