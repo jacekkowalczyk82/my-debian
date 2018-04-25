@@ -30,6 +30,11 @@
   <item label="Exit">
     <action name="Exit" />
   </item>
-</menu>
-
+  <separator />
+  <item label="SystemExit">
+    <action name="Execute" ><execute>systemctl poweroff</execute></action>
+  </item>
+  <item label="SystemReboot">
+    <action name="Execute" ><execute>systemctl reboot</execute></action>
+  </item>
 </openbox_menu>
