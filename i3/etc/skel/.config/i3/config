@@ -172,6 +172,7 @@ bar {
 #Jacek autostart 
 exec --no-startup-id nitrogen --restore & 
 #exec --no-startup-id conky -c ~/.conkyrc & 
+exec --no-startup-id conky --config ~/.conkyrc & 
 
 ### additional shortkeys
 bindsym $mod+Shift+s exec "i3-nagbar -t warning -m 'You pressed the system suspend shortcut. Do you really want to suspend the system?' -b 'Yes, Suspend now' 'systemctl suspend'"

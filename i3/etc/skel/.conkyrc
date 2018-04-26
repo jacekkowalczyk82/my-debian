@@ -1,0 +1,77 @@
+background yes
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+use_spacer right
+override_utf8_locale yes
+use_xft yes
+xftfont DejaVu Sans Mono:bold:size=9
+xftalpha 1.0
+update_interval 1
+uppercase no
+stippled_borders 0
+border_inner_margin 0
+border_width 0
+default_outline_color black
+default_shade_color black
+draw_borders no
+draw_graph_borders no
+draw_outline no
+draw_shades no
+default_color DCDCDC
+color3 DCDCDC
+text_buffer_size 1028
+no_buffers yes
+short_units yes
+pad_percents 2
+top_name_width 10
+alignment mr  # Aligned position on screen: tl, tr, tm, bl, br, bm, ml, mr
+gap_x 35
+gap_y 35
+minimum_size 5 5
+minimum_width 200
+
+TEXT
+${color3}System${color}
+Host${goto 80}$nodename
+Uptime${goto 80}$uptime_short
+Kernel${goto 80}$kernel${color}
+${voffset 10}${color3}Disk${goto 80}Free/Total${color}
+/${goto 80}${fs_free /}/${fs_size /}
+/home${goto 80}${fs_free /home}/${fs_size /home}
+${voffset 10}${goto 0}${color3}Network${goto 80}eth0${goto 125}wlan0${color}
+${goto 0}Download${goto 80}${downspeed eth0}${goto 125}${downspeed wlan0}
+${goto 0}Upload${goto 80}${upspeed eth0}${goto 125}${upspeed wlan0}
+${goto 0}TotalDown${goto 80}${totaldown eth0} ${offset 10}${goto 125}${totaldown wlan0} ${offset 10}
+${goto 0}TotalUp${goto 80}${totalup eth0}${goto 125}${totalup wlan0}
+${voffset 10}${goto 0}${color3}Name${goto 85}CPU${goto 135}MEM${color}
+${goto 0}${top name 1}${goto 70}${top cpu 1}${goto 120}${top mem 1}
+${goto 0}${top name 2}${goto 70}${top cpu 2}${goto 120}${top mem 2}
+${goto 0}${top name 3}${goto 70}${top cpu 3}${goto 120}${top mem 3}
+${goto 0}${top name 4}${goto 70}${top cpu 4}${goto 120}${top mem 4}
+${goto 0}${top name 5}${goto 70}${top cpu 5}${goto 120}${top mem 5}
+${voffset 10}Shortcuts${color}
+${color3}Files${goto 90}${color}Mod+Ctrl+f
+${color3}Firewall${goto 90}${color}Mod+Ctrl+u
+${color3}Kill${goto 90}${color}Mod+Shift+q
+${color3}MC${goto 90}${color}Mod+Ctrl+m
+${color3}Menu${goto 90}${color}Mod+d
+${color3}Monitor${goto 90}${color}Mod+Ctrl+l
+${color3}Printer${goto 90}${color}Mod+Ctrl+p
+${color3}Reload conf${goto 90}${color}Mod+Shift+c
+${color3}Restart i3${goto 90}${color}Mod+Shift+r
+${color3}Screenshot${goto 90}${color}Mod+Ctrl+s
+${color3}Synaptic${goto 90}${color}Mod+Ctrl+y
+${color3}Task Manager${goto 90}${color}Mod+Ctrl+x
+${color3}Terminal${goto 90}${color}Mod+Enter
+${color3}Web Browser${goto 90}${color}Mod+Ctrl+w
+${color3}Wallpaper${goto 90}${color}Mod+Ctrl+n
+${color3}Workspaces${goto 90}${color}Mod+1-9
+${voffset 10}Exit${color}
+${color3}LogOut${goto 90}${color}Mod+Shift+e
+${color3}Suspend${goto 90}${color}Mod+Shift+s
+${color3}Hibernate${goto 90}${color}Mod+Shift+h
+${color3}Reboot${goto 90}${color}Mod+Shift+b
+${color3}PowerOff${goto 90}${color}Mod+Shift+p
