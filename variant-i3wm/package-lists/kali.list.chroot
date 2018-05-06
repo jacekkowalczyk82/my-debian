@@ -38,6 +38,7 @@ vim
 htop
 openssh-server
 apt-transport-https
+network-manager
 
 #falkon
 #chromium
