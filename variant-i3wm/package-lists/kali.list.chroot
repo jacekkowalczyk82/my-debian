@@ -39,7 +39,7 @@ htop
 openssh-server
 apt-transport-https
 network-manager
-
+network-manager-gnome
 #falkon
 #chromium
 nitrogen
