@@ -204,7 +204,7 @@ bindsym $mod+Ctrl+n exec nitrogen
 # synaptic
 #bindsym $mod+Ctrl+y exec remsu synaptic
 # firewall
-bindsym $mod+Ctrl+u exec i3-sensible-terminal -e sudo gufw
+#bindsym $mod+Ctrl+u exec gufw
 # printer
 bindsym $mod+Ctrl+p exec system-config-printer
 # lxtask

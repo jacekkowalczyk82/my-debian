@@ -171,13 +171,44 @@ bar {
 
 #Jacek autostart 
 exec --no-startup-id nitrogen --restore & 
-#exec --no-startup-id conky -c ~/.conkyrc & 
-exec --no-startup-id conky --config ~/.conkyrc & 
+exec --no-startup-id conky -c ~/.conkyrc & 
+
+#sparky autostart
+#exec compton -b & 
+#exec nm-applet &
+#exec nitrogen --restore &
+#exec /usr/bin/sparky-polkit &
+#exec pasystray &
+#exec xscreensaver -nosplash &
+###exec --no-startup-id compton &  
+###exec echo "i3 file" >>/home/kowalczy/i3-is-alive.txt & 
+#exec conky --config=/opt/conky/conky-sparky-i3.conf &
+
 
 ### additional shortkeys
-bindsym $mod+Shift+s exec "i3-nagbar -t warning -m 'You pressed the system suspend shortcut. Do you really want to suspend the system?' -b 'Yes, Suspend now' 'systemctl suspend'"
-bindsym $mod+Shift+h exec "i3-nagbar -t warning -m 'You pressed the system hibernate shortcut. Do you really want to hibernate the system?' -b 'Yes, Hibernate now' 'systemctl hibernate'"
+#bindsym $mod+Shift+s exec "i3-nagbar -t warning -m 'You pressed the system suspend shortcut. Do you really want to suspend the system?' -b 'Yes, Suspend now' 'systemctl suspend'"
+#bindsym $mod+Shift+h exec "i3-nagbar -t warning -m 'You pressed the system hibernate shortcut. Do you really want to hibernate the system?' -b 'Yes, Hibernate now' 'systemctl hibernate'"
 bindsym $mod+Shift+b exec "i3-nagbar -t warning -m 'You pressed the system restart shortcut. Do you really want to reboot?' -b 'Yes, Reboot now' 'systemctl reboot'"
 bindsym $mod+Shift+p exec "i3-nagbar -t warning -m 'You pressed the system poweroff shortcut. Do you really want to shot the system down?' -b 'Yes, PowerOff now' 'systemctl poweroff'"
 
+# midnight commander
+bindsym $mod+Ctrl+m exec i3-sensible-terminal -e mc
+# monitor settings
+#bindsym $mod+Ctrl+l exec lxrandr
+# pcmanfm
+bindsym $mod+Ctrl+f exec rox-filer
+# web browser
+bindsym $mod+Ctrl+w exec x-www-browser
+# wallpaper
+bindsym $mod+Ctrl+n exec nitrogen
+# synaptic
+#bindsym $mod+Ctrl+y exec remsu synaptic
+# firewall
+#bindsym $mod+Ctrl+u exec gufw
+# printer
+bindsym $mod+Ctrl+p exec system-config-printer
+# lxtask
+bindsym $mod+Ctrl+x exec lxtask
+# scrot
+bindsym $mod+Ctrl+s exec scrot
 

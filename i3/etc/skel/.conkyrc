@@ -54,7 +54,9 @@ ${goto 0}${top name 4}${goto 70}${top cpu 4}${goto 120}${top mem 4}
 ${goto 0}${top name 5}${goto 70}${top cpu 5}${goto 120}${top mem 5}
 ${voffset 10}Shortcuts${color}
 ${color3}Files${goto 90}${color}Mod+Ctrl+f
+${color3}Ranger${goto 90}${color}ranger
 ${color3}Firewall${goto 90}${color}Mod+Ctrl+u
+${color3}Firewall${goto 90}${color}sudo gufw
 ${color3}Kill${goto 90}${color}Mod+Shift+q
 ${color3}MC${goto 90}${color}Mod+Ctrl+m
 ${color3}Menu${goto 90}${color}Mod+d
@@ -63,15 +65,15 @@ ${color3}Printer${goto 90}${color}Mod+Ctrl+p
 ${color3}Reload conf${goto 90}${color}Mod+Shift+c
 ${color3}Restart i3${goto 90}${color}Mod+Shift+r
 ${color3}Screenshot${goto 90}${color}Mod+Ctrl+s
-${color3}Synaptic${goto 90}${color}Mod+Ctrl+y
-${color3}Task Manager${goto 90}${color}Mod+Ctrl+x
+#${color3}Synaptic${goto 90}${color}Mod+Ctrl+y
+#${color3}Task Manager${goto 90}${color}Mod+Ctrl+x
 ${color3}Terminal${goto 90}${color}Mod+Enter
 ${color3}Web Browser${goto 90}${color}Mod+Ctrl+w
 ${color3}Wallpaper${goto 90}${color}Mod+Ctrl+n
 ${color3}Workspaces${goto 90}${color}Mod+1-9
 ${voffset 10}Exit${color}
 ${color3}LogOut${goto 90}${color}Mod+Shift+e
-${color3}Suspend${goto 90}${color}Mod+Shift+s
-${color3}Hibernate${goto 90}${color}Mod+Shift+h
+#${color3}Suspend${goto 90}${color}Mod+Shift+s
+#${color3}Hibernate${goto 90}${color}Mod+Shift+h
 ${color3}Reboot${goto 90}${color}Mod+Shift+b
 ${color3}PowerOff${goto 90}${color}Mod+Shift+p
