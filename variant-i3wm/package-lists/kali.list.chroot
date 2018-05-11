@@ -40,7 +40,7 @@ openssh-server
 apt-transport-https
 network-manager
 network-manager-gnome
-#falkon
+falkon
 #chromium
 nitrogen
 feh
@@ -53,6 +53,14 @@ rox-filer
 # pcmanfm
 # oxygen-icon-theme
 
+#simple firewall
+gufw
+
 #live-build
 #cdebootstrap
 
+#printers
+system-config-printer
+
+#simple tasks manager 
+lxtask
