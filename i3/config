@@ -172,6 +172,10 @@ bar {
 #Jacek autostart 
 exec --no-startup-id nitrogen --restore & 
 exec --no-startup-id conky -c ~/.conkyrc & 
+#automount cd/dvd, usb disks and show notifications
+exec --no-startup-id udiskie -ant & 
+#network manager applet
+exec --no-startup-id nm-applet & 
 
 #sparky autostart
 #exec compton -b & 
