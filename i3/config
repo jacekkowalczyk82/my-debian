@@ -177,6 +177,10 @@ exec --no-startup-id udiskie -ant &
 #network manager applet
 exec --no-startup-id nm-applet & 
 
+#Pulse audio systray
+exec --no-startup-id pasystray & 
+
+
 #sparky autostart
 #exec compton -b & 
 #exec nm-applet &
@@ -209,6 +213,7 @@ bindsym $mod+Ctrl+n exec nitrogen
 #bindsym $mod+Ctrl+y exec remsu synaptic
 # firewall
 #bindsym $mod+Ctrl+u exec gufw
+#bindsym $mod+Ctrl+u exec i3-sensible-terminal -e sudo gufw
 # printer
 bindsym $mod+Ctrl+p exec system-config-printer
 # lxtask

@@ -29,6 +29,14 @@ i3
 lightdm
 slick-greeter
 scrot
+nitrogen
+
+#systray apps
+pulseaudio
+pasystray 
+udiskie
+network-manager
+network-manager-gnome
 
 sudo
 git
@@ -38,16 +46,12 @@ vim
 htop
 openssh-server
 apt-transport-https
-network-manager
-network-manager-gnome
 falkon
 #chromium
-nitrogen
 feh
 screenfetch
 
 # file manager
-udiskie
 ranger
 rox-filer
 # pcmanfm

@@ -172,6 +172,14 @@ bar {
 #Jacek autostart 
 exec --no-startup-id nitrogen --restore & 
 exec --no-startup-id conky -c ~/.conkyrc & 
+#automount cd/dvd, usb disks and show notifications
+exec --no-startup-id udiskie -ant & 
+#network manager applet
+exec --no-startup-id nm-applet & 
+
+#Pulse audio systray
+exec --no-startup-id pasystray & 
+
 
 #sparky autostart
 #exec compton -b & 
@@ -205,6 +213,7 @@ bindsym $mod+Ctrl+n exec nitrogen
 #bindsym $mod+Ctrl+y exec remsu synaptic
 # firewall
 #bindsym $mod+Ctrl+u exec gufw
+#bindsym $mod+Ctrl+u exec i3-sensible-terminal -e sudo gufw
 # printer
 bindsym $mod+Ctrl+p exec system-config-printer
 # lxtask
