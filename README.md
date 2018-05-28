@@ -46,6 +46,21 @@ reboot
 * http://wiki.debian.org/WindowManager
 * http://wiki.debian.org/Xorg
 
+## Setup OpenBox
+
+* https://www.youtube.com/watch?v=_FZCXVgiORA&t=1038s
+* https://www.debian.org/doc/manuals/debian-handbook/sect.customizing-graphical-interface.en.html
+* apt-get install openbox obconf obmenu lxterminal leafpad
+* apt-get install iceweasel
+* apt-get install lightdm 
+
+* reboot the machine 
+* apt-get install pcmanfm tint2 nitrogen  
+
+* apt-get install gnome-backgrounds mate-backgrounds 
+* nitrogen
+
+
 ### Setup iceWM
 
 ```
@@ -95,7 +110,7 @@ cd live-build-config
 nano kali-config/variant-i3wm/package-lists/kali.list.chroot
 
 
-kali-dektop-common 
+kali-desktop-common 
 xorg
 lightdm
 slick-greeter
@@ -133,4 +148,15 @@ git clone git://git.kali.org/live-build-config.git
 
 
 ``` 
+
+
+
+openbox 
+obconf
+obsession
+scrot
+openbox-menu
+
+tint2
+fonts-dejavu
 
