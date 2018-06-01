@@ -203,8 +203,10 @@ bindsym $mod+Shift+p exec "i3-nagbar -t warning -m 'You pressed the system power
 bindsym $mod+Ctrl+m exec i3-sensible-terminal -e mc
 # monitor settings
 #bindsym $mod+Ctrl+l exec lxrandr
-# pcmanfm
+# rox-filer 
 bindsym $mod+Ctrl+f exec rox-filer
+#pcmanfm is also installed currently
+
 # web browser
 bindsym $mod+Ctrl+w exec x-www-browser
 # wallpaper
@@ -220,4 +222,7 @@ bindsym $mod+Ctrl+p exec system-config-printer
 bindsym $mod+Ctrl+x exec lxtask
 # scrot
 bindsym $mod+Ctrl+s exec scrot
+
+# help info 
+bindsym $mod+Ctrl+h exec falkon /opt/help/basic-help.html  
 

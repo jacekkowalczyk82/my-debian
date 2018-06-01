@@ -47,6 +47,9 @@ htop
 openssh-server
 apt-transport-https
 falkon
+dillo
+youtube-dl
+leafpad
 #chromium
 feh
 screenfetch
