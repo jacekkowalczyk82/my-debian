@@ -70,3 +70,6 @@ system-config-printer
 lxtask
 meld
 
+#for firefox developer edition 
+libdbus-glib-1-2
+
