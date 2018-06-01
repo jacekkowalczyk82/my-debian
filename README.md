@@ -50,6 +50,9 @@ reboot
 
 * https://www.youtube.com/watch?v=_FZCXVgiORA&t=1038s
 * https://www.debian.org/doc/manuals/debian-handbook/sect.customizing-graphical-interface.en.html
+* https://github.com/dwt1/dotfiles
+* https://www.debian.org/CD/netinst/
+
 * apt-get install openbox obconf obmenu lxterminal leafpad
 * apt-get install iceweasel
 * apt-get install lightdm 
@@ -59,6 +62,19 @@ reboot
 
 * apt-get install gnome-backgrounds mate-backgrounds 
 * nitrogen
+* nano ~/.config/openbox/autostart.sh 
+
+```
+nitrogen --restore & 
+tint2 & 
+
+```
+* apt-get install menu 
+* apt-get install compton 
+* mkdir ~/.config/compton/
+
+* obmenu
+
 
 
 ### Setup iceWM
