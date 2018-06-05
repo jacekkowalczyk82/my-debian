@@ -30,7 +30,8 @@ hsetroot -solid "#2E3436" &
 ## 4. tint2 panel
 (\
 nitrogen --restore && \
-cbpp-compositor --start && \
+#compton -c ~/.config/compton/compton.conf && \
+compton -b && \
 sleep 2s && \
 tint2 \
 ) &
@@ -38,19 +39,25 @@ tint2 \
 ## Start nm-applet for systray
 nm-applet &
 
-## Volume keys daemon
-mate-volume-control-applet &
+#automount cd/dvd, usb disks and show notifications
+udiskie -ant & 
+
+### Volume keys daemon
+#mate-volume-control-applet &
+
+#Pulse audio systray
+pasystray & 
 
 ## Enable power management
 xfce4-power-manager &
 
-## Start Thunar Daemon
-thunar --daemon &
-
-## Detect and configure touchpad. See 'man synclient' for more info.
-if egrep -iq 'touchpad' /proc/bus/input/devices; then
-    synclient VertEdgeScroll=1 TapButton1=1 &
-fi
+### Start Thunar Daemon
+#thunar --daemon &
+#
+### Detect and configure touchpad. See 'man synclient' for more info.
+#if egrep -iq 'touchpad' /proc/bus/input/devices; then
+#    synclient VertEdgeScroll=1 TapButton1=1 &
+#fi
 
 ## Start xscreensaver
 xscreensaver -no-splash &
@@ -71,7 +78,9 @@ xset b off &
 
 ## cbpp-welcome - post-installation script, will not run in a live session and
 ## only runs once. Safe to remove.
-(sleep 10s && cbpp-welcome --firstrun) &
+#(sleep 10s && cbpp-welcome --firstrun) &
 
 ## Run the conky
-conky -q &
+#conky -q &
+conky -c ~/.conkyrc &
+
