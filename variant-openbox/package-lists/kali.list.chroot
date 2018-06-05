@@ -45,6 +45,8 @@ feh
 conky 
 menu
 compton
+lxpolkit
+
 
 # file manager
 ranger
@@ -71,7 +73,9 @@ pasystray
 udiskie
 network-manager
 network-manager-gnome
-
+clipit
+xfce4-power-manager
+xscreensaver 
 
 sudo
 git
