@@ -22,44 +22,77 @@ kali-linux-top10
 # Graphical desktop
 kali-desktop-common
 xorg
-dmenu
-conky
-openbox-menu
+
 openbox
 obconf
+obmenu
+openbox-menu
 obsession
+lxterminal
+sakura
+leafpad
+terminator 
 
-#tint2
-#fonts-dejavu
-lightdm
-slick-greeter
+lightdm 
+dillo
+falkon
+chromium
+
+tint2
+dmenu
+nitrogen
+feh
+conky 
+menu
+compton
+
+# file manager
+ranger
+rox-filer
+#pcmanfm 
+
 scrot
+screenfetch
+
+#fonts-dejavu
+#lightdm
+#slick-greeter
 #gtk-theme-switch
 #gtk2-engines
 # xfce-mcs-manager cannot finf package
 #idesk
 #leafpad
-light-locker
+#light-locker
 #terminator
+
+#systray apps
+pulseaudio
+pasystray 
+udiskie
+network-manager
+network-manager-gnome
+
 
 sudo
 git
+git-gui
 curl
 mc
 vim
 htop
 openssh-server
 apt-transport-https
+meld
 
-#falkon
-#chromium
-nitrogen
-#feh
-#screenfetch
-# window manager
-#rox-filer
-#pcmanfm 
+#printers
+system-config-printer
+
+#simple tasks manager 
+lxtask
+
+#for firefox developer edition 
+libdbus-glib-1-2
+
 #oxygen-icon-theme
 #live-build
 #cdebootstrap
-
