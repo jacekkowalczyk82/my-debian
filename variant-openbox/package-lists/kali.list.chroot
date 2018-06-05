@@ -28,15 +28,17 @@ obconf
 obmenu
 openbox-menu
 obsession
-lxterminal
-sakura
+
 leafpad
 terminator 
+lxterminal
+sakura
 
 lightdm 
 dillo
-falkon
 chromium
+falkon
+
 
 tint2
 dmenu
@@ -46,7 +48,7 @@ conky
 menu
 compton
 lxpolkit
-
+gksudo
 
 # file manager
 ranger
@@ -56,7 +58,7 @@ rox-filer
 scrot
 screenfetch
 
-#fonts-dejavu
+fonts-dejavu
 #lightdm
 #slick-greeter
 #gtk-theme-switch
