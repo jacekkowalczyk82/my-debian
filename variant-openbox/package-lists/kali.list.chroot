@@ -28,56 +28,63 @@ obconf
 obmenu
 openbox-menu
 obsession
+tint2
+menu
+lxpolkit
 
-leafpad
-terminator 
-lxterminal
-sakura
+dmenu
+conky
 
 lightdm 
+compton
+nitrogen
+feh
+scrot
+fonts-dejavu
+
+
+#editors 
+leafpad
+
+#terminals
+lxterminal
+sakura
+terminator
+
+#web browsers
 dillo
 chromium
 falkon
+youtube-dl
 
+#dev tools
+meld
 
-tint2
-dmenu
-nitrogen
-feh
-conky 
-menu
-compton
-lxpolkit
-gksudo
+# gksudo - package not found 
 
 # file manager
 ranger
 rox-filer
-#pcmanfm 
+#pcmanfm  - install whiole lxqt desktops
+# oxygen-icon-theme
 
-scrot
-screenfetch
-
-fonts-dejavu
-#lightdm
 #slick-greeter
 #gtk-theme-switch
 #gtk2-engines
 # xfce-mcs-manager cannot finf package
 #idesk
-#leafpad
 #light-locker
-#terminator
 
 #systray apps
 pulseaudio
+pavucontrol
 pasystray 
 udiskie
 network-manager
 network-manager-gnome
 clipit
 xfce4-power-manager
-xscreensaver 
+xscreensaver
 
 sudo
 git
@@ -88,7 +95,14 @@ vim
 htop
 openssh-server
 apt-transport-https
-meld
+screenfetch
+
+
+#simple firewall
+#gufw # package not found 
+
+#live-build
+#cdebootstrap
 
 #printers
 system-config-printer
@@ -99,6 +113,3 @@ lxtask
 #for firefox developer edition 
 libdbus-glib-1-2
 
-#oxygen-icon-theme
-#live-build
-#cdebootstrap

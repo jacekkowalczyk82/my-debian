@@ -22,46 +22,79 @@ kali-linux-top10
 # Graphical desktop
 kali-desktop-common
 xorg
-dmenu
-conky
+
 i3
 
-lightdm
-slick-greeter
-scrot
+lxpolkit
+
+dmenu
+conky
+
+lightdm 
+compton
 nitrogen
+feh
+scrot
+fonts-dejavu
+
+
+#editors 
+leafpad
+
+#terminals
+lxterminal
+sakura
+terminator
+
+#web browsers
+dillo
+chromium
+falkon
+youtube-dl
+
+#dev tools
+meld
+
+# gksudo - package not found 
+
+# file manager
+ranger
+rox-filer
+#pcmanfm  - install whiole lxqt desktops
+# oxygen-icon-theme
+
+#slick-greeter
+#gtk-theme-switch
+#gtk2-engines
+# xfce-mcs-manager cannot finf package
+#idesk
+#light-locker
 
 #systray apps
 pulseaudio
+pavucontrol
 pasystray 
 udiskie
 network-manager
 network-manager-gnome
+clipit
+xfce4-power-manager
+xscreensaver
 
 sudo
 git
+git-gui
 curl
 mc
 vim
 htop
 openssh-server
 apt-transport-https
-falkon
-dillo
-youtube-dl
-leafpad
-#chromium
-feh
 screenfetch
 
-# file manager
-ranger
-rox-filer
-# pcmanfm
-# oxygen-icon-theme
 
 #simple firewall
-gufw
+#gufw # package not found 
 
 #live-build
 #cdebootstrap
@@ -71,7 +104,6 @@ system-config-printer
 
 #simple tasks manager 
 lxtask
-meld
 
 #for firefox developer edition 
 libdbus-glib-1-2
