@@ -180,6 +180,7 @@ exec --no-startup-id nm-applet &
 #Pulse audio systray
 exec --no-startup-id pasystray & 
 
+exec --no-startup-id compton -b & 
 
 #sparky autostart
 #exec compton -b & 

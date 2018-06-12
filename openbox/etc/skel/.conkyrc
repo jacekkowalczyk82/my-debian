@@ -58,17 +58,18 @@ CPU usage:$alignr${cpu cpu0}%
 
 S H O R T C U T    K E Y S
 ${hr}
-Alt+F2$alignr Run Dialog
-Alt+F3$alignr Alt Menu
-Super+Space$alignr Main Menu
-Super+Tab$alignr Client Menu
-Super+t$alignr Terminal
-Super+f$alignr File Manager
-Super+e$alignr Editor
-Super+m$alignr Media Player
-Super+w$alignr Web Browser
-Super+h$alignr Task Manager
-Super+l$alignr Lock Screen
-Super+v$alignr Volume Control
-Super+x$alignr Logout
-PrtSc$alignr Screenshot
+Not defined, check rc.xml file
+#Alt+F2$alignr Run Dialog
+#Alt+F3$alignr Alt Menu
+#Super+Space$alignr Main Menu
+#Super+Tab$alignr Client Menu
+#Super+t$alignr Terminal
+#Super+f$alignr File Manager
+#Super+e$alignr Editor
+#Super+m$alignr Media Player
+#Super+w$alignr Web Browser
+#Super+h$alignr Task Manager
+#Super+l$alignr Lock Screen
+#Super+v$alignr Volume Control
+#Super+x$alignr Logout
+#PrtSc$alignr Screenshot

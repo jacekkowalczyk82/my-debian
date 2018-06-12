@@ -46,7 +46,7 @@ udiskie -ant &
 #mate-volume-control-applet &
 
 #Pulse audio systray
-pasystray & 
+#pasystray & # it is already started by some magic
 
 ## Enable power management
 xfce4-power-manager &
