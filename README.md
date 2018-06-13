@@ -32,6 +32,8 @@ apt-get dist-upgrade
 
 apt-get install byobu htop mc vim curl sudo git 
 usermod -aG sudo kowalczy 
+usermod -aG "sudo,adm,cdrom,dip,plugdev,lpadmin,sambashare" kowalczy 
+
 reboot 
 
 
@@ -166,3 +168,11 @@ tint2 &
 
 * pasystray or xfce4-pulseaudio-plugin or volumeicon-alsa or mate-media (mate-volume-control-applet) or pnmixer
  
+
+ 
+## Post install setup
+
+* apt install lxappearance pcmanfm smplayer mplayer mpv vlc clementine audacious 
+
+
+
