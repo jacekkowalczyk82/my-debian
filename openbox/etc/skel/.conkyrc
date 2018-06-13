@@ -32,7 +32,8 @@ draw_shades no
 draw_outline no
 draw_borders no
 draw_graph_borders no
-default_color 656667
+default_color DCDCDC
+color3 DCDCDC
 default_shade_color 000000
 default_outline_color 828282
 alignment top_right
@@ -50,26 +51,40 @@ S Y S T E M    I N F O
 ${hr}
 Host:$alignr$nodename
 Uptime:$alignr$uptime
+Kernel:$alignr$kernel${color}
 RAM:$alignr$mem/$memmax
 Swap usage:$alignr$swap/$swapmax
 Disk usage:$alignr${fs_used /}/${fs_size /}
-CPU usage:$alignr${cpu cpu0}%
-
-
+CPU 0 usage:$alignr${cpu cpu0}%
+CPU 1 usage:$alignr${cpu cpu2}%
+${hr}
+${color3}Network${goto 80}eth0 $alignr wlan0${color}
+Download:${goto 80}${downspeed eth0} $alignr ${downspeed wlan0}
+Upload:${goto 80}${upspeed eth0} $alignr ${upspeed wlan0}
+TotalDown:${goto 80}${totaldown eth0} ${offset 10} $alignr ${totaldown wlan0}
+TotalUp:${goto 80}${totalup eth0} $alignr ${totalup wlan0}
+${hr}
+${color3}Name${goto 80}CPU $alignr MEM${color}
+${top name 1}${goto 80}${top cpu 1} $alignr ${top mem 1}
+${top name 2}${goto 80}${top cpu 2} $alignr ${top mem 2}
+${top name 3}${goto 80}${top cpu 3} $alignr ${top mem 3}
+${top name 4}${goto 80}${top cpu 4} $alignr ${top mem 4}
+${top name 5}${goto 80}${top cpu 5} $alignr ${top mem 5}
+${hr}
 S H O R T C U T    K E Y S
 ${hr}
-Not defined, check rc.xml file
-#Alt+F2$alignr Run Dialog
-#Alt+F3$alignr Alt Menu
+#Alt+F2:$alignr Run Dialog
+Alt+F3:$alignr DMenu
 #Super+Space$alignr Main Menu
 #Super+Tab$alignr Client Menu
-#Super+t$alignr Terminal
-#Super+f$alignr File Manager
-#Super+e$alignr Editor
-#Super+m$alignr Media Player
-#Super+w$alignr Web Browser
-#Super+h$alignr Task Manager
-#Super+l$alignr Lock Screen
-#Super+v$alignr Volume Control
-#Super+x$alignr Logout
-#PrtSc$alignr Screenshot
+Super+t:$alignr Terminal
+Super+f:$alignr File Manager
+Super+e:$alignr Editor
+Super+m:$alignr Media Player
+Super+w:$alignr Web Browser
+Super+h:$alignr Task Manager
+#Super+l:$alignr Lock Screen
+Super+v:$alignr Volume Control
+#Super+x:$alignr Logout
+PrtSc:$alignr Screenshot
+
