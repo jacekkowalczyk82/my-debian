@@ -180,6 +180,9 @@ exec --no-startup-id nm-applet &
 #Pulse audio systray
 exec --no-startup-id pasystray & 
 
+exec --no-startup-id compton -b & 
+exec --no-startup-id xfce4-power-manager & 
+
 
 #sparky autostart
 #exec compton -b & 

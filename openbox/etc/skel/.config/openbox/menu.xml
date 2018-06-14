@@ -64,9 +64,9 @@
 				<execute>lxtask</execute>
 			</action>
 		</item>
-		<item label="MPV">
+		<item label="Media Player">
 			<action name="Execute">
-				<execute>mpv</execute>
+				<execute>mpv --player-operation-mode=pseudo-gui --</execute>
 			</action>
 		</item>
 		<menu id="screenshot-menu-754113" label="Screenshot">
