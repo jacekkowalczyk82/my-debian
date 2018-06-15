@@ -1,90 +1,20 @@
 # my-debian
-* manuals, scripts to create my own custom debian iso
 
-## My Setup 
+* The goal of this project is to custom debian or debian based iso. 
+* This repo is a place for manuals, scripts and configs. 
+* I spent a lot of time on searching for Linux distribution that suites best for me. I wated to have a very lightweight system. 
+* I was testing almost all variants of Manjaro (except Gnome and KDE), Debian, Ubuntu, Sparky, MX Linux, Antix, Arch, Anarchy, Antergos Archlabs, Bunsen Labs... and many many more. 
+* I was playing around with different desktops, XFCE, LXDE, Mate, LXqt, i3, openbox, fluxbox, jwm, icewm. 
+* After some time it started to be clear that I want a rolling release linux and it must be lightweight, and with a good support of some company or comunity. 
+* I made a list of my favourites linux distributions but it was still long list, and I could not make a final choice. 
+* Ithought, maybe I should create my own setup: Take some good linux distro and install base os and customize it. But what will happen if I will need to reinstall it? I will need to spend all this time again on customizing my nstalled system? No, I wanted to create a ISO, taht I could use to install anytime anywhere and it will be perfectly customized for my needs out of the box. 
+* I started to looking for way of custmizing debian, arch or manjaro, and I found Kali Linux live-build-config scripts. That was it. 
+* Kali Linux is a rolling distro, based on debian, and has a good support of Offensive Security. 
+* I found also existing scripts for i3wm. That was my starting point. I start plaing with custom packages list and later on with some chroot files to be included in the ISO. 
+* I generated over 18 ISO images untill I made this gret one with openbox . 
+* In This manual I will try to explain step by step how to create two variants of Kali linux - with i3wm and openbox window managers. 
 
-* Install debian server from https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.4.0-amd64-netinst.iso 
-* Language: English 
-* Location: Poland
-* locales: en_US.UTF-8
-* Keymap: Polish 
-* Hostname
-* domain name
-* Setup root password
-* Create user
-* Do partitioning 
-* Configure package manager
-* Mirror: Poland, ftp.pl.debian.org
-* No proxy 
-* Package usage survey: yes
-
-* Software selection 
-  * unmark Debian Desktop environment
-  * mark SSH Server
-* Install grub boot loader to MBR /dev/sda
-
-
-## First boot 
-
-```
-apt-get update
-apt-get dist-upgrade
-
-apt-get install byobu htop mc vim curl sudo git 
-usermod -aG sudo kowalczy 
-usermod -aG "sudo,adm,cdrom,dip,plugdev,lpadmin,sambashare" kowalczy 
-
-reboot 
-
-
-```
-
-## Setup gui iceWM
-
-* https://www.debian.org/doc/manuals/debian-handbook/sect.customizing-graphical-interface.en.html
-* apt-get install xserver-xorg-core gdm
-* apt-get install xserver-xorg-core sddm
-* http://wiki.debian.org/DisplayManager
-* http://wiki.debian.org/WindowManager
-* http://wiki.debian.org/Xorg
-
-### Setup iceWM
-
-```
-sudo apt-get install xserver-xorg-core sddm 
-
-sudo apt-get install icewm
-sudo reboot 
-
-```
-
-* login in gui  :-) 
-
-### Add support for virtualbox guest os 
-
-```
-sudo apt-get install build-essential module-assistant linux-headers-amd64 linux-headers-`uname -r`
-```
-
-* Mount Virtualbox Additions Iso 
-```
-cd /media/cdrom0
-sudo mount /dev/cdrom /media/cdrom0
-ls
-sudo sh VBoxLinuxAdditions.run 
-sudo reboot 
-
-```
-* after login I got 
-```
-VBoxClient: Failed to execurte the xrandr utility. 
-```
-* `sudo apt-get install x11-xserver-utils`
-* reboot 
-
-
-
-## My Custom Kali Linux with i3wm 
+## My Custom Kali Linux with i3wm DRAFT
 
 ```
 
@@ -137,7 +67,7 @@ git clone git://git.kali.org/live-build-config.git
 ``` 
 
 
-## Setup OpenBox
+## Setup OpenBox DRAFT
 
 * https://www.youtube.com/watch?v=_FZCXVgiORA&t=1038s
 * https://www.debian.org/doc/manuals/debian-handbook/sect.customizing-graphical-interface.en.html
