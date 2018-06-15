@@ -32,6 +32,11 @@
 				<execute>x-www-browser</execute>
 			</action>
 		</item>
+		<item label="Firefox Developer Edition">
+			<action name="Execute">
+				<execute>firefox.sh</execute>
+			</action>
+		</item>
 		<item label="Chromium">
 			<action name="Execute">
 				<execute>chromium</execute>
