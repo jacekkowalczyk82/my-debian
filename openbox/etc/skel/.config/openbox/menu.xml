@@ -27,6 +27,11 @@
 			</action>
 		</item>
 		<separator/>
+		<item label="Toxic">
+			<action name="Execute">
+				<execute>x-terminal-emulator -e /opt/toxic/run_toxic.sh</execute>
+			</action>
+		</item>
 		<item label="Web browser">
 			<action name="Execute">
 				<execute>x-www-browser</execute>
@@ -54,6 +59,11 @@
 		</item>
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<separator/>
+		<item label="File Manager">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
 		<item label="Leafpad">
 			<action name="Execute">
 				<execute>leafpad</execute>
@@ -86,7 +96,6 @@
 				</action>
 			</item>
 		</menu>
-		<separator/>
 		<separator/>
 		<menu id="/Debian"/>
 		<separator/>

@@ -362,7 +362,7 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>rox-filer</name>
+          <name>thunar</name>
         </startupnotify>
         <command>thunar</command>
       </action>
@@ -412,7 +412,7 @@
           <enabled>true</enabled>
           <name>Mediaplayer</name>
         </startupnotify>
-        <command>mpv</command>
+        <command>mpv --player-operation-mode=pseudo-gui --</command>
       </action>
     </keybind>
     <keybind key="W-h">
