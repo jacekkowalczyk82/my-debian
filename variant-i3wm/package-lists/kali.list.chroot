@@ -25,6 +25,7 @@ xorg
 
 i3
 
+# to allow reboot and poweroff directly from window manager 
 lxpolkit
 
 dmenu
@@ -36,7 +37,6 @@ nitrogen
 feh
 scrot
 fonts-dejavu
-
 
 #editors 
 leafpad
@@ -55,20 +55,15 @@ youtube-dl
 #dev tools
 meld
 
-# gksudo - package not found 
+# gksudo                 # package not found 
 
 # file manager
 ranger
 rox-filer
-#pcmanfm  - install whiole lxqt desktops
+#pcmanfm                 # installs whole lxqt desktops, I do not know why yet
 # oxygen-icon-theme
 
-#slick-greeter
-#gtk-theme-switch
-#gtk2-engines
-# xfce-mcs-manager cannot finf package
-#idesk
-#light-locker
+#slick-greeter           # I started with this greeter but I got back to lightdm-gtk-greeter
 
 #systray apps
 pulseaudio
@@ -81,6 +76,7 @@ clipit
 xfce4-power-manager
 xscreensaver
 
+#utilities
 sudo
 git
 git-gui
@@ -94,7 +90,7 @@ screenfetch
 
 
 #simple firewall
-#gufw # package not found 
+#gufw                   # package not found 
 
 #live-build
 #cdebootstrap
@@ -105,6 +101,7 @@ system-config-printer
 #simple tasks manager 
 lxtask
 
-#for firefox developer edition 
+#for firefox developer edition, 
+#firefox-developer-edition is installed in /opt/firefox 
 libdbus-glib-1-2
 

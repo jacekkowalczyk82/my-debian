@@ -12,59 +12,53 @@
 * Kali Linux is a rolling distro, based on debian, and has a good support of Offensive Security. 
 * I found also existing scripts for i3wm. That was my starting point. I start plaing with custom packages list and later on with some chroot files to be included in the ISO. 
 * I generated over 18 ISO images untill I made this gret one with openbox . 
-* In This manual I will try to explain step by step how to create two variants of Kali linux - with i3wm and openbox window managers. 
+* In this manual I will try to explain step by step how to create two variants of Kali linux - with i3wm and openbox window managers. 
+* And last but not least I always wanted to take part in some opensource project and do some "development"
 
-## My Custom Kali Linux with i3wm DRAFT
+## My Custom Kali Linux with i3wm or openbox DRAFT
+
+* I did my first setup based on the official kali documentation for [live-build-config](https://docs.kali.org/development/live-build-a-custom-kali-iso)
+
+1. Install new Kali Linux and you can use any official Kali image  
+2. Install additional packages that will be needed 
 
 ```
-
 apt install curl git live-build cdebootstrap
 git clone git://git.kali.org/live-build-config.git
 
-
 cd live-build-config
+```
 
-nano kali-config/variant-i3wm/package-lists/kali.list.chroot
+3. Start hacking i3wm variant :-) 
 
+  * For i3 I started with making my modifications in the `variant-i3wm` folder. 
+  * Edit the file `kali-config/variant-i3wm/package-lists/kali.list.chroot` and add there the required packages you want. My list of packages is in file [here](variant-i3wm/package-lists/kali.list.chroot)
+  * Add configs for live cd and for root fs. 
+  * All config files for livecd should be copied to: `kali-config/common/includes.chroot/root/`. 
+  * All config files for livecd should be copied to: `kali-config/common/includes.chroot/etc/skel/`. 
+  * For example I added files: 
+    * `kali-config/common/includes.chroot/root/.conkyrc`
+    * `kali-config/common/includes.chroot/root/.config/i3/config`
+  * My example config files for i3wm can be found [here](./i3/etc/skel/)
+  * I added firefox developer edition browser by adding downloading install package and unpacking it into `kali-config/common/includes.chroot/opt/firefox/`
+  * I added also shell script `kali-config/common/includes.chroot/usr/bin/firefox.sh` for starting firefox. 
 
-kali-desktop-common 
-xorg
-lightdm
-slick-greeter
-sudo
-git 
-curl 
-mc
-vim 
-htop
-terminator
-falkon
-chromium
-feh
-screenfetch
-nitrogen 
-openssh-server
-apt-transport-https
-pcmanfm
-oxygen-icon-theme
-live-build 
-cdebootstrap
+```
+#!/bin/bash 
 
+echo "Starting firefox developer edition"
+/opt/firefox/firefox 
 
-cd kali-config/common/includes.chroot/
-mkdir opt/
-cd opt/
-git clone https://github.com/jacekkowalczyk82/my-debian.git
-git clone https://jacek_kowalczyk@bitbucket.org/jacek_kowalczyk/walpapers.git
-git clone git://git.kali.org/live-build-config.git
+```
+4. Build ISO
 
+```
+sudo ./build.sh --distribution kali-rolling --variant i3wm --verbose
+```
 
-#./build.sh --distribution kali-rolling --verbose
-#./build.sh --distribution kali-rolling --variant {gnome,kde,xfce,mate,e17,lxde,i3wm} --verbose
-./build.sh --distribution kali-rolling --variant i3wm --verbose
+* Wait for the job to finis. In my case it was usually around 3-5 hours. 
+* ISO file will be generated in `images` subfolder. 
 
-
-``` 
 
 
 ## Setup OpenBox DRAFT
