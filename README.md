@@ -1,4 +1,4 @@
-# my-debian
+# My Kali L inux distribution 
 
 * The goal of this project is to custom debian or debian based iso. 
 * This repo is a place for manuals, scripts and configs. 
@@ -15,12 +15,13 @@
 * In this manual I will try to explain step by step how to create two variants of Kali linux - with i3wm and openbox window managers. 
 * And last but not least I always wanted to take part in some opensource project and do some "development"
 
-## My Custom Kali Linux with i3wm or openbox DRAFT
+
+## My Custom Kali Linux with i3wm or openbox
 
 * I did my first setup based on the official kali documentation for [live-build-config](https://docs.kali.org/development/live-build-a-custom-kali-iso)
 
-##### 1. Install new Kali Linux and you can use any official Kali image  
-##### 2. Install additional packages that will be needed 
+##### 1. Install new Kali Linux and you can use any official Kali image
+##### 2. Install additional packages that will be needed
 
 ```
 apt install curl git live-build cdebootstrap
@@ -29,7 +30,7 @@ git clone git://git.kali.org/live-build-config.git
 cd live-build-config
 ```
 
-##### 3. Start hacking i3wm/openbox variant :-) 
+##### 3. Start hacking i3wm/openbox variant :-)
 
   * For i3 I started with making my modifications in the `variant-i3wm` folder. 
   * For openbox I copied `variant-i3wm` folder to `variant-openbox` and add my modifications to it. 
@@ -73,7 +74,7 @@ sudo ./build.sh --distribution kali-rolling --variant openbox --verbose
 
 ## Recommended post install setup
 
-* I decided to install few packages after completing the instalation to hard drive. For example when I added pcmanfm to the list of packages to generate iso i was getting system with preinstalled LXqt. Probably scripts install also some recommended packages not only the dependencies. 
+* I decided to install few packages after completing the instalation to hard drive. For example when I added pcmanfm to the list of packages to generate iso I was getting system with preinstalled LXqt. Probably scripts install also some recommended packages not only the dependencies. 
 
 ```
 apt install lxappearance pcmanfm smplayer mplayer mpv vlc audacious lxinput lxrandr xarchiver galculator gpicview evince retext scite
