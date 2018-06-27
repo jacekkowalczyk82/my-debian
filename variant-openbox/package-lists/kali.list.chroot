@@ -46,6 +46,9 @@ fonts-dejavu
 
 #editors 
 leafpad
+scite
+retext
+
 
 #terminals
 lxterminal
@@ -113,5 +116,6 @@ libdbus-glib-1-2
 
 #multimedia 
 mpv
-clementine
+smplayer
 audacious
+
