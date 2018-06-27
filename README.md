@@ -19,8 +19,8 @@
 
 * I did my first setup based on the official kali documentation for [live-build-config](https://docs.kali.org/development/live-build-a-custom-kali-iso)
 
-1. Install new Kali Linux and you can use any official Kali image  
-2. Install additional packages that will be needed 
+##### 1. Install new Kali Linux and you can use any official Kali image  
+##### 2. Install additional packages that will be needed 
 
 ```
 apt install curl git live-build cdebootstrap
@@ -29,74 +29,55 @@ git clone git://git.kali.org/live-build-config.git
 cd live-build-config
 ```
 
-3. Start hacking i3wm variant :-) 
+##### 3. Start hacking i3wm/openbox variant :-) 
 
   * For i3 I started with making my modifications in the `variant-i3wm` folder. 
-  * Edit the file `kali-config/variant-i3wm/package-lists/kali.list.chroot` and add there the required packages you want. My list of packages is in file [here](variant-i3wm/package-lists/kali.list.chroot)
+  * For openbox I copied `variant-i3wm` folder to `variant-openbox` and add my modifications to it. 
+  * Edit the file `kali-config/<VARIANT>/package-lists/kali.list.chroot` and add there the required packages you want. My list of packages is in file [here](variant-i3wm/package-lists/kali.list.chroot), for openbox use [this](variant-openbox/package-lists/kali.list.chroot)
   * Add configs for live cd and for root fs. 
   * All config files for livecd should be copied to: `kali-config/common/includes.chroot/root/`. 
-  * All config files for livecd should be copied to: `kali-config/common/includes.chroot/etc/skel/`. 
+  * All config files for installed file system should be copied to: `kali-config/common/includes.chroot/etc/skel/`. 
   * For example I added files: 
     * `kali-config/common/includes.chroot/root/.conkyrc`
     * `kali-config/common/includes.chroot/root/.config/i3/config`
+  * For Openbox some example files: 
+    * `kali-config/common/includes.chroot/root/.conkyrc`
+    * `kali-config/common/includes.chroot/root/.config/openbox/autostart`
+    * `kali-config/common/includes.chroot/root/.config/openbox/menu.xml`
+    * `kali-config/common/includes.chroot/root/.config/openbox/rc.xml`
+    * `kali-config/common/includes.chroot/root/.config/tint2/tint2rc`
   * My example config files for i3wm can be found [here](./i3/etc/skel/)
+  * My example config files for openbox can be found [here](./openbox/etc/skel/)
   * I added firefox developer edition browser by adding downloading install package and unpacking it into `kali-config/common/includes.chroot/opt/firefox/`
   * I added also shell script `kali-config/common/includes.chroot/usr/bin/firefox.sh` for starting firefox. 
 
 ```
+
 #!/bin/bash 
 
 echo "Starting firefox developer edition"
 /opt/firefox/firefox 
 
 ```
-4. Build ISO
+
+##### 4. Build ISO
 
 ```
 sudo ./build.sh --distribution kali-rolling --variant i3wm --verbose
+sudo ./build.sh --distribution kali-rolling --variant openbox --verbose
 ```
 
-* Wait for the job to finis. In my case it was usually around 3-5 hours. 
+* Wait for the job to finish. In my case it was usually around 3-5 hours. 
 * ISO file will be generated in `images` subfolder. 
 
 
+## Recommended post install setup
 
-## Setup OpenBox DRAFT
-
-* https://www.youtube.com/watch?v=_FZCXVgiORA&t=1038s
-* https://www.debian.org/doc/manuals/debian-handbook/sect.customizing-graphical-interface.en.html
-* https://github.com/dwt1/dotfiles
-* https://www.debian.org/CD/netinst/
-
-* apt-get install openbox obconf obmenu lxterminal leafpad
-* apt-get install iceweasel
-* apt-get install lightdm 
-
-* reboot the machine 
-* apt-get install pcmanfm tint2 nitrogen  
-
-* apt-get install gnome-backgrounds mate-backgrounds 
-* nitrogen
-* nano ~/.config/openbox/autostart.sh 
+* I decided to install few packages after completing the instalation to hard drive. For example when I added pcmanfm to the list of packages to generate iso i was getting system with preinstalled LXqt. Probably scripts install also some recommended packages not only the dependencies. 
 
 ```
-nitrogen --restore & 
-tint2 & 
-
+apt install lxappearance pcmanfm smplayer mplayer mpv vlc audacious lxinput lxrandr xarchiver galculator gpicview evince retext scite
 ```
-* apt-get install menu 
-* apt-get install compton 
-* mkdir ~/.config/compton/
-
-* obmenu
-
-* pasystray or xfce4-pulseaudio-plugin or volumeicon-alsa or mate-media (mate-volume-control-applet) or pnmixer
- 
-
- 
-## Post install setup
-
-* apt install lxappearance pcmanfm smplayer mplayer mpv vlc clementine audacious 
 
 
 
