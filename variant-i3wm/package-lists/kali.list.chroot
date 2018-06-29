@@ -63,8 +63,12 @@ meld
 # file manager
 ranger
 rox-filer
+thunar
 #pcmanfm                 # installs whole lxqt desktops, I do not know why yet
-# oxygen-icon-theme
+oxygen-icon-theme
+obsidian-icon-theme
+adwaita-icon-theme
+hicolor-icon-theme
 
 #slick-greeter           # I started with this greeter but I got back to lightdm-gtk-greeter
 
@@ -91,6 +95,7 @@ openssh-server
 apt-transport-https
 screenfetch
 gmrun
+i3lock
 
 #simple firewall
 #gufw                   # package not found 
@@ -107,4 +112,9 @@ lxtask
 #for firefox developer edition, 
 #firefox-developer-edition is installed in /opt/firefox 
 libdbus-glib-1-2
+
+#multimedia 
+mpv
+smplayer
+audacious
 

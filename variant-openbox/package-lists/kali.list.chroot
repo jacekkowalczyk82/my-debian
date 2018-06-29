@@ -101,6 +101,7 @@ openssh-server
 apt-transport-https
 screenfetch
 gmrun
+i3lock
 
 #simple firewall
 #gufw                   # package not found 
