@@ -90,7 +90,7 @@ htop
 openssh-server
 apt-transport-https
 screenfetch
-
+gmrun
 
 #simple firewall
 #gufw                   # package not found 
