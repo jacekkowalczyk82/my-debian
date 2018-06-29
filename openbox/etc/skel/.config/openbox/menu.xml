@@ -121,6 +121,12 @@
 		<item label="Exit Openbox">
 			<action name="Exit"/>
 		</item>
+		<item label="Exit Openbox">
+			<action name="Lock">
+				<execute>i3lock -i /usr/share/desktop-base/kali-theme/grub/grub-16x9.png</execute>
+			</action>
+		</item>
+
 		<menu id="root-menu-814533" label="System">
 			<item label="Reboot">
 				<action name="Execute">

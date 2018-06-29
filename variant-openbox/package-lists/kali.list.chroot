@@ -69,8 +69,12 @@ meld
 # file manager
 ranger
 rox-filer
+thunar
 #pcmanfm                 # installs whole lxqt desktops, I do not know why yet
-# oxygen-icon-theme
+oxygen-icon-theme
+obsidian-icon-theme
+adwaita-icon-theme
+hicolor-icon-theme
 
 #slick-greeter           # I started with this greeter but I got back to lightdm-gtk-greeter
 
@@ -96,7 +100,7 @@ htop
 openssh-server
 apt-transport-https
 screenfetch
-
+gmrun
 
 #simple firewall
 #gufw                   # package not found 
