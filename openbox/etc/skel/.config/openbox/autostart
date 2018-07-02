@@ -82,5 +82,5 @@ xset b off &
 
 ## Run the conky
 #conky -q &
-conky -c ~/.conkyrc &
+conky -c ~/.openbox_conkyrc &
 

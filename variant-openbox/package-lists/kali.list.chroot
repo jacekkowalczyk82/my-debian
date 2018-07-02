@@ -31,6 +31,9 @@ obsession
 tint2
 menu
 
+# i3wm will be also available in openbox edition 
+i3
+
 # to allow reboot and poweroff directly from window manager 
 lxpolkit
 
@@ -52,8 +55,9 @@ retext
 
 #terminals
 lxterminal
-sakura
 terminator
+sakura
+
 
 #web browsers
 dillo

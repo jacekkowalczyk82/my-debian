@@ -46,8 +46,9 @@ retext
 
 #terminals
 lxterminal
-sakura
 terminator
+sakura
+
 
 #web browsers
 dillo
