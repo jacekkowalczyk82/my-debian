@@ -1,19 +1,16 @@
-# My Kali L inux distribution 
+# My Kali Linux distribution 
 
-* The goal of this project is to custom debian or debian based iso. 
+* The goal of this project is to create custom debian or debian based distribution iso
 * This repo is a place for manuals, scripts and configs. 
-* I spent a lot of time on searching for Linux distribution that suites best for me. I wated to have a very lightweight system. 
-* I was testing almost all variants of Manjaro (except Gnome and KDE), Debian, Ubuntu, Sparky, MX Linux, Antix, Arch, Anarchy, Antergos Archlabs, Bunsen Labs... and many many more. 
-* I was playing around with different desktops, XFCE, LXDE, Mate, LXqt, i3, openbox, fluxbox, jwm, icewm. 
-* After some time it started to be clear that I want a rolling release linux and it must be lightweight, and with a good support of some company or comunity. 
-* I made a list of my favourites linux distributions but it was still long list, and I could not make a final choice. 
-* Ithought, maybe I should create my own setup: Take some good linux distro and install base os and customize it. But what will happen if I will need to reinstall it? I will need to spend all this time again on customizing my nstalled system? No, I wanted to create a ISO, taht I could use to install anytime anywhere and it will be perfectly customized for my needs out of the box. 
-* I started to looking for way of custmizing debian, arch or manjaro, and I found Kali Linux live-build-config scripts. That was it. 
-* Kali Linux is a rolling distro, based on debian, and has a good support of Offensive Security. 
-* I found also existing scripts for i3wm. That was my starting point. I start plaing with custom packages list and later on with some chroot files to be included in the ISO. 
-* I generated over 18 ISO images untill I made this gret one with openbox . 
-* In this manual I will try to explain step by step how to create two variants of Kali linux - with i3wm and openbox window managers. 
-* And last but not least I always wanted to take part in some opensource project and do some "development"
+
+#### My story 
+
+I spent a lot of time on searching for Linux distribution that suites best for me. I wated to have a very lightweight system. I was testing almost all variants of Manjaro (except Gnome and KDE), Debian, Ubuntu, Sparky, MX Linux, Antix, Arch, Anarchy, Antergos Archlabs, Bunsen Labs... and many many more. I was playing around with different desktops, XFCE, LXDE, Mate, LXqt, i3, openbox, fluxbox, jwm, icewm. After some time it started to be clear that I want a rolling release linux and it must be lightweight, and with a good support of some company or comunity. I made a list of my favourites linux distributions but it was still long list, and I could not make a final choice. And last but not least I always wanted to take part in some opensource project and do some *"development"*. I thought, maybe I should create my own setup: Take some good linux distro and install base os and customize it. But what will happen if I will need to reinstall it? I will need to spend all this time again on customizing my nstalled system? No, I wanted to create a ISO, taht I could use to install anytime anywhere and it will be perfectly customized for my needs out of the box. I started to looking for way of custmizing debian, arch or manjaro, and I found Kali Linux live-build-config scripts. That was it. 
+
+Kali Linux is a rolling distro, based on debian, and has a good support of Offensive Security. I found also existing scripts for i3wm. That was my starting point. I start plaing with custom packages list and later on with some chroot files to be included in the ISO. I generated over 20 ISO images untill I made the one that satisfied me, and I am still working on it to get something better and better.
+
+In this manual I will try to explain how to create two variants of Kali linux - with i3wm and openbox window managers. 
+
 
 
 ## My Custom Kali Linux with i3wm or openbox
@@ -49,7 +46,7 @@ cd live-build-config
     * `kali-config/common/includes.chroot/root/.config/tint2/tint2rc`
   * My example config files for i3wm can be found [here](./i3/etc/skel/)
   * My example config files for openbox can be found [here](./openbox/etc/skel/)
-  * I added firefox developer edition browser by adding downloading install package and unpacking it into `kali-config/common/includes.chroot/opt/firefox/`
+  * I added firefox developer edition browser by adding downloading install package and unpacking it into `kali-config/common/includes.chroot/opt/firefox/` and toxic tox client added to `kali-config/common/includes.chroot/opt/toxic`. 
   * I added also shell script `kali-config/common/includes.chroot/usr/bin/firefox.sh` for starting firefox. 
 
 ```
@@ -68,7 +65,7 @@ sudo ./build.sh --distribution kali-rolling --variant i3wm --verbose
 sudo ./build.sh --distribution kali-rolling --variant openbox --verbose
 ```
 
-* Wait for the job to finish. In my case it was usually around 3-5 hours. 
+* Wait for the job to finish. In my case it was usually around 3 hours. 
 * ISO file will be generated in `images` subfolder. 
 
 
@@ -79,6 +76,27 @@ sudo ./build.sh --distribution kali-rolling --variant openbox --verbose
 ```
 apt install lxappearance pcmanfm smplayer mplayer mpv vlc audacious lxinput lxrandr xarchiver galculator gpicview evince retext scite
 ```
+
+## Final version 
+
+* In my final version of the configs I decided to add i3wm to openbox edition so building openbox edition in the fact I am getting both window managers openbox and i3 and on the login screen I can select the session I want. 
+
+## Issues and solutions
+
+#### Installing pcmanfm I was getting the LXQT destop 
+
+* I do not know why it happend but it happened this way. It was very early a the begining of the *"project"*. I did not resolved it so I just decided to not install pcmanfm file manager
+
+#### While installing installer is complaining that there is kernel modules matching installer kernel version. 
+
+* I started investigating of the issue and wanted to get newer debian installer from debian buster. Next day I found out that *Kali linux* was upgrading the kernel packages these days, at their repositories and they did not update the installer and netboot image yet. Two days latyer it was OK, I noticked that debian installer and netboot were updated at kali linux repos and it worked OK. The only negative was that I needed to rebuild the iso. 
+
+
+
+
+
+
+
 
 
 
