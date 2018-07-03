@@ -173,7 +173,7 @@ launcher_item_app = /usr/share/applications/lxterminal.desktop
 launcher_item_app = /usr/share/applications/sakura.desktop
 launcher_item_app = /usr/share/applications/terminator.desktop
 launcher_item_app = /usr/share/applications/mpv.desktop
-launcher_item_app = /usr/share/applications/clementine.desktop
+launcher_item_app = /usr/share/applications/audacious.desktop
 
 #-------------------------------------
 # Clock
