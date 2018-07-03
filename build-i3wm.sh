@@ -13,6 +13,8 @@ cp -v -r  /opt/firefox /home/kowalczy/live-build-config/kali-config/common/inclu
 
 cp -v -r  /opt/my-debian/opt/firefox/firefox.sh /home/kowalczy/live-build-config/kali-config/common/includes.chroot/usr/bin/firefox.sh
 
+cp -v -r  /opt/my-debian/opt/firefox/firefox-developer-edition.desktop /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt/firefox/firefox-developer-edition.desktop
+
 #toxic
 cp -v -r  /opt/toxic /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt/
 
