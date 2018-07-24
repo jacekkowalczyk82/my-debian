@@ -36,18 +36,20 @@ cd live-build-config
   * For i3 I started with making my modifications in the `variant-i3wm` folder. 
   * For openbox I copied `variant-i3wm` folder to `variant-openbox` and added my modifications to it. 
   * Edit the file `kali-config/<VARIANT>/package-lists/kali.list.chroot` and add the required packages you want. My list of packages is in file [here](variant-i3wm/package-lists/kali.list.chroot), for openbox use [this](variant-openbox/package-lists/kali.list.chroot)
-  * Add configs for live cd and for root fs. 
-  * All config files for livecd should be copied to: `kali-config/common/includes.chroot/root/`. 
-  * All config files for installed file system should be copied to: `kali-config/common/includes.chroot/etc/skel/`. 
-  * For example I added files: 
-    * `kali-config/common/includes.chroot/root/.conkyrc`
+  * Add configs for livecd and for the target installed file system. 
+  * All config files for livecd should be copied to: `kali-config/common/includes.chroot/root/`. This directory is used by livecd as the livecd environment is running as root user. 
+  * All config files for installed file system should be copied to: `kali-config/common/includes.chroot/etc/skel/`. '/etc/skel' directory in commonly used as a template for creating user home directories, so every new user will by default have the files that are located in this directory. 
+  * Nitrogen is an application used to setup wallpaper. The file `.config/nitrogen/bg-saved.cfg` defines the set wallpaper. The second file `.config/nitrogen/nitrogen.cfg` is the main configuration file for nitrogen and defines the direcories where the wallaper images are located. 
+  * Power manager applet is configured by file `.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml`
+  * For i3wm I added files: 
+    * `kali-config/common/includes.chroot/root/.i3wm_conkyrc`
     * `kali-config/common/includes.chroot/root/.config/i3/config`
-  * For Openbox some example files: 
-    * `kali-config/common/includes.chroot/root/.conkyrc`
-    * `kali-config/common/includes.chroot/root/.config/openbox/autostart`
-    * `kali-config/common/includes.chroot/root/.config/openbox/menu.xml`
-    * `kali-config/common/includes.chroot/root/.config/openbox/rc.xml`
-    * `kali-config/common/includes.chroot/root/.config/tint2/tint2rc`
+  * For Openbox I added files: 
+    * `kali-config/common/includes.chroot/root/.openbox_conkyrc` - configuration for conky. 
+    * `kali-config/common/includes.chroot/root/.config/openbox/autostart` - openbox autostart file.
+    * `kali-config/common/includes.chroot/root/.config/openbox/menu.xml` - openbox menu.
+    * `kali-config/common/includes.chroot/root/.config/openbox/rc.xml` - openbox window manager themes and keybindings. 
+    * `kali-config/common/includes.chroot/root/.config/tint2/tint2rc` - tint2 panel settings, and launchers, I added here my most commonly used tools: terminal, editors, web browsers.
   * My example config files for i3wm can be found [here](./i3/etc/skel/)
   * My example config files for openbox can be found [here](./openbox/etc/skel/)
   * I added the Firefox developer edition browser by downloading the install package and unpacking it into `kali-config/common/includes.chroot/opt/firefox/` and then added the toxic tox client to `kali-config/common/includes.chroot/opt/toxic`. 
@@ -75,7 +77,7 @@ sudo ./build.sh --distribution kali-rolling --variant openbox --verbose
 
 ## Recommended post install setup
 
-* I decided to install a few packages after completing the installation. I noticed that when I added pcmanfm to the list of packages to generate an ISO, I got a system with preinstalled LXqt. It seems likely that some scripts install more than the bare minimum, and will include recommended packages.
+I decided to install a few packages after completing the installation. I noticed that when I added pcmanfm to the list of packages to generate an ISO, I got a system with preinstalled LXqt. It seems likely that some scripts install more than the bare minimum, and will include recommended packages.
 
 ```
 apt install lxappearance pcmanfm smplayer mplayer mpv vlc audacious lxinput lxrandr xarchiver galculator gpicview evince retext scite
@@ -83,14 +85,14 @@ apt install lxappearance pcmanfm smplayer mplayer mpv vlc audacious lxinput lxra
 
 ## Final version 
 
-* In the final version of the configs, I decided to port my i3wm install to my openbox build. This way, when building the openbox config, I am getting both window managers, openbox and i3. On the login screen I can select the session I want.
+In the final version of the configs, I decided to port my i3wm install to my openbox build. This way, when building the openbox config, I am getting both window managers, openbox and i3. On the login screen I can select the session I want.
 
 ## Issues and solutions
 
 #### Installing pcmanfm and getting the LXQT desktop 
 
-* This happened very early in the project. I decided to avoid the problem by not installing pcmanfm file manager
+This happened very early in the project. I decided to avoid the problem by not installing pcmanfm file manager
 
 #### While installing, the installer complained that kernel modules did not match the installer kernel version. 
 
-* I started investigating the issue and wanted to get an updated Debian installer from Debian buster. The next day I found out that Kali linux was upgrading the kernel packages, but they had not updated the installer and netboot images yet. Two days later it was OK. Debian installer and netboot were updated at Kali linux repos and everything worked fine. The only negative was that I needed to rebuild the iso. 
+I started investigating the issue and wanted to get an updated Debian installer from Debian buster. The next day I found out that Kali linux was upgrading the kernel packages, but they had not updated the installer and netboot images yet. Two days later it was OK. Debian installer and netboot were updated at Kali linux repos and everything worked fine. The only negative was that I needed to rebuild the iso. 
