@@ -93,7 +93,7 @@ With those running, I then had to wait for the job to finish. In my case it took
 
 ## Final Version
 
-In the final version of the configs, I decided to port my i3wm install to my Openbox build. This way, when building the Openbox config, I am getting both window managers, Openbox and i3. On the login screen, I can select the session I want. Obviously, its much easier to have one “perfect” ISO than have to decide between the two at install time. 
+In the final version of the configs, I decided to port my i3wm install to my Openbox build. This way, when building the Openbox config, I am getting both window managers, Openbox and i3. On the login screen, I can select the session I want. Obviously, its much easier to have one "perfect" ISO than have to decide between the two at install time. 
 
 ## Issues and solutions
 
