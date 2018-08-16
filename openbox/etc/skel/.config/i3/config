@@ -184,19 +184,6 @@ exec --no-startup-id compton -b &
 exec --no-startup-id xfce4-power-manager & 
 exec --no-startup-id clipit & 
 
-
-#sparky autostart
-#exec compton -b & 
-#exec nm-applet &
-#exec nitrogen --restore &
-#exec /usr/bin/sparky-polkit &
-#exec pasystray &
-#exec xscreensaver -nosplash &
-###exec --no-startup-id compton &  
-###exec echo "i3 file" >>/home/kowalczy/i3-is-alive.txt & 
-#exec conky --config=/opt/conky/conky-sparky-i3.conf &
-
-
 ### additional shortkeys
 #bindsym $mod+Shift+s exec "i3-nagbar -t warning -m 'You pressed the system suspend shortcut. Do you really want to suspend the system?' -b 'Yes, Suspend now' 'systemctl suspend'"
 #bindsym $mod+Shift+h exec "i3-nagbar -t warning -m 'You pressed the system hibernate shortcut. Do you really want to hibernate the system?' -b 'Yes, Hibernate now' 'systemctl hibernate'"

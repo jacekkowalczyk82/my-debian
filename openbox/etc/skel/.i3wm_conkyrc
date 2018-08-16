@@ -33,6 +33,10 @@ gap_y 35
 minimum_size 5 5
 minimum_width 200
 
+#
+# This config file is based on conkyrc from Sparky Linux (https://sparkylinux.org/)
+#
+
 TEXT
 ${color3}System${color}
 Host${goto 80}$nodename
