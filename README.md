@@ -111,5 +111,44 @@ I decided to install a few packages after completing the installation. I noticed
 
 ```
 apt install lxappearance pcmanfm smplayer mplayer mpv vlc audacious lxinput lxrandr xarchiver galculator gpicview evince retext scite
+
+
+sudo apt install gpicview
+sudo apt install evince
+sudo apt install lxrandr
+sudo apt install dtrx # tool for extracting multiple archive types
+sudo apt install snapd
+
+#snaps
+sudo snap install vscode --classic
+snap run vscode
+
+sudo snap install notepadqq
+
+sudo snap install slack --classic
+sudo snap install vlc
+sudo snap install clementine
+
+#appImage
+https://kate-editor.org/get-it/
+or 
+sudo snap install --edge kate
+
+```
+
+
+## issue with some missing toollbars, icos in few GUI apps: retext, kate
+
+```
+libGL error: pci id for fd 6: 80ee:beef, driver (null)
+libGL error: No driver found
+libGL error: failed to load driver: (null)
+Using configuration file: /home/kowalczy/.config/ReText project/ReText.conf
+
+libGL error: pci id for fd 14: 80ee:beef, driver (null)
+libGL error: No driver found
+libGL error: failed to load driver: (null)
+
+
 ```
 

@@ -41,8 +41,15 @@ fonts-dejavu
 #editors 
 leafpad
 scite
-retext
+geany
 
+#accessories
+gpicview
+evince
+lxrandr
+galculator
+xarchiver
+lxinput
 
 #terminals
 xterm
