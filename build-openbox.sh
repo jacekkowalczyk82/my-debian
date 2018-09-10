@@ -1,4 +1,11 @@
 #/usr/bin/env bash 
+
+mkdir -p /home/kowalczy/live-build-config/kali-config/variant-openbox/
+mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/etc/skel/
+mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/root/
+mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt/
+mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/usr/bin/
+
 cp -v /opt/my-debian/openbox/etc/skel/.openbox_conkyrc /home/kowalczy/live-build-config/kali-config/common/includes.chroot/etc/skel/.openbox_conkyrc
 cp -v /opt/my-debian/openbox/etc/skel/.openbox_conkyrc /home/kowalczy/live-build-config/kali-config/common/includes.chroot/root/.openbox_conkyrc
 

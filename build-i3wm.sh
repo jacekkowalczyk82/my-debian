@@ -1,5 +1,11 @@
 #/usr/bin/env bash 
 
+mkdir -p /home/kowalczy/live-build-config/kali-config/variant-openbox/
+mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/etc/skel/
+mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/root/
+mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt/
+mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/usr/bin/
+
 cp -v /opt/my-debian/i3/etc/skel/.i3wm_conkyrc /home/kowalczy/live-build-config/kali-config/common/includes.chroot/etc/skel/.i3wm_conkyrc
 cp -v /opt/my-debian/i3/etc/skel/.i3wm_conkyrc /home/kowalczy/live-build-config/kali-config/common/includes.chroot/root/.i3wm_conkyrc
 
