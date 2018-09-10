@@ -78,6 +78,14 @@ echo "Starting firefox developer edition"
 
 ```
 
+At the end I modified the debian installer configuration (kali-config/common/includes.installer/preseed.cfg) to allow to create standard user account during the installation process 
+
+```
+# Do not create a normal user account
+d-i passwd/make-user boolean true 
+
+```
+
 ##### 4. Build ISOs
 
 With all that configuration out of the way, it was time for the fun part, building the ISOs!

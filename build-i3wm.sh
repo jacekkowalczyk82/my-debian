@@ -1,6 +1,6 @@
 #/usr/bin/env bash 
 
-mkdir -p /home/kowalczy/live-build-config/kali-config/variant-openbox/
+mkdir -p /home/kowalczy/live-build-config/kali-config/variant-openbox/package-lists/
 mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/etc/skel/
 mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/root/
 mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt/
