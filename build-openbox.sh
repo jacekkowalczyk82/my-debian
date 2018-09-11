@@ -1,9 +1,10 @@
 #/usr/bin/env bash 
 
 mkdir -p /home/kowalczy/live-build-config/kali-config/variant-openbox/package-lists/
-mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/etc/skel/
-mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/root/
-mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt/
+mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/etc/skel/.config/
+mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/root/.config/
+mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt/firefox/
+mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt/toxic/
 mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/usr/bin/
 
 cp -v /opt/my-debian/openbox/etc/skel/.openbox_conkyrc /home/kowalczy/live-build-config/kali-config/common/includes.chroot/etc/skel/.openbox_conkyrc
@@ -18,11 +19,13 @@ cp -v -r /opt/my-debian/openbox/etc/skel/.config /home/kowalczy/live-build-confi
 cp -v /opt/my-debian/variant-openbox/package-lists/kali.list.chroot /home/kowalczy/live-build-config/kali-config/variant-openbox/package-lists/kali.list.chroot
 
 #firefox
-cp -v -r  /opt/firefox /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt/
+cp -v -r /opt/firefox /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt/
 
-cp -v -r  /opt/my-debian/opt/firefox/firefox.sh /home/kowalczy/live-build-config/kali-config/common/includes.chroot/usr/bin/firefox.sh
+sleep 60
 
-cp -v -r  /opt/my-debian/opt/firefox/firefox-developer-edition.desktop /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt/firefox/firefox-developer-edition.desktop
+cp -v /opt/my-debian/opt/firefox/firefox.sh /home/kowalczy/live-build-config/kali-config/common/includes.chroot/usr/bin/firefox.sh
+
+cp -v /opt/my-debian/opt/firefox/firefox-developer-edition.desktop /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt/firefox/firefox-developer-edition.desktop
 
 #toxic
 cp -v -r  /opt/toxic /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt/
@@ -32,6 +35,7 @@ cp -v -r  /opt/my-debian/i3/kali-lock.sh /home/kowalczy/live-build-config/kali-c
 
 cd /home/kowalczy/live-build-config/
 date
+rm -rf config/
 ./build.sh --distribution kali-rolling --variant openbox --verbose
 date
 
