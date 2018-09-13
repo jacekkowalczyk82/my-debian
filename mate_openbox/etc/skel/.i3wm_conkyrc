@@ -24,7 +24,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
 background yes
 own_window yes
 own_window_type override
@@ -59,6 +58,10 @@ gap_x 35
 gap_y 35
 minimum_size 5 5
 minimum_width 200
+
+#
+# This config file is based on conkyrc from Sparky Linux (https://sparkylinux.org/)
+#
 
 TEXT
 ${color3}System${color}

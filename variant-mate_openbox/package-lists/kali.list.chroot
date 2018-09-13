@@ -20,8 +20,16 @@ kali-linux-top10
 # kali-linux-rfid
 
 # Graphical desktop
+# | NOTE: With Kali 1.x, the mate desktop requires other changes to the live config.
+# | See http://docs.kali.org/live-build/customize-the-kali-desktop-environment
+# | for details
 kali-desktop-common
 xorg
+#if DISTRIBUTION moto
+mate-archive-keyring
+#endif
+mate-desktop-environment
+
 
 openbox
 obconf
@@ -34,9 +42,6 @@ menu
 # i3wm will be also available in openbox edition 
 i3
 
-# to allow reboot and poweroff directly from window manager 
-lxpolkit
-
 dmenu
 conky
 
@@ -48,23 +53,13 @@ scrot
 fonts-dejavu
 
 #editors 
-leafpad
-scite
-geany
 
-#accessories
-gpicview
-evince
-lxrandr
-galculator
-xarchiver
-lxinput
+geany
 
 #terminals
 xterm
-lxterminal
+
 terminator
-sakura
 
 
 #web browsers
@@ -75,30 +70,14 @@ youtube-dl
 #dev tools
 meld
 
-# gksudo                 # package not found 
-
 # file manager
 ranger
-rox-filer
-thunar
-#pcmanfm                 # installs whole lxqt desktops, I do not know why yet
+
+
 oxygen-icon-theme
 obsidian-icon-theme
 adwaita-icon-theme
 hicolor-icon-theme
-
-#slick-greeter           # I started with this greeter but I got back to lightdm-gtk-greeter
-
-#systray apps
-pulseaudio
-pavucontrol
-pasystray 
-udiskie
-network-manager
-network-manager-gnome
-clipit
-xfce4-power-manager
-xscreensaver
 
 #utilities
 sudo
@@ -122,9 +101,6 @@ i3lock
 
 #printers
 system-config-printer
-
-#simple tasks manager 
-lxtask
 
 #for firefox developer edition, 
 #firefox-developer-edition is installed in /opt/firefox 
