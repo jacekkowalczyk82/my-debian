@@ -36,7 +36,7 @@ cp -v -r  /opt/my-debian/i3/kali-lock.sh /home/kowalczy/live-build-config/kali-c
 cd /home/kowalczy/live-build-config/
 date
 rm -rf config/
-./build.sh --distribution kali-rolling --variant openbox --verbose
+./build.sh --distribution kali-rolling --variant mate_openbox --verbose
 date
 
 
