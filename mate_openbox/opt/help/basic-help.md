@@ -8,8 +8,7 @@
 | D-Menu | $mod+d |  |
 | Workspaces | $mod+1-9 |  |
 | Midnight Commander | $mod+Ctrl+m | mc |
-| File manager | $mod+Ctrl+f | rox-filer |
-| pcmanfm |  | pcmanfm |
+| File manager | $mod+Ctrl+f | caja |
 | ranger |  | ranger |
 | Web Browser | $mod+Ctrl+w | x-www-browser |
 | Firefox |  | firefox |
@@ -17,7 +16,7 @@
 | Wallpapers | $mod+Ctrl+n | nitrogen |
 | Simple Firewall |  | sudo gufw |
 | Printer | $mod+Ctrl+p | system-config-printer |
-| LXtask | $mod+Ctrl+x | lxtask |
+| mate-system-monitor | $mod+Ctrl+x | mate-system-monitor |
 | Screenshot | $mod+Ctrl+s | scrot |
 | Reload i3 config | $mod+Shift+c |  |
 | Restart i3 | $mod+Shift+r |  |
