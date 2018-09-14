@@ -42,6 +42,9 @@ menu
 # i3wm will be also available in openbox edition 
 i3
 
+# to allow reboot and poweroff directly from window manager 
+mate-polkit
+
 dmenu
 conky
 
@@ -78,6 +81,12 @@ oxygen-icon-theme
 obsidian-icon-theme
 adwaita-icon-theme
 hicolor-icon-theme
+
+#systray apps
+udiskie
+network-manager
+network-manager-gnome
+clipit
 
 #utilities
 sudo
