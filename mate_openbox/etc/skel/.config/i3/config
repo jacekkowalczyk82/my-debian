@@ -177,8 +177,8 @@ exec --no-startup-id udiskie -ant &
 #network manager applet
 exec --no-startup-id nm-applet & 
 
-#Pulse audio systray
-#exec --no-startup-id pasystray & 
+#volume vontrol applet in systray
+exec --no-startup-id mate-volume-control-applet &
 
 exec --no-startup-id compton -b & 
 exec --no-startup-id mate-power-manager & 

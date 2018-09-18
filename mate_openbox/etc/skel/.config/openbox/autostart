@@ -30,15 +30,8 @@ udiskie -ant &
 ### Volume keys daemon
 mate-volume-control-applet &
 
-#Pulse audio systray
-#pasystray & # it is already started by some magic
-
 ## Enable power management
 mate-power-manager &
-
-### Start Thunar Daemon
-#thunar --daemon &
-#
 
 ## Start xscreensaver
 #xscreensaver -no-splash &
