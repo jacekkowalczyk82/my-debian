@@ -71,6 +71,12 @@
 				<execute>mpv --player-operation-mode=pseudo-gui --</execute>
 			</action>
 		</item>
+		<item label="Task Manager">
+			<action name="Execute">
+				<execute>mate-system-monitor</execute>
+			</action>
+		</item>
+
 		</menu>
 		<menu id="screenshot-menu-754113" label="Screenshot">
 			<item label="Whole screen">
