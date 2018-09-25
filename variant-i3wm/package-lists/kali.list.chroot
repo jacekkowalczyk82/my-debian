@@ -26,7 +26,7 @@ xorg
 i3
 
 # to allow reboot and poweroff directly from window manager 
-lxpolkit
+mate-polkit
 
 dmenu
 conky
@@ -39,8 +39,9 @@ scrot
 fonts-dejavu
 
 #editors 
-leafpad
-scite
+#leafpad
+#scite
+pluma
 geany
 
 #accessories
@@ -53,13 +54,13 @@ lxinput
 
 #terminals
 xterm
-lxterminal
+#lxterminal
 terminator
-sakura
+#sakura
+mate-terminal
 
 
 #web browsers
-dillo
 chromium
 falkon
 youtube-dl
@@ -71,8 +72,9 @@ meld
 
 # file manager
 ranger
-rox-filer
-thunar
+caja
+#rox-filer
+#thunar
 #pcmanfm                 # installs whole lxqt desktops, I do not know why yet
 oxygen-icon-theme
 obsidian-icon-theme
@@ -83,13 +85,13 @@ hicolor-icon-theme
 
 #systray apps
 pulseaudio
-pavucontrol
-pasystray 
+#pavucontrol
+#pasystray
 udiskie
 network-manager
 network-manager-gnome
 clipit
-xfce4-power-manager
+mate-power-manager
 xscreensaver
 
 #utilities
@@ -116,7 +118,7 @@ i3lock
 system-config-printer
 
 #simple tasks manager 
-lxtask
+mate-system-monitor
 
 #for firefox developer edition, 
 #firefox-developer-edition is installed in /opt/firefox 

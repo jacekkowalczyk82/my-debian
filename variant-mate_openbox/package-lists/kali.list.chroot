@@ -83,6 +83,9 @@ adwaita-icon-theme
 hicolor-icon-theme
 
 #systray apps
+pulseaudio
+#pavucontrol
+#pasystray
 udiskie
 network-manager
 network-manager-gnome

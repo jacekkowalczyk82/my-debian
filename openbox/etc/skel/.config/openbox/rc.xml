@@ -322,15 +322,7 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-e">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Konqueror</name>
-        </startupnotify>
-        <command>kfmclient openProfile filemanagement</command>
-      </action>
-    </keybind>
+    
     <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
@@ -362,9 +354,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>thunar</name>
+          <name>caja</name>
         </startupnotify>
-        <command>thunar</command>
+        <command>caja</command>
       </action>
     </keybind>
     <keybind key="W-t">
@@ -386,24 +378,24 @@
       </action>
     </keybind>
     
-   <!--
+   
  <keybind key="W-l">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
           <name>Lock screen</name>
         </startupnotify>
-        <command>xscreensaver-command -lock</command>
+        <command>i3lock -i /usr/share/desktop-base/kali-theme/grub/grub-16x9.png</command>
       </action>
     </keybind>
--->
+
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
           <name>Editor</name>
         </startupnotify>
-        <command>leafpad</command>
+        <command>pluma</command>
       </action>
     </keybind>
     <keybind key="W-m">
@@ -424,6 +416,7 @@
         <command>x-terminal-emulator -e htop</command>
       </action>
     </keybind>
+<!--
     <keybind key="W-v">
       <action name="Execute">
         <startupnotify>
@@ -433,7 +426,8 @@
         <command>pavucontrol</command>
       </action>
     </keybind>
-    
+    -->
+
 <!-- end of kali openbox custom -->
   </keyboard>
   <mouse>

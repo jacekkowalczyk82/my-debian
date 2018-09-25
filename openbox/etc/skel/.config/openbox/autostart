@@ -1,8 +1,9 @@
 ## Openbox autostart.sh
 # This configuration file is based on the configs from CrunchBang++ 
 
-## LX PolicyKit
-lxpolkit &
+## PolicyKit
+gnome-keyring-daemon
+polkit-mate-authentication-agent-1
 
 ## Set root window colour
 hsetroot -solid "#2E3436" &
@@ -15,7 +16,7 @@ hsetroot -solid "#2E3436" &
 (\
 nitrogen --restore && \
 
-compton -b && \
+#compton -b && \
 sleep 2s && \
 tint2 \
 ) &
@@ -27,20 +28,13 @@ nm-applet &
 udiskie -ant & 
 
 ### Volume keys daemon
-#mate-volume-control-applet &
-
-#Pulse audio systray
-#pasystray & # it is already started by some magic
+mate-volume-control-applet &
 
 ## Enable power management
-xfce4-power-manager &
-
-### Start Thunar Daemon
-#thunar --daemon &
-#
+mate-power-manager &
 
 ## Start xscreensaver
-xscreensaver -no-splash &
+#xscreensaver -no-splash &
 
 ## Start Clipboard manager
 (sleep 3s && clipit) &

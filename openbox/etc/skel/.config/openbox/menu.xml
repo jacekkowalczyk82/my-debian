@@ -11,22 +11,19 @@
 				<execute>terminator</execute>
 			</action>
 		</item>
-		<item label="Sakura">
-			<action name="Execute">
-				<execute>sakura</execute>
-			</action>
-		</item>
 		<item label="XTerm">
 			<action name="Execute">
 				<execute>xterm</execute>
 			</action>
 		</item>
-		<item label="LXTerminal">
+		<item label="mate-terminal">
 			<action name="Execute">
-				<execute>lxterminal</execute>
+				<execute>mate-terminal</execute>
 			</action>
 		</item>
 		<separator/>
+		<menu id="root-menu-fevourites-tools" label="Favourite Apps">
+
 		<item label="Toxic">
 			<action name="Execute">
 				<execute>x-terminal-emulator -e /opt/toxic/run_toxic.sh</execute>
@@ -47,11 +44,6 @@
 				<execute>chromium</execute>
 			</action>
 		</item>
-		<item label="Dillo">
-			<action name="Execute">
-				<execute>dillo</execute>
-			</action>
-		</item>
 		<item label="Falkon">
 			<action name="Execute">
 				<execute>falkon</execute>
@@ -61,12 +53,12 @@
 		<separator/>
 		<item label="File Manager">
 			<action name="Execute">
-				<execute>thunar</execute>
+				<execute>caja</execute>
 			</action>
 		</item>
-		<item label="Leafpad">
+		<item label="Pluma">
 			<action name="Execute">
-				<execute>leafpad</execute>
+				<execute>pluma</execute>
 			</action>
 		</item>
 		<item label="Meld">
@@ -74,16 +66,18 @@
 				<execute>meld</execute>
 			</action>
 		</item>
-		<item label="Task Manager">
-			<action name="Execute">
-				<execute>lxtask</execute>
-			</action>
-		</item>
 		<item label="Media Player">
 			<action name="Execute">
 				<execute>mpv --player-operation-mode=pseudo-gui --</execute>
 			</action>
 		</item>
+		<item label="Task Manager">
+			<action name="Execute">
+				<execute>mate-system-monitor</execute>
+			</action>
+		</item>
+
+		</menu>
 		<menu id="screenshot-menu-754113" label="Screenshot">
 			<item label="Whole screen">
 				<action name="Execute">
@@ -101,6 +95,8 @@
 		<separator/>
 		<menu execute="/usr/bin/obamenu" id="applications-menu" label="Applications"/>
 		<separator/>
+
+		<menu id="root-menu-fopenbox-tools" label="Openbox tools">
 		<item label="Obmenu">
 			<action name="Execute">
 				<execute>obmenu</execute>
@@ -117,6 +113,8 @@
 		<item label="Restart">
 			<action name="Restart"/>
 		</item>
+		</menu>
+
 		<separator/>
 		<item label="Exit Openbox">
 			<action name="Exit"/>
