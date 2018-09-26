@@ -49,3 +49,6 @@ xset b off &
 ## Run the conky
 conky -c ~/.openbox_conkyrc &
 
+## Start the plank panel dock
+plank &
+

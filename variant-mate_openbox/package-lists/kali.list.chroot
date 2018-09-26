@@ -90,6 +90,7 @@ udiskie
 network-manager
 network-manager-gnome
 clipit
+plank
 
 #utilities
 sudo
