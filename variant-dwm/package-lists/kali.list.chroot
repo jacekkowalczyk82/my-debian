@@ -1,0 +1,152 @@
+# You always want those
+kali-linux
+kali-desktop-live
+
+# Kali applications
+
+# You can customize the set of Kali applications to install
+# (-full is the default, -all is absolutely everything, the rest
+# corresponds to various subsets)
+# kali-linux-full
+# kali-linux-all
+# kali-linux-sdr
+# kali-linux-gpu
+# kali-linux-wireless
+# kali-linux-web
+# kali-linux-forensic
+# kali-linux-voip
+# kali-linux-pwtools
+kali-linux-top10
+# kali-linux-rfid
+
+# Graphical desktop
+kali-desktop-common
+xorg
+
+openbox
+obconf
+obmenu
+openbox-menu
+obsession
+tint2
+menu
+
+# i3wm will be also available in openbox edition 
+i3
+
+# to allow reboot and poweroff directly from window manager 
+mate-polkit
+
+#DWM
+dwm
+suckless-tools
+#dmenu
+#slock
+
+stterm
+libx11-dev
+libxft-dev
+libxinerama-dev
+
+
+conky
+
+lightdm 
+compton
+nitrogen
+feh
+scrot
+fonts-dejavu
+
+#editors 
+#leafpad
+#scite
+pluma
+geany
+
+#accessories
+gpicview
+evince
+lxrandr
+galculator
+xarchiver
+lxinput
+
+#terminals
+xterm
+#lxterminal
+terminator
+#sakura
+mate-terminal
+
+
+#web browsers
+chromium
+falkon
+youtube-dl
+
+#dev tools
+meld
+
+# gksudo                 # package not found 
+
+# file manager
+ranger
+caja
+#rox-filer
+#thunar
+#pcmanfm                 # installs whole lxqt desktops, I do not know why yet
+oxygen-icon-theme
+obsidian-icon-theme
+adwaita-icon-theme
+hicolor-icon-theme
+
+#slick-greeter           # I started with this greeter but I got back to lightdm-gtk-greeter
+
+#systray apps
+pulseaudio
+#pavucontrol
+#pasystray
+udiskie
+network-manager
+network-manager-gnome
+clipit
+mate-power-manager
+xscreensaver
+plank
+
+#utilities
+sudo
+git
+git-gui
+curl
+mc
+vim
+htop
+openssh-server
+apt-transport-https
+screenfetch
+gmrun
+i3lock
+
+#simple firewall
+#gufw                   # package not found 
+
+#live-build
+#cdebootstrap
+
+#printers
+system-config-printer
+
+#simple tasks manager 
+mate-system-monitor
+
+#for firefox developer edition, 
+#firefox-developer-edition is installed in /opt/firefox 
+libdbus-glib-1-2
+
+#multimedia 
+mpv
+smplayer
+audacious
+
