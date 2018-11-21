@@ -8,6 +8,9 @@ mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/opt
 mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/usr/bin/
 mkdir -p /home/kowalczy/live-build-config/kali-config/common/includes.chroot/usr/share/xsessions/
 
+cp -v /opt/my-debian/dwm/etc/skel/.openbox_conkyrc /home/kowalczy/live-build-config/kali-config/common/includes.chroot/etc/skel/.openbox_conkyrc
+cp -v /opt/my-debian/dwm/etc/skel/.openbox_conkyrc /home/kowalczy/live-build-config/kali-config/common/includes.chroot/root/.openbox_conkyrc
+
 cp -v /opt/my-debian/dwm/etc/skel/.dwm_conkyrc /home/kowalczy/live-build-config/kali-config/common/includes.chroot/etc/skel/.dwm_conkyrc
 cp -v /opt/my-debian/dwm/etc/skel/.dwm_conkyrc /home/kowalczy/live-build-config/kali-config/common/includes.chroot/root/.dwm_conkyrc
 
