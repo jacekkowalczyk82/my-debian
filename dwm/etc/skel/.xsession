@@ -1,1 +1,1 @@
-/home/kowalczy/.xinitrc
+.xinitrc
