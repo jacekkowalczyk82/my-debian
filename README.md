@@ -3,6 +3,9 @@
 * The goal of this project is to create custom debian or debian based distribution iso
 * This repo is a place for manuals, scripts and configs. 
 
+![Kali Linux Openbox variant screenshot](./screenshots/2018-09-04-172803_1360x687_scrot.png)
+
+More screenshots [here](./screenshots/)
 - - - -
 
 #### My story 
@@ -102,6 +105,24 @@ With those running, I then had to wait for the job to finish. In my case it took
 ## Final Version
 
 In the final version of the configs, I decided to port my i3wm install to my Openbox build. This way, when building the Openbox config, I am getting both window managers, Openbox and i3. On the login screen, I can select the session I want. Obviously, its much easier to have one "perfect" ISO than have to decide between the two at install time. 
+
+## Kali Linux DWM variant
+
+I wanted to try even something lighter then openbox. I installed DWM (Dynamic Window Manager from suckless.org) and prepared config files for new ISO. See this [manual](.debian-dwm.md) for more info. 
+
+![Kali Linux DWM variant screenshot](./screenshots/2018-11-22-104146_1920x975_scrot.png)
+
+I prepared some automation scripts so right now I can build new ISO using commands: 
+
+```
+cd /opt/my-debian
+sudo ./build-dwm.sh |tee -a build-dwm-`date '+%Y-%m-%d'`.log
+sudo ./build-openbox.sh |tee -a build-dwm-`date '+%Y-%m-%d'`.log
+sudo ./build-mate_openbox.sh |tee -a build-mate-openbox-`date '+%Y-%m-%d'`.log
+sudo ./build-i3wm.sh |tee -a build-i3wm-`date '+%Y-%m-%d'`.log
+
+```
+
 
 ## Issues and solutions
 
