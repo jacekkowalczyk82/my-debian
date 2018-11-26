@@ -14,15 +14,6 @@ mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/toxic/
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/bin/
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/share/xsessions/
 
-cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.openbox_conkyrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.openbox_conkyrc
-cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.openbox_conkyrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/.openbox_conkyrc
-
-cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.dwm_conkyrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.dwm_conkyrc
-cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.dwm_conkyrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/.dwm_conkyrc
-
-cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.i3wm_conkyrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.i3wm_conkyrc
-cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.i3wm_conkyrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/.i3wm_conkyrc
-
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.config ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.config ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/
 
