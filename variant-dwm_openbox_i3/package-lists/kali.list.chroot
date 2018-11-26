@@ -23,7 +23,16 @@ kali-linux-top10
 kali-desktop-common
 xorg
 
+openbox
+obconf
+obmenu
+openbox-menu
+obsession
+tint2
 menu
+
+# i3wm will be also available in openbox edition 
+i3
 
 # to allow reboot and poweroff directly from window manager 
 mate-polkit
@@ -39,6 +48,11 @@ libx11-dev
 libxft-dev
 libxinerama-dev
 
+
+conky
+
+lightdm 
+compton
 nitrogen
 feh
 scrot
@@ -87,6 +101,7 @@ obsidian-icon-theme
 adwaita-icon-theme
 hicolor-icon-theme
 
+#slick-greeter           # I started with this greeter but I got back to lightdm-gtk-greeter
 
 #systray apps
 pulseaudio

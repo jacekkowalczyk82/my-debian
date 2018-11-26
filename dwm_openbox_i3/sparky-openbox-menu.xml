@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://openbox.org/">
+  <menu id="root-menu" label="Applications">
+    <item label="File Manager" icon="/home/kowalczy/.config/obmenu-generator/icons/ba6a01d7da466d92fd392c912c136eb4.png"><action name="Execute"><command><![CDATA[sparky-fileopen]]></command></action></item>
+    <item label="Terminal" icon="/home/kowalczy/.config/obmenu-generator/icons/5d2a23f780be9894333c0866641ce36e.png"><action name="Execute"><command><![CDATA[x-terminal-emulator]]></command></action></item>
+    <item label="Web Browser" icon="/home/kowalczy/.config/obmenu-generator/icons/a378933c03ec9396979f63e9339383ee.png"><action name="Execute"><command><![CDATA[x-www-browser]]></command></action></item>
+    <item label="Run command" icon="/home/kowalczy/.config/obmenu-generator/icons/f9d7ab401e54a8cb37470f6796bda993.png"><action name="Execute"><command><![CDATA[gexec]]></command></action></item>
+  <separator label="Categories"/>
+  <menu id="0.927173877208592" icon="/home/kowalczy/.config/obmenu-generator/icons/8d196596a9181c98ec8e2a6077c4e3b4.png" label="Accessories">
+    <item label="Bulk Rename" icon="/home/kowalczy/.config/obmenu-generator/icons/ba6a01d7da466d92fd392c912c136eb4.png"><action name="Execute"><command><![CDATA[/usr/lib/x86_64-linux-gnu/Thunar/ThunarBulkRename]]></command></action></item>
+    <item label="Compton Manager" icon="/home/kowalczy/.config/obmenu-generator/icons/297be74fcedc7d9ad537490ffed66f6e.png"><action name="Execute"><command><![CDATA[/usr/bin/sparky-compton]]></command></action></item>
+    <item label="compton" icon="/home/kowalczy/.config/obmenu-generator/icons/79706a0a3833a8b5a372c19635a63d02.png"><action name="Execute"><command><![CDATA[compton]]></command></action></item>
+    <item label="Conky Manager" icon="/home/kowalczy/.config/obmenu-generator/icons/4088883a86d632d340267840808727e4.png"><action name="Execute"><command><![CDATA[/usr/bin/sparky-conky]]></command></action></item>
+    <item label="File Manager" icon="/home/kowalczy/.config/obmenu-generator/icons/ba6a01d7da466d92fd392c912c136eb4.png"><action name="Execute"><command><![CDATA[exo-open --launch FileManager]]></command></action></item>
+    <item label="Image Viewer" icon="/home/kowalczy/.config/obmenu-generator/icons/0caefce88aaa85547dc3328d47597be5.png"><action name="Execute"><command><![CDATA[gpicview]]></command></action></item>
+    <item label="Leafpad" icon="/home/kowalczy/.config/obmenu-generator/icons/1e53a2034120617b05bd5dbaf5ac8fa8.png"><action name="Execute"><command><![CDATA[leafpad]]></command></action></item>
+    <item label="LightDM GTK+ Greeter settings" icon="/home/kowalczy/.config/obmenu-generator/icons/9b1d85e27f3a5cc1ef72d6ea552ab2c8.png"><action name="Execute"><command><![CDATA[lightdm-gtk-greeter-settings-pkexec]]></command></action></item>
+    <item label="Midnight Commander editor" icon="/home/kowalczy/.config/obmenu-generator/icons/ba6a01d7da466d92fd392c912c136eb4.png"><action name="Execute"><command><![CDATA[x-terminal-emulator -e 'mcedit']]></command></action></item>
+    <item label="Midnight Commander" icon="/home/kowalczy/.config/obmenu-generator/icons/ba6a01d7da466d92fd392c912c136eb4.png"><action name="Execute"><command><![CDATA[x-terminal-emulator -e 'mc']]></command></action></item>
+    <item label="nitrogen" icon="/home/kowalczy/.config/obmenu-generator/icons/dc07ea0146d8fe8408ee1b3a35dded2d.png"><action name="Execute"><command><![CDATA[nitrogen]]></command></action></item>
+    <item label="Terminal Emulator" icon="/home/kowalczy/.config/obmenu-generator/icons/5d2a23f780be9894333c0866641ce36e.png"><action name="Execute"><command><![CDATA[exo-open --launch TerminalEmulator]]></command></action></item>
+    <item label="Terminator" icon="/home/kowalczy/.config/obmenu-generator/icons/5d2a23f780be9894333c0866641ce36e.png"><action name="Execute"><command><![CDATA[terminator]]></command></action></item>
+    <item label="Thunar File Manager" icon="/home/kowalczy/.config/obmenu-generator/icons/ba6a01d7da466d92fd392c912c136eb4.png"><action name="Execute"><command><![CDATA[thunar]]></command></action></item>
+    <item label="Tilda" icon="/home/kowalczy/.config/obmenu-generator/icons/5d2a23f780be9894333c0866641ce36e.png"><action name="Execute"><command><![CDATA[/usr/bin/tilda]]></command></action></item>
+    <item label="Vim" icon="/home/kowalczy/.config/obmenu-generator/icons/c5c7fc4e25946a72af725c83dc27746f.png"><action name="Execute"><command><![CDATA[x-terminal-emulator -e 'vim']]></command></action></item>
+    <item label="Xarchiver" icon="/home/kowalczy/.config/obmenu-generator/icons/1d17096ba45c8179c4c3068990f8a70b.png"><action name="Execute"><command><![CDATA[xarchiver]]></command></action></item>
+  </menu>
+  <menu id="0.166998154807033" icon="/home/kowalczy/.config/obmenu-generator/icons/8314a097871614db2a74e0a80fec336a.png" label="Development">
+    <item label="Icon Browser" icon="/home/kowalczy/.config/obmenu-generator/icons/b8313cedd85df19356441f35523d5676.png"><action name="Execute"><command><![CDATA[yad-icon-browser]]></command></action></item>
+  </menu>
+  <menu id="0.775616318258596" icon="/home/kowalczy/.config/obmenu-generator/icons/65feb4e4a622e33f0738f5d78aa0e24f.png" label="Graphics">
+    <item label="gscreenshot" icon="/home/kowalczy/.config/obmenu-generator/icons/95c2d4a7bd625aa36b5f4f042fa5ecff.png"><action name="Execute"><command><![CDATA[gscreenshot]]></command></action></item>
+    <item label="Image Viewer" icon="/home/kowalczy/.config/obmenu-generator/icons/0caefce88aaa85547dc3328d47597be5.png"><action name="Execute"><command><![CDATA[gpicview]]></command></action></item>
+    <item label="ImageMagick (color depth=q16)" icon="/home/kowalczy/.config/obmenu-generator/icons/b61cbb4cce959bced9faee77567b7e90.png"><action name="Execute"><command><![CDATA[/usr/bin/display-im6.q16 -nostdin]]></command></action></item>
+  </menu>
+  <menu id="0.347785420340138" icon="/home/kowalczy/.config/obmenu-generator/icons/18db7d4f68f2015b8a47848e0854f3eb.png" label="Multimedia">
+    <item label="Install multimedia codecs" icon="/home/kowalczy/.config/obmenu-generator/icons/b8ce899fd019190e97cf687685004bb5.png"><action name="Execute"><command><![CDATA[remsu /usr/bin/sparky-codecs]]></command></action></item>
+    <item label="PNMixer" icon="/home/kowalczy/.config/obmenu-generator/icons/22cfb2823be5b07fac50bf9849b5bb76.png"><action name="Execute"><command><![CDATA[pnmixer]]></command></action></item>
+    <item label="PulseAudio Volume Control" icon="/home/kowalczy/.config/obmenu-generator/icons/b8ce899fd019190e97cf687685004bb5.png"><action name="Execute"><command><![CDATA[pavucontrol]]></command></action></item>
+  </menu>
+  <menu id="0.610032554145693" icon="/home/kowalczy/.config/obmenu-generator/icons/2bd91f57b2f192240b45fd4e18991f91.png" label="Network">
+    <item label="Dropbox" icon="/home/kowalczy/.config/obmenu-generator/icons/69ef06c0505804207cb88b4971b358fc.png"><action name="Execute"><command><![CDATA[dropbox start -i]]></command></action></item>
+    <item label="Falkon" icon="/home/kowalczy/.config/obmenu-generator/icons/78c19e7c7c43b4d45979dbf6fb3bdc36.png"><action name="Execute"><command><![CDATA[falkon]]></command></action></item>
+    <item label="Firefox" icon="/home/kowalczy/.config/obmenu-generator/icons/81976407e9634a5cd57f9a5287083186.png"><action name="Execute"><command><![CDATA[/usr/lib/firefox/firefox]]></command></action></item>
+    <item label="Google Chrome" icon="/home/kowalczy/.config/obmenu-generator/icons/8bfd9933b5af4e953be3244c89038055.png"><action name="Execute"><command><![CDATA[/usr/bin/google-chrome-stable]]></command></action></item>
+    <item label="Mail Reader" icon="/home/kowalczy/.config/obmenu-generator/icons/dfa40318c7de6389ab598a88d92fbdaa.png"><action name="Execute"><command><![CDATA[exo-open --launch MailReader]]></command></action></item>
+    <item label="Midori Private Browsing" icon="/home/kowalczy/.config/obmenu-generator/icons/15bda19a183aca90893e4e77626b7be0.png"><action name="Execute"><command><![CDATA[midori --private]]></command></action></item>
+    <item label="Midori" icon="/home/kowalczy/.config/obmenu-generator/icons/15bda19a183aca90893e4e77626b7be0.png"><action name="Execute"><command><![CDATA[midori]]></command></action></item>
+    <item label="Web Browser Installer" icon="/home/kowalczy/.config/obmenu-generator/icons/a378933c03ec9396979f63e9339383ee.png"><action name="Execute"><command><![CDATA[/usr/bin/sparky-webbrowser]]></command></action></item>
+    <item label="Web Browser" icon="/home/kowalczy/.config/obmenu-generator/icons/a378933c03ec9396979f63e9339383ee.png"><action name="Execute"><command><![CDATA[exo-open --launch WebBrowser]]></command></action></item>
+  </menu>
+  <menu id="0.0257550631504131" icon="/home/kowalczy/.config/obmenu-generator/icons/12dd2ba45c1df41e7091acb0cf7bcc08.png" label="Office">
+    <item label="Office Suite Installer" icon="/home/kowalczy/.config/obmenu-generator/icons/52cf3b27febad446bc1848c1799afb75.png"><action name="Execute"><command><![CDATA[remsu /usr/bin/sparky-office]]></command></action></item>
+  </menu>
+  <menu id="0.713933467768893" icon="/home/kowalczy/.config/obmenu-generator/icons/8d196596a9181c98ec8e2a6077c4e3b4.png" label="Settings">
+    <item label="File Manager" icon="/home/kowalczy/.config/obmenu-generator/icons/ba6a01d7da466d92fd392c912c136eb4.png"><action name="Execute"><command><![CDATA[thunar-settings]]></command></action></item>
+    <item label="Firewall Configuration" icon="/home/kowalczy/.config/obmenu-generator/icons/4b7dce9a4e8a26bf74615f4537bf9801.png"><action name="Execute"><command><![CDATA[gufw]]></command></action></item>
+    <item label="Keyboard and Mouse" icon="/home/kowalczy/.config/obmenu-generator/icons/92de0f72e0c40b88b6328447c03074db.png"><action name="Execute"><command><![CDATA[lxinput]]></command></action></item>
+    <item label="LightDM GTK+ Greeter settings" icon="/home/kowalczy/.config/obmenu-generator/icons/9b1d85e27f3a5cc1ef72d6ea552ab2c8.png"><action name="Execute"><command><![CDATA[lightdm-gtk-greeter-settings-pkexec]]></command></action></item>
+    <item label="Monitor Settings" icon="/home/kowalczy/.config/obmenu-generator/icons/b70317a456782dca010ffbcf38e40893.png"><action name="Execute"><command><![CDATA[lxrandr]]></command></action></item>
+    <item label="Network Connections" icon="/home/kowalczy/.config/obmenu-generator/icons/5f0bc52f7dcac2c0e4b1d79bca4b4b1c.png"><action name="Execute"><command><![CDATA[nm-connection-editor]]></command></action></item>
+    <item label="Openbox Configuration Manager" icon="/home/kowalczy/.config/obmenu-generator/icons/2ed6e38a7927a5ddf9fd3a58d04100df.png"><action name="Execute"><command><![CDATA[obconf]]></command></action></item>
+    <item label="Preferred Applications" icon="/home/kowalczy/.config/obmenu-generator/icons/27ba3001127046026ef388c3737d802b.png"><action name="Execute"><command><![CDATA[exo-preferred-applications]]></command></action></item>
+    <item label="Print Settings" icon="/home/kowalczy/.config/obmenu-generator/icons/bf08551e4dc3773ed3388b1d2cba4818.png"><action name="Execute"><command><![CDATA[system-config-printer]]></command></action></item>
+    <item label="Removable Drives and Media" icon="/home/kowalczy/.config/obmenu-generator/icons/4a7a87fb3aae3af2ede62d0892571654.png"><action name="Execute"><command><![CDATA[thunar-volman-settings]]></command></action></item>
+    <item label="Screensaver" icon="/home/kowalczy/.config/obmenu-generator/icons/f1f7761393e18a8d9050d16a43bfb0f1.png"><action name="Execute"><command><![CDATA[xscreensaver-demo]]></command></action></item>
+    <item label="Synaptic Package Manager" icon="/home/kowalczy/.config/obmenu-generator/icons/7439380cb112e9e770d1f34da8458df4.png"><action name="Execute"><command><![CDATA[synaptic-pkexec]]></command></action></item>
+    <item label="systemadm" icon="/home/kowalczy/.config/obmenu-generator/icons/4a2606e306b44fb3727dc314c703677e.png"><action name="Execute"><command><![CDATA[systemadm]]></command></action></item>
+    <item label="Tint2 Settings" icon="/home/kowalczy/.config/obmenu-generator/icons/d11e9a9f091c3f9b5df15fde9a354f45.png"><action name="Execute"><command><![CDATA[tint2conf]]></command></action></item>
+  </menu>
+  <menu id="0.923250383039964" icon="/home/kowalczy/.config/obmenu-generator/icons/4a2606e306b44fb3727dc314c703677e.png" label="System">
+    <item label="About SparkyLinux" icon="/home/kowalczy/.config/obmenu-generator/icons/c52f058a2668115c96d86e6b95055c31.png"><action name="Execute"><command><![CDATA[/usr/bin/sparky-about]]></command></action></item>
+    <item label="APTus Extra" icon="/home/kowalczy/.config/obmenu-generator/icons/7439380cb112e9e770d1f34da8458df4.png"><action name="Execute"><command><![CDATA[remsu /usr/bin/sparky-aptus-extra]]></command></action></item>
+    <item label="APTus" icon="/home/kowalczy/.config/obmenu-generator/icons/7439380cb112e9e770d1f34da8458df4.png"><action name="Execute"><command><![CDATA[remsu /usr/bin/sparky-aptus]]></command></action></item>
+    <item label="BleachBit as Administrator" icon="/home/kowalczy/.config/obmenu-generator/icons/350bb2570a8fb3fed4fcb776d24a4d09.png"><action name="Execute"><command><![CDATA[pkexec bleachbit]]></command></action></item>
+    <item label="BleachBit" icon="/home/kowalczy/.config/obmenu-generator/icons/350bb2570a8fb3fed4fcb776d24a4d09.png"><action name="Execute"><command><![CDATA[bleachbit]]></command></action></item>
+    <item label="Bulk Rename" icon="/home/kowalczy/.config/obmenu-generator/icons/ba6a01d7da466d92fd392c912c136eb4.png"><action name="Execute"><command><![CDATA[/usr/lib/x86_64-linux-gnu/Thunar/ThunarBulkRename]]></command></action></item>
+    <item label="gExec" icon="/home/kowalczy/.config/obmenu-generator/icons/f9d7ab401e54a8cb37470f6796bda993.png"><action name="Execute"><command><![CDATA[gexec]]></command></action></item>
+    <item label="Htop" icon="/home/kowalczy/.config/obmenu-generator/icons/ec7b2c5959b15c9867139ddbbca7031f.png"><action name="Execute"><command><![CDATA[x-terminal-emulator -e 'htop']]></command></action></item>
+    <item label="LightDM GTK+ Greeter settings" icon="/home/kowalczy/.config/obmenu-generator/icons/9b1d85e27f3a5cc1ef72d6ea552ab2c8.png"><action name="Execute"><command><![CDATA[lightdm-gtk-greeter-settings-pkexec]]></command></action></item>
+    <item label="Log Out" icon="/home/kowalczy/.config/obmenu-generator/icons/3cb716f43dbeaf8cf2ad885b67a07ba7.png"><action name="Execute"><command><![CDATA[/usr/bin/wm-logout]]></command></action></item>
+    <item label="LXTerminal" icon="/home/kowalczy/.config/obmenu-generator/icons/5d2a23f780be9894333c0866641ce36e.png"><action name="Execute"><command><![CDATA[lxterminal]]></command></action></item>
+    <item label="Midnight Commander" icon="/home/kowalczy/.config/obmenu-generator/icons/ba6a01d7da466d92fd392c912c136eb4.png"><action name="Execute"><command><![CDATA[x-terminal-emulator -e 'mc']]></command></action></item>
+    <item label="Print Settings" icon="/home/kowalczy/.config/obmenu-generator/icons/bf08551e4dc3773ed3388b1d2cba4818.png"><action name="Execute"><command><![CDATA[system-config-printer]]></command></action></item>
+    <item label="Reportbug" icon="/home/kowalczy/.config/obmenu-generator/icons/9bccc96276955c9d0b7d2e5284ea8ebe.png"><action name="Execute"><command><![CDATA[reportbug --exit-prompt --ui gtk2]]></command></action></item>
+    <item label="Root Terminal" icon="/home/kowalczy/.config/obmenu-generator/icons/c4009195456078d02007fefdcfa3d258.png"><action name="Execute"><command><![CDATA[gksu /usr/bin/x-terminal-emulator]]></command></action></item>
+    <item label="Synaptic Package Manager" icon="/home/kowalczy/.config/obmenu-generator/icons/7439380cb112e9e770d1f34da8458df4.png"><action name="Execute"><command><![CDATA[synaptic-pkexec]]></command></action></item>
+    <item label="System Upgrade" icon="/home/kowalczy/.config/obmenu-generator/icons/111fa262cea7e2314f490d40cfb89c46.png"><action name="Execute"><command><![CDATA[remsu /usr/bin/sparky-aptus-upgrade]]></command></action></item>
+    <item label="systemadm" icon="/home/kowalczy/.config/obmenu-generator/icons/4a2606e306b44fb3727dc314c703677e.png"><action name="Execute"><command><![CDATA[systemadm]]></command></action></item>
+    <item label="Task Manager" icon="/home/kowalczy/.config/obmenu-generator/icons/948b5de8a45c740ebc6980ba61f08e42.png"><action name="Execute"><command><![CDATA[lxtask]]></command></action></item>
+    <item label="Terminator" icon="/home/kowalczy/.config/obmenu-generator/icons/5d2a23f780be9894333c0866641ce36e.png"><action name="Execute"><command><![CDATA[terminator]]></command></action></item>
+    <item label="Thunar File Manager" icon="/home/kowalczy/.config/obmenu-generator/icons/ba6a01d7da466d92fd392c912c136eb4.png"><action name="Execute"><command><![CDATA[thunar]]></command></action></item>
+    <item label="Tilda" icon="/home/kowalczy/.config/obmenu-generator/icons/5d2a23f780be9894333c0866641ce36e.png"><action name="Execute"><command><![CDATA[/usr/bin/tilda]]></command></action></item>
+    <item label="Tint2" icon="/home/kowalczy/.config/obmenu-generator/icons/6eeb1aa398077e781cf1c0d4cd475278.png"><action name="Execute"><command><![CDATA[tint2]]></command></action></item>
+    <item label="UXTerm" icon="/home/kowalczy/.config/obmenu-generator/icons/5d2a23f780be9894333c0866641ce36e.png"><action name="Execute"><command><![CDATA[uxterm]]></command></action></item>
+    <item label="XTerm" icon="/home/kowalczy/.config/obmenu-generator/icons/5d2a23f780be9894333c0866641ce36e.png"><action name="Execute"><command><![CDATA[xterm]]></command></action></item>
+  </menu>
+  <separator/>
+  <menu id="0.686129838685165" icon="/home/kowalczy/.config/obmenu-generator/icons/0bf83b6fc4243c3ab19736177069dd78.png" label="Advanced Settings">
+    <item label="Panel" icon="/home/kowalczy/.config/obmenu-generator/icons/d486e394b84297e4348d65ae0b0dda73.png"><action name="Execute"><command><![CDATA[obmenu-panel-edit]]></command></action></item>
+  <menu id="0.0331471870310907" icon="/home/kowalczy/.config/obmenu-generator/icons/1e53a2034120617b05bd5dbaf5ac8fa8.png" label="Obmenu-Generator">
+    <item label="Menu Schema" icon="/home/kowalczy/.config/obmenu-generator/icons/d486e394b84297e4348d65ae0b0dda73.png"><action name="Execute"><command><![CDATA[sparky-editor ~/.config/obmenu-generator/schema.pl]]></command></action></item>
+    <item label="Menu Config" icon="/home/kowalczy/.config/obmenu-generator/icons/d486e394b84297e4348d65ae0b0dda73.png"><action name="Execute"><command><![CDATA[sparky-editor ~/.config/obmenu-generator/config.pl]]></command></action></item>
+  <separator/>
+    <item label="Generate a static menu" icon="/home/kowalczy/.config/obmenu-generator/icons/1e53a2034120617b05bd5dbaf5ac8fa8.png"><action name="Execute"><command><![CDATA[obmenu-generator -s -c]]></command></action></item>
+    <item label="Generate a static menu with icons" icon="/home/kowalczy/.config/obmenu-generator/icons/1e53a2034120617b05bd5dbaf5ac8fa8.png"><action name="Execute"><command><![CDATA[obmenu-generator -s -i -c]]></command></action></item>
+  <separator/>
+    <item label="Generate a dynamic menu" icon="/home/kowalczy/.config/obmenu-generator/icons/1e53a2034120617b05bd5dbaf5ac8fa8.png"><action name="Execute"><command><![CDATA[obmenu-generator -p]]></command></action></item>
+    <item label="Generate a dynamic menu with icons" icon="/home/kowalczy/.config/obmenu-generator/icons/1e53a2034120617b05bd5dbaf5ac8fa8.png"><action name="Execute"><command><![CDATA[obmenu-generator -p -i]]></command></action></item>
+  <separator/>
+    <item label="Refresh cache" icon="/home/kowalczy/.config/obmenu-generator/icons/160b75a8bed7ecbedd05b0819a846527.png"><action name="Execute"><command><![CDATA[obmenu-generator -d]]></command></action></item>
+  </menu>
+  <menu id="0.107779293337256" icon="/home/kowalczy/.config/obmenu-generator/icons/cbd33e85d4e0834359519a4e282b2aeb.png" label="Openbox">
+    <item label="Restart Openbox" icon="/home/kowalczy/.config/obmenu-generator/icons/cbd33e85d4e0834359519a4e282b2aeb.png"><action name="Execute"><command><![CDATA[openbox --restart]]></command></action></item>
+    <item label="Openbox Autostart.sh" icon="/home/kowalczy/.config/obmenu-generator/icons/d486e394b84297e4348d65ae0b0dda73.png"><action name="Execute"><command><![CDATA[sparky-editor ~/.config/openbox/autostart.sh]]></command></action></item>
+    <item label="Openbox RC" icon="/home/kowalczy/.config/obmenu-generator/icons/d486e394b84297e4348d65ae0b0dda73.png"><action name="Execute"><command><![CDATA[sparky-editor ~/.config/openbox/rc.xml]]></command></action></item>
+    <item label="Openbox Menu" icon="/home/kowalczy/.config/obmenu-generator/icons/d486e394b84297e4348d65ae0b0dda73.png"><action name="Execute"><command><![CDATA[sparky-editor ~/.config/openbox/menu.xml]]></command></action></item>
+  </menu>
+  </menu>
+  <separator/>
+    <item label="Lock" icon="/home/kowalczy/.config/obmenu-generator/icons/0083c8428a7418e49f695597bfb290c7.png"><action name="Execute"><command><![CDATA[xscreensaver-command -lock]]></command></action></item>
+    <item label="Exit" icon="/home/kowalczy/.config/obmenu-generator/icons/3cb716f43dbeaf8cf2ad885b67a07ba7.png"><action name="Execute"><command><![CDATA[wm-logout]]></command></action></item>
+  </menu>
+</openbox_menu>

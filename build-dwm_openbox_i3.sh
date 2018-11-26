@@ -2,8 +2,8 @@
 
 LIVE_BUILD_ROOT_DIR="/home/kowalczy/live-build-config"
 MY_DEBIAN_ROOT_DIR="/opt/my-debian"
-CUSTOMIZATIONS_DIR=dwm
-KALI_VARIANT_NAME=dwm
+CUSTOMIZATIONS_DIR=dwm_openbox_i3
+KALI_VARIANT_NAME=dwm_openbox_i3
 KALI_VARIANT_DIR="variant-${KALI_VARIANT_NAME}"
 
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/${KALI_VARIANT_DIR}/package-lists/
