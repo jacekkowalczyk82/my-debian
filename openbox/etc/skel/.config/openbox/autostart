@@ -27,8 +27,8 @@ nm-applet &
 #automount cd/dvd, usb disks and show notifications
 udiskie -ant & 
 
-### Volume keys daemon
-mate-volume-control-applet &
+#Pulse audio systray
+#pasystray & # it is already started by some magic
 
 ## Enable power management
 mate-power-manager &

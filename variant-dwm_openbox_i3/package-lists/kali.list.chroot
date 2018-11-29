@@ -101,12 +101,11 @@ obsidian-icon-theme
 adwaita-icon-theme
 hicolor-icon-theme
 
-#slick-greeter           # I started with this greeter but I got back to lightdm-gtk-greeter
 
 #systray apps
 pulseaudio
-#pavucontrol
-#pasystray
+pavucontrol
+pasystray
 udiskie
 network-manager
 network-manager-gnome

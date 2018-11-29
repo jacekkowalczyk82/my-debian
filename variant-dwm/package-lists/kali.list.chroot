@@ -90,8 +90,8 @@ hicolor-icon-theme
 
 #systray apps
 pulseaudio
-#pavucontrol
-#pasystray
+pavucontrol
+pasystray
 udiskie
 network-manager
 network-manager-gnome
