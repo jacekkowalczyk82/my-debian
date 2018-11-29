@@ -106,7 +106,7 @@ With those running, I then had to wait for the job to finish. In my case it took
 
 In the final version of the configs, I decided to port my i3wm install to my Openbox build. This way, when building the Openbox config, I am getting both window managers, Openbox and i3. On the login screen, I can select the session I want. Obviously, its much easier to have one "perfect" ISO than have to decide between the two at install time. 
 
-## Kali Linux DWM variant
+## Final Version - Kali Linux DWM Openbox i3 variant
 
 I wanted to try even something lighter then openbox. I installed DWM (Dynamic Window Manager from suckless.org) and prepared config files for new ISO. See this [manual](.debian-dwm.md) for more info. 
 
@@ -122,6 +122,12 @@ sudo ./build-mate_openbox.sh |tee -a build-mate-openbox-`date '+%Y-%m-%d'`.log
 sudo ./build-i3wm.sh |tee -a build-i3wm-`date '+%Y-%m-%d'`.log
 
 ```
+
+Right now user of the installed system can choose which "desktop" to use: DWM, Custom-DWM, Openbox or i3. 
+
+## About the Kali Linux DWM Openbox i3 variant
+
+More info about installed applications and basic help is [here](./dwm_openbox_i3/about.md). 
 
 
 ## Issues and solutions
