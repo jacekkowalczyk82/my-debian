@@ -108,7 +108,7 @@ In the final version of the configs, I decided to port my i3wm install to my Ope
 
 ## Final Version - Kali Linux DWM Openbox i3 variant
 
-I wanted to try even something lighter then openbox. I installed DWM (Dynamic Window Manager from suckless.org) and prepared config files for new ISO. See this [manual](.debian-dwm.md) for more info. 
+I wanted to try even something lighter then openbox. I installed DWM (Dynamic Window Manager from suckless.org) and prepared config files for new ISO. See this [manual](./debian-dwm.md) for more info. 
 
 ![Kali Linux DWM variant screenshot](./screenshots/2018-11-22-104146_1920x975_scrot.png)
 
