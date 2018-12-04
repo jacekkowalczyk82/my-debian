@@ -58,6 +58,15 @@ index 25e2685..b599bf2 100644
  XINERAMALIBS  = -lXinerama
 
 ```
+
+Build dwm 
+
+```
+cd /opt/dwm/
+sudo make clean install 
+
+```
+
 create file ~/.xinitrc
 
 ```
@@ -68,10 +77,16 @@ exec /opt/dwm/dwm
 
 ```
 
+Set permissions and create xsession link 
+
+```
 ln -s ~/.xinitrc ~/.xsession
 chmod 755 ~/.xinitrc
 
+```
+
 create file /usr/share/xsessions/custom-dwm.desktop
+
 ```
 [Desktop Entry]
 Name=Kowalczy-DWM
