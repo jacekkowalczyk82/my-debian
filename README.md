@@ -92,19 +92,6 @@ d-i passwd/make-user boolean true
 ##### 3.1 Tweak Live build framework configs to be able to generate 32bit image and to create standards user account
 
 ```
-diff --git a/auto/config b/auto/config
-index 991eada..4018e85 100755
---- a/auto/config
-+++ b/auto/config
-@@ -75,7 +75,7 @@ case "$arch" in
-        lb_opts="$lb_opts --debian-installer live"
-     ;;
-     i386)
--       lb_opts="$lb_opts --debian-installer live --linux-flavours 686-pae"
-+       lb_opts="$lb_opts --debian-installer live --linux-flavours 686"
-     ;;
-     armel|armhf)
-        lb_opts="$lb_opts --binary-images hdd --binary-filesystem ext4 --chroot-filesystem none"
 diff --git a/kali-config/common/includes.installer/preseed.cfg b/kali-config/common/includes.installer/preseed.cfg
 index 31fffa9..720424b 100644
 --- a/kali-config/common/includes.installer/preseed.cfg
