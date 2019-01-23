@@ -89,6 +89,38 @@ d-i passwd/make-user boolean true
 
 ```
 
+##### 3.1 Tweak Live build framework configs to be able to generate 32bit image and to create standards user account
+
+```
+diff --git a/auto/config b/auto/config
+index 991eada..4018e85 100755
+--- a/auto/config
++++ b/auto/config
+@@ -75,7 +75,7 @@ case "$arch" in
+        lb_opts="$lb_opts --debian-installer live"
+     ;;
+     i386)
+-       lb_opts="$lb_opts --debian-installer live --linux-flavours 686-pae"
++       lb_opts="$lb_opts --debian-installer live --linux-flavours 686"
+     ;;
+     armel|armhf)
+        lb_opts="$lb_opts --binary-images hdd --binary-filesystem ext4 --chroot-filesystem none"
+diff --git a/kali-config/common/includes.installer/preseed.cfg b/kali-config/common/includes.installer/preseed.cfg
+index 31fffa9..720424b 100644
+--- a/kali-config/common/includes.installer/preseed.cfg
++++ b/kali-config/common/includes.installer/preseed.cfg
+@@ -32,7 +32,7 @@ d-i pkgsel/upgrade select full-upgrade
+ # d-i netcfg/get_hostname seen false
+
+ # Do not create a normal user account
+-d-i passwd/make-user boolean false
++d-i passwd/make-user boolean true
+
+ # Enable eatmydata in kali-installer to boost speed installation
+ d-i preseed/early_command string anna-install eatmydata-udeb
+
+```
+
 ##### 4. Build ISOs
 
 With all that configuration out of the way, it was time for the fun part, building the ISOs!
@@ -97,6 +129,10 @@ With all that configuration out of the way, it was time for the fun part, buildi
 root@kali:~/live-build-config/kali-config# ./build.sh --distribution kali-rolling --variant i3wm --verbose
 
 root@kali:~/live-build-config/kali-config# ./build.sh --distribution kali-rolling --variant openbox --verbose
+
+#for 32 bit 
+root@kali:~/live-build-config/kali-config# ./build.sh --distribution kali-rolling --variant openbox --verbose  --arch i386	
+
 
 ```
 

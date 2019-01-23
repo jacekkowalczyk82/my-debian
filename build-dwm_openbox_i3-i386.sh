@@ -5,7 +5,7 @@ MY_DEBIAN_ROOT_DIR="/opt/my-debian"
 CUSTOMIZATIONS_DIR=dwm_openbox_i3
 KALI_VARIANT_NAME=dwm_openbox_i3
 KALI_VARIANT_DIR="variant-${KALI_VARIANT_NAME}"
-KALI_ARCH="amd64"
+KALI_ARCH="i386"
 
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/${KALI_VARIANT_DIR}/package-lists/
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.config/
