@@ -24,7 +24,7 @@
 |Volume Control    |pavucontrol                                                                         |
 |Power Manager     |mate-power-manager, upower -i /org/freedesktop/UPower/devices/battery_BAT0          |
 |WWW browser       |Firefox Developer Edition, run Dmenu and type firefox.sh                            |
-|tox client        |toxic                                                                               |
+|tox client        |toxic (only 64 bit ISO)                                                             |
 |Kali tools        |only meta package kali-linux-top10 is installed                                     |
 
 * Customization manual for DWM is [here](./debian-dwm.md).
@@ -87,6 +87,10 @@ plank
 
 * Full list of packages for variant: [dwm_openbox_i3](./variant-dwm_openbox_i3/package-lists/kali.list.chroot)
 
+
+## Download
+
+* ISO images of this comunity edition are published at [Kali-Linux-openbox project at OSDN.net](https://osdn.net/projects/kali-lnux-openbox/storage/kali-linux-community-releases/)
 
 
 
