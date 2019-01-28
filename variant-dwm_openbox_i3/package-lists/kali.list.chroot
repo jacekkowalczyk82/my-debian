@@ -81,7 +81,8 @@ mate-terminal
 
 
 #web browsers
-chromium
+#chromium
+firefox-esr
 falkon
 youtube-dl
 

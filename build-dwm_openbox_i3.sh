@@ -2,8 +2,9 @@
 
 LIVE_BUILD_ROOT_DIR="/home/kowalczy/live-build-config"
 MY_DEBIAN_ROOT_DIR="/opt/my-debian"
-CUSTOMIZATIONS_DIR=dwm_openbox_i3
-KALI_VARIANT_NAME=dwm_openbox_i3
+CUSTOMIZATIONS_DIR="dwm_openbox_i3"
+KALI_VARIANT_NAME="live_dwm"
+CUSTOMIZATIONS_KALI_VARIANT_DIR="variant-dwm_openbox_i3"
 KALI_VARIANT_DIR="variant-${KALI_VARIANT_NAME}"
 KALI_ARCH="amd64"
 
@@ -27,7 +28,7 @@ cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.i3wm_conkyrc ${LIVE_
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.config ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.config ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/
 
-cp -v ${MY_DEBIAN_ROOT_DIR}/variant-dwm/package-lists/kali.list.chroot ${LIVE_BUILD_ROOT_DIR}/kali-config/${KALI_VARIANT_DIR}/package-lists/kali.list.chroot
+cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_KALI_VARIANT_DIR}/package-lists/kali.list.chroot ${LIVE_BUILD_ROOT_DIR}/kali-config/${KALI_VARIANT_DIR}/package-lists/kali.list.chroot
 
 #Custom Xsession 
 cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/custom-dwm.desktop ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/share/xsessions/
