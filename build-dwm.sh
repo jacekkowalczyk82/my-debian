@@ -3,8 +3,10 @@
 LIVE_BUILD_ROOT_DIR="/home/kowalczy/live-build-config"
 MY_DEBIAN_ROOT_DIR="/opt/my-debian"
 CUSTOMIZATIONS_DIR=dwm
-KALI_VARIANT_NAME=dwm
+KALI_VARIANT_NAME=live_dwm_only
+CUSTOMIZATIONS_KALI_VARIANT_DIR="variant-dwm"
 KALI_VARIANT_DIR="variant-${KALI_VARIANT_NAME}"
+KALI_ARCH="amd64"
 
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/${KALI_VARIANT_DIR}/package-lists/
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.config/
@@ -17,13 +19,13 @@ mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/share/xse
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.config ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.config ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/
 
-cp -v ${MY_DEBIAN_ROOT_DIR}/variant-dwm/package-lists/kali.list.chroot ${LIVE_BUILD_ROOT_DIR}/kali-config/${KALI_VARIANT_DIR}/package-lists/kali.list.chroot
+cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_KALI_VARIANT_DIR}/package-lists/kali.list.chroot ${LIVE_BUILD_ROOT_DIR}/kali-config/${KALI_VARIANT_DIR}/package-lists/kali.list.chroot
 
 #Custom Xsession 
 cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/custom-dwm.desktop ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/share/xsessions/
 
-cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.xinitrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
-cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.xinitrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/
+cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/dwm_xinitrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.xinitrc
+cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/dwm_xinitrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/.xinitrc
 
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.xsession ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.xsession ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/
@@ -50,7 +52,7 @@ cp -v -r  ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/kali-lock.sh ${LIVE_BUILD_
 cd ${LIVE_BUILD_ROOT_DIR}/
 date
 rm -rf config/
-./build.sh --distribution kali-rolling --variant ${KALI_VARIANT_NAME} --verbose
+./build.sh --distribution kali-rolling --variant ${KALI_VARIANT_NAME} --arch "${KALI_ARCH}" --verbose
 date
 
 
