@@ -4,9 +4,7 @@
 |Feature           |Description                                                                         |
 |------------------|------------------------------------------------------------------------------------|
 |Livecd user/pass  |root/toor                                                                           |
-|Livecd session    |In LiveCD mode only one session can be used. Switching of sessions in livecd does not work |
-|Login mode        |lightdm                                                                             |
-|GUI sessions      |DWM (stock), Custom-DWM, Openbox or i3, you can select on Lightdm screen 	        |
+|GUI sessions      |All variants have: DWM (stock), Custom-DWM, Openbox or i3                           |
 |DWM stock ModKey  |Alt                                                                                 |
 |DWM custom ModKey |Win                                                                                 |
 |i3wm ModKey       |Win                                                                                 |
@@ -26,6 +24,13 @@
 |WWW browser       |Firefox Developer Edition, run Dmenu and type firefox.sh                            |
 |tox client        |toxic (only 64 bit ISO)                                                             |
 |Kali tools        |only meta package kali-linux-top10 is installed                                     |
+
+* ISO Variants
+
+|Variant           |Description                                                                         |
+|------------------|------------------------------------------------------------------------------------|
+|live_dwm          |In LiveCD mode only one session can be used. Switching of sessions in livecd doees not work always, it is not stable, At installed system you can switch Xsessions at Lightdm Login screen |
+|dwm_openbox_i3_no_lightdm |There is no lightdm installed but you can switch Xsessions using startup scripts: ./start-dwm.sh,./start-openbox.sh, ./start-i3.sh                                               |
 
 * Customization manual for DWM is [here](./debian-dwm.md).
 * More information/help about dwm can be found at [http://suckless.org](http://suckless.org).
