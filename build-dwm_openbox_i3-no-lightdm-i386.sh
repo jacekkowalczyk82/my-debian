@@ -1,6 +1,6 @@
 #/usr/bin/env bash 
 
-LIVE_BUILD_ROOT_DIR="/home/kowalczy/live-build-config"
+LIVE_BUILD_ROOT_DIR="/opt/live-build-config"
 MY_DEBIAN_ROOT_DIR="/opt/my-debian"
 CUSTOMIZATIONS_DIR="dwm_openbox_i3"
 KALI_VARIANT_NAME="dwm_openbox_i3_no_lightdm"
