@@ -1,0 +1,20 @@
+
+The programs included with the Kali GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Kali GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+
+This system supports multiple GUI sessions:
+dwm
+openbox
+i3
+
+To star Xsession of your choice run one of these scripts: 
+./start-dwm.sh 
+./start-openbox.sh 
+./start-i3.sh 
+or simply to start the latest Xsession run
+startx
+ 

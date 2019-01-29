@@ -51,7 +51,7 @@ libxinerama-dev
 
 conky
 
-lightdm 
+#lightdm 
 compton
 nitrogen
 feh
