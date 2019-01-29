@@ -54,10 +54,10 @@ cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.xsession ${LIVE_B
 
 
 # DWM REPO and compiled binaries
-cp -v -r /opt/dwm ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
+cp -v -r /opt/kali-build-resources-32bit/dwm ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
 
 #firefox
-cp -v -r /opt/firefox ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
+cp -v -r /opt/kali-build-resources-32bit/firefox ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
 
 sleep 5
 
@@ -66,7 +66,7 @@ cp -v ${MY_DEBIAN_ROOT_DIR}/opt/firefox/firefox.sh ${LIVE_BUILD_ROOT_DIR}/kali-c
 cp -v ${MY_DEBIAN_ROOT_DIR}/opt/firefox/firefox-developer-edition.desktop ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/firefox/firefox-developer-edition.desktop
 
 #toxic
-cp -v -r  /opt/toxic ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
+#cp -v -r  /opt/toxic ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
 
 #i3lock 
 cp -v -r  ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/kali-lock.sh ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/bin/kali-lock.sh
