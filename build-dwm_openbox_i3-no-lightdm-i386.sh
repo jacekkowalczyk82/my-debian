@@ -36,7 +36,7 @@ cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/custom-dwm.desktop ${LIVE_BUIL
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/motd ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/motd
 
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/openbox_xinitrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.xinitrc
-cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/openbox_xinitrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/.xinitrc
+#cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/openbox_xinitrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/.xinitrc
 
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/start*.sh ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/dwm_xinitrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
@@ -49,8 +49,8 @@ cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/openbox_xinitrc ${
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/i3_xinitrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/
 
 
-cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.xsession ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
-cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.xsession ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/
+#cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.xsession ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
+#cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/.xsession ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/
 
 
 # DWM REPO and compiled binaries
