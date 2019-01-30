@@ -30,7 +30,7 @@
 |Variant           |Description                                                                         |
 |------------------|------------------------------------------------------------------------------------|
 |live_dwm          |In LiveCD mode only one session can be used. Switching of sessions in livecd doees not work always, it is not stable, At installed system you can switch Xsessions at Lightdm Login screen |
-|dwm_openbox_i3_no_lightdm |There is no lightdm installed but you can switch Xsessions using startup scripts: ./start-dwm.sh,./start-openbox.sh, ./start-i3.sh                                               |
+|dwm_openbox_i3_no_lightdm |There is no lightdm installed but you can switch Xsessions of installed system using startup scripts: ./start-dwm.sh,./start-openbox.sh, ./start-i3.sh, Live cd mode is running Openbox by default   |
 
 * Customization manual for DWM is [here](./debian-dwm.md).
 * More information/help about dwm can be found at [http://suckless.org](http://suckless.org).
@@ -55,7 +55,8 @@ mate-terminal
 terminator
 
 #web apps
-chromium
+#chromium
+firefox-esr
 falkon
 youtube-dl
 
