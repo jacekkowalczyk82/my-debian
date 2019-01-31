@@ -3,10 +3,14 @@
 LIVE_BUILD_ROOT_DIR="/opt/live-build-config"
 MY_DEBIAN_ROOT_DIR="/opt/my-debian"
 CUSTOMIZATIONS_DIR="dwm_openbox_i3"
-KALI_VARIANT_NAME="dwm_openbox_i3_no_lightdm"
+KALI_VARIANT_NAME="light-wm-edition-by-Jacek"
 CUSTOMIZATIONS_KALI_VARIANT_DIR="variant-dwm_openbox_i3"
 KALI_VARIANT_DIR="variant-${KALI_VARIANT_NAME}"
 KALI_ARCH="i386"
+
+rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
+rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/
+rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
 
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/${KALI_VARIANT_DIR}/package-lists/
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.config/
