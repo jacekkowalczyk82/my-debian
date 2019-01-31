@@ -4,7 +4,7 @@ LIVE_BUILD_ROOT_DIR="/opt/live-build-config"
 MY_DEBIAN_ROOT_DIR="/opt/my-debian"
 CUSTOMIZATIONS_DIR="dwm_openbox_i3"
 KALI_VARIANT_NAME="light-wm-edition-by-Jacek"
-CUSTOMIZATIONS_KALI_VARIANT_DIR="variant-dwm_openbox_i3"
+CUSTOMIZATIONS_KALI_VARIANT_DIR="variant-dwm_openbox_i3_live_openbox"
 KALI_VARIANT_DIR="variant-${KALI_VARIANT_NAME}"
 KALI_ARCH="amd64"
 
