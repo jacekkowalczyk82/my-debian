@@ -40,6 +40,8 @@ cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_KALI_VARIANT_DIR}/package-lists/kal
 #Custom Xsession 
 cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/custom-dwm.desktop ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/share/xsessions/
 
+#/etc/systemd/system/default.target -> multi-user.target
+cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/systemd/system/default.target ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/systemd/system/
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/motd ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/motd
 
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/openbox_xinitrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.xinitrc
