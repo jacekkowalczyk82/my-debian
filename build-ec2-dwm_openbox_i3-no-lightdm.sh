@@ -3,7 +3,7 @@
 LIVE_BUILD_ROOT_DIR="/opt/live-build-config"
 MY_DEBIAN_ROOT_DIR="/opt/my-debian"
 CUSTOMIZATIONS_DIR="dwm_openbox_i3"
-KALI_VARIANT_NAME="light-wm-edition-by-Jacek-live-openbox"
+KALI_VARIANT_NAME="light-wm-edition-by-Jacek-multi-user-target"
 CUSTOMIZATIONS_KALI_VARIANT_DIR="variant-dwm_openbox_i3"
 KALI_VARIANT_DIR="variant-${KALI_VARIANT_NAME}"
 KALI_ARCH="amd64"
@@ -41,7 +41,7 @@ cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_KALI_VARIANT_DIR}/package-lists/kal
 cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/custom-dwm.desktop ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/share/xsessions/
 
 #/etc/systemd/system/default.target -> multi-user.target
-#cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/systemd/system/default.target ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/systemd/system/
+cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/systemd/system/default.target ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/systemd/system/
 
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/motd ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/motd
 
