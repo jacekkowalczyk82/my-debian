@@ -8,8 +8,11 @@ CUSTOMIZATIONS_KALI_VARIANT_DIR="variant-dwm_openbox_i3"
 KALI_VARIANT_DIR="variant-${KALI_VARIANT_NAME}"
 KALI_ARCH="amd64"
 
-rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
-rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/
+rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.xinitrc
+rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.xsession
+#must keep this file : kali-config/common/includes.chroot/root/.bashrc
+rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/.xinitrc
+rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/root/.xsession
 rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
 
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/${KALI_VARIANT_DIR}/package-lists/
