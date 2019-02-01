@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+# trying to disable auto start of gui session 
+systemctl set-default multi-user.target || true 
+
+
