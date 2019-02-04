@@ -3,7 +3,7 @@
 LIVE_BUILD_ROOT_DIR="/opt/live-build-config"
 MY_DEBIAN_ROOT_DIR="/opt/my-debian"
 CUSTOMIZATIONS_DIR="dwm_openbox_i3"
-KALI_VARIANT_NAME="light-wm-edition-by-Jacek-multi-user-target"
+KALI_VARIANT_NAME="light-wm-edition-by-Jacek-live-openbox"
 CUSTOMIZATIONS_KALI_VARIANT_DIR="variant-dwm_openbox_i3"
 KALI_VARIANT_DIR="variant-${KALI_VARIANT_NAME}"
 KALI_ARCH="amd64"
@@ -45,8 +45,8 @@ cp -v ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/custom-dwm.desktop ${LIVE_BUIL
 #/etc/systemd/system/default.target -> multi-user.target
 
 #dwm_openbox_i3/live-kali-multi-user-hook.chroot
-cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/live-kali-multi-user-hook.chroot ${LIVE_BUILD_ROOT_DIR}/kali-config/common/hooks/live/
-cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/systemd/system/default.target ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/systemd/system/
+#cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/live-kali-multi-user-hook.chroot ${LIVE_BUILD_ROOT_DIR}/kali-config/common/hooks/live/
+#cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/systemd/system/default.target ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/systemd/system/
 
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/motd ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/motd
 
