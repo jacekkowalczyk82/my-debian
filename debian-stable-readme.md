@@ -61,7 +61,7 @@ LIVE_DEFAULT_HOME="/home/kowalczy/live-default"
 
 #sudo apt install xorriso 
 sudo apt install curl git live-build debootstrap 
-lb config --debian-installer live 
+lb config --debian-installer live -d buster
 
 lb build 
 
