@@ -69,3 +69,24 @@ lb build
 
 
 ```
+
+## Web Resources 
+
+* https://dug.net.pl/tekst/243/budowa_spersonalizowanego_systemu_debian_live/
+* https://dug.net.pl/tekst/341/wlasny_debian_liveusb/
+
+* https://live-team.pages.debian.net/live-manual/html/live-manual/the-basics.en.html#179
+* https://live-team.pages.debian.net/live-manual/html/live-manual/customizing-contents.en.html#517
+* 
+* https://willhaley.com/blog/custom-debian-live-environment/
+* https://www.opengeeks.me/2015/04/build-your-hybrid-debian-distro-with-xorriso/
+* http://www.linuxandubuntu.com/home/make-your-very-own-customized-linux-distro-from-your-current-installation
+* https://www.linux-live.org/#download
+* https://marvin.im/post/a-suckless-debian/
+* https://www.debian.org/devel/debian-desktop/
+* http://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/
+* https://www.debian.org/CD/live/
+* https://wiki.debian.org/DebianLive
+* https://www.google.pl/search?q=live%20systems%20debian%20builder&ie=utf-8&oe=utf-8&client=firefox-b&gfe_rd=cr&dcr=0&ei=v1POWrq_K8TX8gfJt7yYBw&authuser=0
+
+
