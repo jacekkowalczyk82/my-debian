@@ -1,4 +1,6 @@
-# My Custom Kali Linux Distribution 
+
+
+# My Custom Kali/Debian Linux Distribution 
 
 * The goal of this project is to create custom debian or debian based distribution iso
 * This repo is a place for manuals, scripts and configs. 
@@ -222,4 +224,11 @@ libGL error: failed to load driver: (null)
 
 
 ```
+
+
+## Debian Stretch and Buster custom ISO
+
+Building custom Kali Linux ISO gave me enough of experience to start thinking about building pure Debian Linux custom ISO. 
+
+Raw notes for how to build custom Debian with DWM are [here](./debian-stable-readme.md).
 
