@@ -1,27 +1,33 @@
 # How to Create a Custom Debian Stable ISO
 
+## Install required packages to build and configure DWM
+
 ```
 sudo apt install dwm suckless-tools stterm libx11-dev libxft-dev libxinerama-dev nitrogen feh 
+```
 
+## Install DWM at the production host machine
 
+```
 mkdir -p /opt/  && cd /opt
-
 git clone git://git.suckless.org/dwm
 cd dwm
+```
 
-* follow https://gitlab.com/jacekkowalczyk82/my-debian/blob/master/debian-dwm.md
+* follow https://gitlab.com/jacekkowalczyk82/my-debian/blob/master/debian-dwm.md to modify the config.def.h file in dwm sources. 
 
+```
 cd /opt/dwm/
 sudo make clean install 
+```
 
-create file ~/.xinitrc
-exec nitrogen --restore &
-while true ; do xsetroot -name "`date '+%Y-%m-%d %H:%M.%S'` Load15: `cat /proc/loadavg |cut -d " " -f 3`; `uptime -p `"; sleep 1 ; done &
-exec /opt/dwm/dwm
+* create file ~/.xinitrc
 
-
-
-exec nitrogen --restore &
+```
+#~/.xinitrc
+#exec nitrogen --restore &
+#exec feh --bg-scale /usr/share/desktop-base/spacefun-theme/wallpaper/contents/images/3840x2160.svg  &
+exec feh --bg-scale /opt/backgrounds/futureprototype_login.png & 
 #exec compton -b &
 dropbox_status_string=""
 while true ; do 
@@ -41,32 +47,44 @@ done &
 #exec /usr/bin/dropbox & 
 exec /opt/dwm/dwm
 
+```
 
-Set permissions and create xsession link
+* Set permissions and create xsession link
+
+```
 ln -s ~/.xinitrc ~/.xsession
 chmod 755 ~/.xinitrc
+```
 
-create file /usr/share/xsessions/custom-dwm.desktop
+* create file /usr/share/xsessions/custom-dwm.desktop
+
+```
 [Desktop Entry]
 Name=Kowalczy-DWM
 Exec=/etc/X11/Xsession
 
+```
 
+## Install packages for building ISO 
 
-
-
-
-mkdir live-default && cd live-default
-LIVE_DEFAULT_HOME="/home/kowalczy/live-default"
-
+```
 #sudo apt install xorriso 
 sudo apt install curl git live-build debootstrap 
-lb config --debian-installer live -d buster
 
-lb build 
+```
 
+## Build Live ISO images
 
+```
+cd my-debian/live-build-stretch
+sudo lb config --debian-installer live -d stretch
+sudo lb build --debug --verbose 2>&1 |tee lb-build-stretch-`date '+%Y-%m-%d_%H%M%S'`.log
 
+cd my-debian/live-build-buster
+sudo lb config --debian-installer live -d buster
+* modify the config/binary file and set `LB_DEBIAN_INSTALLER_DISTRIBUTION="stretch" insted of buster`
+* on default settings there is a poblem with installing linux-image vmlinuz file 
+sudo lb build --debug --verbose 2>&1 |tee lb-build-buster-`date '+%Y-%m-%d_%H%M%S'`.log
 
 ```
 
