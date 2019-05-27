@@ -47,7 +47,7 @@ LB_DEBIAN_INSTALLER="live"
 
 # $LB_DEBIAN_INSTALLER_DISTRIBUTION: set debian-installer suite
 # (Default: empty)
-LB_DEBIAN_INSTALLER_DISTRIBUTION="strech"
+LB_DEBIAN_INSTALLER_DISTRIBUTION="stretch"
 
 # $LB_DEBIAN_INSTALLER_PRESEEDFILE: set debian-installer preseed filename/url
 # (Default: )
@@ -86,8 +86,8 @@ LB_ISO_PREPARER="live-build $VERSION; https://debian-live.alioth.debian.org/live
 LB_ISO_PUBLISHER="Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org"
 
 # $LB_ISO_VOLUME: set iso volume (max 32 chars)
-# (Default: Debian strech $(date +%Y%m%d-%H:%M))
-LB_ISO_VOLUME="Debian strech $(date +%Y%m%d-%H:%M)"
+# (Default: Debian stretch $(date +%Y%m%d-%H:%M))
+LB_ISO_VOLUME="Debian stretch $(date +%Y%m%d-%H:%M)"
 
 # $LB_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)

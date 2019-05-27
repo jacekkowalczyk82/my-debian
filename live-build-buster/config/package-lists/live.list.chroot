@@ -23,7 +23,6 @@ scrot
 fonts-dejavu
 
 #editors 
-leafpad
 mousepad
 geany
 
@@ -62,6 +61,8 @@ faba-icon-theme
 faenza-icon-theme
 moka-icon-theme
 tango-icon-theme
+numix-icon-theme
+papirus-icon-theme
 
 
 
