@@ -33,11 +33,12 @@ lxrandr
 galculator
 xarchiver
 lxinput
+libreoffice
 
 #terminals
 xterm
 #lxterminal
-terminator
+#terminator
 xfce4-terminal
 
 #web browsers
@@ -108,8 +109,15 @@ system-config-printer
 libdbus-glib-1-2
 
 #multimedia 
+vlc
 mpv
 smplayer
 audacious
 audacious-plugins
+
+#packages for virtualbox guest additions
+build-essential
+module-assistant
+
+
 

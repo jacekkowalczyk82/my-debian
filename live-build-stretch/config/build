@@ -6,5 +6,5 @@ Mirror-Bootstrap: http://deb.debian.org/debian/
 
 [FIXME]
 Configuration-Version: 1:20190311
-Name: live-image
+Name: debian-9.9-dwm-live
 Type: iso-hybrid

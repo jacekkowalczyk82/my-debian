@@ -115,3 +115,9 @@ smplayer
 audacious
 audacious-plugins
 
+#packages for virtualbox guest additions
+build-essential
+module-assistant
+
+
+
