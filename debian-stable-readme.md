@@ -78,12 +78,22 @@ sudo apt install curl git live-build debootstrap
 ```
 cd my-debian/live-build-stretch
 sudo lb config --debian-installer live -d stretch
+#add your packages to config/package-lists/live.list.chroot
+#add your customization files to config/includes.chroot/
+#when rebuilding run also clean
+sudo lb clean --purge
+
+#build ISO
 sudo lb build --debug --verbose 2>&1 |tee lb-build-stretch-`date '+%Y-%m-%d_%H%M%S'`.log
 
 cd my-debian/live-build-buster
 sudo lb config --debian-installer live -d buster
-* modify the config/binary file and set `LB_DEBIAN_INSTALLER_DISTRIBUTION="stretch" insted of buster`
-* on default settings there is a poblem with installing linux-image vmlinuz file 
+#add your packages to config/package-lists/live.list.chroot
+#add your customization files to config/includes.chroot/
+#when rebuilding run also clean
+sudo lb clean --purge
+
+#build ISO
 sudo lb build --debug --verbose 2>&1 |tee lb-build-buster-`date '+%Y-%m-%d_%H%M%S'`.log
 
 ```
