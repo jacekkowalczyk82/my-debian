@@ -2,7 +2,9 @@
 
 set -e
 
-# Prepare system for installing virtualbox guest additions
-apt update
-m-a prepare 
+# # Prepare system for installing virtualbox guest additions
+#apt update
+#m-a prepare 
+
+uname -a |true 
 
