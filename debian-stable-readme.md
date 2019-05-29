@@ -1,5 +1,8 @@
 # How to Create a Custom Debian Stable ISO
 
+
+![Debian Buster 10 Custom DWM screenshot](./screenshots/2019-05-29-134757_1920x975_scrot.png)
+
 ## Install required packages to build and configure DWM
 
 ```
