@@ -96,6 +96,28 @@ sudo lb clean --purge
 #build ISO
 sudo lb build --debug --verbose 2>&1 |tee lb-build-buster-`date '+%Y-%m-%d_%H%M%S'`.log
 
+sudo apt install genisoimage
+mkdir hack
+cd hack 
+mkdir iso
+mkdir hackediso
+#assuming the lb generated debian-buster-dwm-live-amd64.hybrid.iso file
+mv ../debian-buster-dwm-live-amd64.hybrid.iso ./
+sudo mount -t iso9660 -o loop debian-buster-dwm-live-amd64.hybrid.iso  iso
+
+cp -r iso/ hackediso/
+# replace vmlinuz  and initrd.gz and gtk directory in hackediso/install/ with the correct debian installer daily image 
+# from https://d-i.debian.org/daily-images/amd64/20190529-00:24/cdrom/
+
+#rebuild iso again
+cd hackediso
+sudo genisoimage -o ../debian-buster-dwm-live-20190529-amd64.hybrid.hacked-2.iso -r -J -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-info-table -boot-load-size 4 ./
+
+
+
+ 
+
+
 ```
 
 ## Web Resources 
