@@ -18,7 +18,35 @@ cd dwm
 ```
 
 * follow https://gitlab.com/jacekkowalczyk82/my-debian/blob/master/debian-dwm.md to modify the config.def.h file in dwm sources. 
+* made changes:
 
+```
+diff --git a/config.def.h b/config.def.h
+index 1c0b587..fc42d00 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -44,7 +44,7 @@ static const Layout layouts[] = {
+ };
+
+ /* key definitions */
+-#define MODKEY Mod1Mask
++#define MODKEY Mod4Mask
+ #define TAGKEYS(KEY,TAG) \
+        { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+        { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+@@ -57,7 +57,7 @@ static const Layout layouts[] = {
+ /* commands */
+ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
+ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+-static const char *termcmd[]  = { "st", NULL };
++static const char *termcmd[]  = { "stterm", NULL };
+
+ static Key keys[] = {
+        /* modifier                     key        function        argument */
+
+```
+
+* Build DWM
 ```
 cd /opt/dwm/
 sudo make clean install 
