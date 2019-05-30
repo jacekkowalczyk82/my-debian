@@ -76,7 +76,7 @@ sudo apt install curl git live-build debootstrap
 
 ```
 
-## Build Live ISO images
+## Build Live ISO image for Stretch
 
 ```
 cd my-debian/live-build-stretch
@@ -88,7 +88,11 @@ sudo lb clean --purge
 
 #build ISO
 sudo lb build --debug --verbose 2>&1 |tee lb-build-stretch-`date '+%Y-%m-%d_%H%M%S'`.log
+```
 
+## Build Live ISO image for Buster 
+
+```
 cd my-debian/live-build-buster
 sudo lb config --debian-installer live -d buster
 #add your packages to config/package-lists/live.list.chroot

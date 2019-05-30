@@ -3,7 +3,7 @@
 exec nitrogen --restore &
 #exec feh --bg-scale /usr/share/desktop-base/spacefun-theme/wallpaper/contents/images/3840x2160.svg  &
 #exec feh --bg-scale /home/kowalczy/Pictures/futureprototype_login.png & 
-#exec compton -b &
+exec compton -b &
 dropbox_status_string=""
 while true ; do 
 #    dropbox_status=$(dropbox-cli status | head -n 1)
