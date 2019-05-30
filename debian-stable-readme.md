@@ -117,11 +117,24 @@ cd hackediso
 sudo genisoimage -o ../debian-buster-dwm-live-20190529-amd64.hybrid.hacked-2.iso -r -J -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-info-table -boot-load-size 4 ./
 
 
+```
 
- 
+## Post install actions 
 
+* When I installed the generated Debian Buster and logged in to XFCE desktop  I had some issues with themes and icons 
 
 ```
+sudo gtk-update-icon-cache /usr/share/icons/Papirus/
+sudo gtk-update-icon-cache /usr/share/icons/Numix/
+sudo gtk-update-icon-cache /usr/share/icons/Tango/
+sudo gtk-update-icon-cache /usr/share/icons/Moka/
+sudo gtk-update-icon-cache /usr/share/icons/Faba/
+sudo gtk-update-icon-cache /usr/share/icons/Papirus-Light/
+sudo gtk-update-icon-cache /usr/share/icons/Numix-Light/
+sudo gtk-update-icon-cache /usr/share/icons/Faenza/
+
+```
+
 
 ## Web Resources 
 
