@@ -4,6 +4,8 @@ live-config-systemd
 
 xorg
 xfce4
+live-task-xfce
+
 #DWM
 dwm
 suckless-tools

@@ -47,6 +47,7 @@ index 1c0b587..fc42d00 100644
 ```
 
 * Build DWM
+
 ```
 cd /opt/dwm/
 sudo make clean install 
@@ -118,7 +119,7 @@ sudo lb clean --purge
 sudo lb build --debug --verbose 2>&1 |tee lb-build-stretch-`date '+%Y-%m-%d_%H%M%S'`.log
 ```
 
-## Build Live ISO image for Buster 
+## Build Live ISO image for Buster with hack
 
 ```
 cd my-debian/live-build-buster
@@ -148,6 +149,21 @@ cp -r iso/ hackediso/
 cd hackediso
 sudo genisoimage -o ../debian-buster-dwm-live-20190529-amd64.hybrid.hacked-2.iso -r -J -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-info-table -boot-load-size 4 ./
 
+
+```
+
+## Build Live ISO image for Buster
+
+```
+cd my-debian/live-build-buster
+sudo lb config --debian-installer live -d buster --debian-installer-distribution daily
+#add your packages to config/package-lists/live.list.chroot
+#add your customization files to config/includes.chroot/
+#when rebuilding run also clean
+sudo lb clean --purge
+
+#build ISO
+sudo lb build --debug --verbose 2>&1 |tee lb-build-buster-`date '+%Y-%m-%d_%H%M%S'`.log
 
 ```
 
