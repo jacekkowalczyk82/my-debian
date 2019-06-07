@@ -5,8 +5,8 @@
 LB_DISTRIBUTION="testing"
 
 # $LB_PARENT_DISTRIBUTION: select parent distribution to use
-# (Default: buster)
-LB_PARENT_DISTRIBUTION="buster"
+# (Default: testing)
+LB_PARENT_DISTRIBUTION="testing"
 
 # $LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION: select parent distribution for debian-installer to use
 # (Default: buster)
