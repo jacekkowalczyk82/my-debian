@@ -12,8 +12,7 @@ LOGFILE="debian-live-lwr-build-`date '+%Y-%m-%d_%H%M%S'`.log"
 
 MY_LWR_OPTIONS="--isolinux --grub --installer --di-daily --log-level=debug --log=${LOGFILE}"
 lwr -d testing -o debian-live-xfce-dwm.iso ${MY_LWR_OPTIONS} \
- -e ${PACKAGES} \ 
- -t  ${PACKAGES_AND_RECOMMENDED} 
+ -e ${PACKAGES} -t ${PACKAGES_AND_RECOMMENDED} 
 
 
 
