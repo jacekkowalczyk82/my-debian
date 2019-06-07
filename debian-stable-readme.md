@@ -191,7 +191,9 @@ sudo gtk-update-icon-cache /usr/share/icons/Faenza/
 ## Web Resources 
 
 * https://live-wrapper.readthedocs.io/en/latest/quickstart.html
-* 
+* https://live-team.pages.debian.net/live-manual/html/live-manual/index.pl.html
+* https://live-team.pages.debian.net/live-manual/html/live-manual/index.en.html
+
 * https://dug.net.pl/tekst/243/budowa_spersonalizowanego_systemu_debian_live/
 * https://dug.net.pl/tekst/341/wlasny_debian_liveusb/
 
