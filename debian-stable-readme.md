@@ -183,9 +183,15 @@ sudo gtk-update-icon-cache /usr/share/icons/Faenza/
 
 ```
 
+## Live-Wrpper - next generation of debian libe build tools
+
+* https://live-wrapper.readthedocs.io/en/latest/quickstart.html
+* https://salsa.debian.org/live-team/live-wrapper
 
 ## Web Resources 
 
+* https://live-wrapper.readthedocs.io/en/latest/quickstart.html
+* 
 * https://dug.net.pl/tekst/243/budowa_spersonalizowanego_systemu_debian_live/
 * https://dug.net.pl/tekst/341/wlasny_debian_liveusb/
 
