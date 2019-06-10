@@ -1,10 +1,10 @@
 [Image]
 Architecture: amd64
 Archive-Areas: main
-Distribution: stretch
+Distribution: stable
 Mirror-Bootstrap: http://deb.debian.org/debian/
 
 [FIXME]
 Configuration-Version: 1:20190311
-Name: debian-9.9-dwm-live
+Name: debian-live-DWM-Stable
 Type: iso-hybrid
