@@ -28,7 +28,7 @@ fonts-dejavu
 mousepad
 geany
 
-#accessories
+##accessories
 gpicview
 evince
 lxrandr
