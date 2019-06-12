@@ -1,0 +1,11 @@
+[Image]
+Architecture: amd64
+Archive-Areas: main
+Distribution: testing
+#http://deb.netrunner.com/dci/packages/debian/netrunner-1901 testing main contrib non-free
+Mirror-Bootstrap: http://deb.netrunner.com/dci/packages/debian/netrunner-1901
+
+[FIXME]
+Configuration-Version: 1:20180925
+Name: netrunner-desktop-live-dwm
+Type: iso-hybrid
