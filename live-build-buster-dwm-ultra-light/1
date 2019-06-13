@@ -1,0 +1,1956 @@
+[2019-05-27 10:19:22] lb build --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: live-build 1:20190311
+P: Building config tree for a debian/buster/amd64 system
+[2019-05-27 10:19:22] lb bootstrap --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Setting up cleanup function
+[2019-05-27 10:19:22] lb bootstrap_cache restore --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Restoring bootstrap stage from cache...
+W: skipping bootstrap_cache.restore, already done
+[2019-05-27 10:19:22] lb bootstrap_debootstrap --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin bootstrapping system...
+W: skipping bootstrap, already done
+[2019-05-27 10:19:22] lb bootstrap_cache save --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Saving bootstrap stage to cache...
+W: skipping bootstrap_cache.save, already done
+[2019-05-27 10:19:22] lb chroot_devpts install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin mounting /dev/pts...
+[2019-05-27 10:19:23] lb chroot_proc install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin mounting /proc...
+[2019-05-27 10:19:23] lb chroot_selinuxfs install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+[2019-05-27 10:19:23] lb chroot_sysfs install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin mounting /sys...
+[2019-05-27 10:19:23] lb chroot_debianchroot install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /etc/debian_chroot
+[2019-05-27 10:19:23] lb chroot_dpkg install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /sbin/start-stop-daemon
+D: Executing: dpkg-divert --rename --quiet --add /sbin/start-stop-daemon
+D: Executing: dpkg-divert --rename --quiet --add /usr/sbin/flash-kernel
+[2019-05-27 10:19:24] lb chroot_tmpfs install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+[2019-05-27 10:19:24] lb chroot_sysv-rc install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /usr/sbin/policy-rc.d
+W: skipping chroot_sysv-rc, already done
+[2019-05-27 10:19:24] lb chroot_hosts install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /etc/hosts
+W: skipping chroot_hosts, already done
+[2019-05-27 10:19:24] lb chroot_resolv install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /etc/resolv.conf
+W: skipping chroot_resolv, already done
+[2019-05-27 10:19:24] lb chroot_hostname install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+W: skipping chroot_hostname, already done
+[2019-05-27 10:19:24] lb chroot_apt install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /etc/apt/apt.conf
+W: skipping chroot_apt, already done
+[2019-05-27 10:19:25] lb bootstrap_archives binary --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /etc/apt/sources.list
+W: skipping chroot_archives, already done
+[2019-05-27 10:19:25] lb chroot_apt remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /etc/apt/apt.conf
+[2019-05-27 10:19:25] lb chroot_hostname remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /etc/hostname
+P: Deconfiguring file /bin/hostname
+D: Executing: dpkg-divert --rename --quiet --remove /bin/hostname
+[2019-05-27 10:19:25] lb chroot_resolv remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /etc/resolv.conf
+[2019-05-27 10:19:25] lb chroot_hosts remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /etc/hosts
+[2019-05-27 10:19:26] lb chroot_sysv-rc remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /usr/sbin/policy-rc.d
+[2019-05-27 10:19:26] lb chroot_tmpfs remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+[2019-05-27 10:19:26] lb chroot_dpkg remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /sbin/start-stop-daemon
+D: Executing: dpkg-divert --rename --quiet --remove /usr/sbin/flash-kernel
+D: Executing: dpkg-divert --rename --quiet --remove /sbin/start-stop-daemon
+[2019-05-27 10:19:26] lb chroot_debianchroot remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /etc/debian_chroot
+[2019-05-27 10:19:26] lb chroot_sysfs remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin unmounting /sys...
+[2019-05-27 10:19:26] lb chroot_selinuxfs remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin unmounting /sys/fs/selinux...
+[2019-05-27 10:19:27] lb chroot_proc remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin unmounting /proc...
+[2019-05-27 10:19:27] lb chroot_devpts remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin unmounting /dev/pts...
+LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...
+Building dependency tree...
+Reading state information...
+[2019-05-27 10:19:27] lb chroot --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Setting up cleanup function
+[2019-05-27 10:19:28] lb chroot_cache restore --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+[2019-05-27 10:19:28] lb chroot_devpts install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin mounting /dev/pts...
+[2019-05-27 10:19:28] lb chroot_proc install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin mounting /proc...
+[2019-05-27 10:19:28] lb chroot_selinuxfs install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+[2019-05-27 10:19:28] lb chroot_sysfs install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin mounting /sys...
+[2019-05-27 10:19:28] lb chroot_debianchroot install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /etc/debian_chroot
+[2019-05-27 10:19:29] lb chroot_dpkg install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /sbin/start-stop-daemon
+D: Executing: dpkg-divert --rename --quiet --add /sbin/start-stop-daemon
+D: Executing: dpkg-divert --rename --quiet --add /usr/sbin/flash-kernel
+[2019-05-27 10:19:29] lb chroot_tmpfs install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+[2019-05-27 10:19:29] lb chroot_sysv-rc install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /usr/sbin/policy-rc.d
+[2019-05-27 10:19:29] lb chroot_hosts install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /etc/hosts
+[2019-05-27 10:19:29] lb chroot_resolv install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /etc/resolv.conf
+[2019-05-27 10:19:30] lb chroot_hostname install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /etc/hostname
+P: Configuring file /bin/hostname
+D: Executing: dpkg-divert --rename --quiet --add /bin/hostname
+[2019-05-27 10:19:30] lb chroot_apt install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /etc/apt/apt.conf
+[2019-05-27 10:19:30] lb chroot_archives chroot install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Configuring file /etc/apt/sources.list
+W: skipping chroot_archives, already done
+[2019-05-27 10:19:30] lb chroot_linux-image --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+W: skipping chroot_linux-image, already done
+[2019-05-27 10:19:30] lb chroot_firmware --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+W: skipping chroot_firmware, already done
+[2019-05-27 10:19:30] lb chroot_preseed --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin executing local preseeds...
+[2019-05-27 10:19:31] lb chroot_package-lists install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin queueing installation of package lists (install pass)...
+W: skipping chroot_package-lists.install, already done
+[2019-05-27 10:19:31] lb chroot_install-packages install --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin installing packages (install pass)...
+[2019-05-27 10:19:31] lb chroot_package-lists live --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin queueing installation of package lists (live pass)...
+W: skipping chroot_package-lists.live, already done
+[2019-05-27 10:19:31] lb chroot_install-packages live --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin installing packages (live pass)...
+[2019-05-27 10:19:31] lb chroot_includes --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin copying chroot includes...
+W: skipping includes.chroot, already done
+[2019-05-27 10:19:31] lb chroot_hooks --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin executing hooks...
+W: skipping chroot_hooks, already done
+[2019-05-27 10:19:32] lb chroot_hacks --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin executing hacks...
+W: skipping chroot_hacks, already done
+[2019-05-27 10:19:32] lb chroot_interactive --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+[2019-05-27 10:19:32] lb chroot_archives chroot remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /etc/apt/sources.list
+D: Executing: apt-get --yes update
+Get:1 http://deb.debian.org/debian buster InRelease [163 kB]
+Get:2 http://security.debian.org buster/updates InRelease [39.1 kB]
+Get:3 http://deb.debian.org/debian buster-updates InRelease [46.8 kB]
+Get:4 http://security.debian.org buster/updates/main Sources [892 B]
+Get:5 http://security.debian.org buster/updates/main amd64 Packages [1132 B]
+Get:6 http://security.debian.org buster/updates/main Translation-en [678 B]
+Get:7 http://deb.debian.org/debian buster/main Sources [7864 kB]
+Get:8 http://deb.debian.org/debian buster/main amd64 Packages [7905 kB]
+Get:9 http://deb.debian.org/debian buster/main Translation-en [5975 kB]
+Fetched 22.0 MB in 17s (1326 kB/s)
+Reading package lists...
+[2019-05-27 10:19:51] lb chroot_apt remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /etc/apt/apt.conf
+[2019-05-27 10:19:51] lb chroot_hostname remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /etc/hostname
+P: Deconfiguring file /bin/hostname
+D: Executing: dpkg-divert --rename --quiet --remove /bin/hostname
+[2019-05-27 10:19:51] lb chroot_resolv remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /etc/resolv.conf
+[2019-05-27 10:19:52] lb chroot_hosts remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /etc/hosts
+[2019-05-27 10:19:52] lb chroot_sysv-rc remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /usr/sbin/policy-rc.d
+[2019-05-27 10:19:52] lb chroot_tmpfs remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+[2019-05-27 10:19:52] lb chroot_dpkg remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /sbin/start-stop-daemon
+D: Executing: dpkg-divert --rename --quiet --remove /usr/sbin/flash-kernel
+D: Executing: dpkg-divert --rename --quiet --remove /sbin/start-stop-daemon
+[2019-05-27 10:19:52] lb chroot_debianchroot remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Deconfiguring file /etc/debian_chroot
+[2019-05-27 10:19:52] lb chroot_sysfs remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin unmounting /sys...
+[2019-05-27 10:19:53] lb chroot_selinuxfs remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin unmounting /sys/fs/selinux...
+[2019-05-27 10:19:53] lb chroot_proc remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin unmounting /proc...
+[2019-05-27 10:19:53] lb chroot_devpts remove --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+P: Begin unmounting /dev/pts...
+[2019-05-27 10:19:53] lb chroot_cache save --debug --verbose 2
+D: Reading configuration file config/common
+D: Reading configuration file config/bootstrap
+D: Reading configuration file config/chroot
+D: Reading configuration file config/binary
+D: Reading configuration file config/source
+LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...LB_APT='apt'
+LB_APT_FTP_PROXY=''
+LB_APT_HTTP_PROXY=''
+LB_APT_INDICES='true'
+LB_APT_PIPELINE=''
+LB_APT_RECOMMENDS='true'
+LB_APT_SECURE='true'
+LB_APT_SOURCE_ARCHIVES='true'
+LB_ARCHITECTURES='amd64'
+LB_ARCHIVE_AREAS='main'
+LB_BACKPORTS='false'
+LB_BINARY_FILESYSTEM='fat32'
+LB_BOOTAPPEND_INSTALL=''
+LB_BOOTAPPEND_LIVE='boot=live components quiet splash'
+LB_BOOTAPPEND_LIVE_FAILSAFE='boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal'
+LB_BOOTLOADERS='syslinux,grub-efi'
+LB_BOOTSTRAP_QEMU_ARCHITECTURES=''
+LB_BOOTSTRAP_QEMU_EXCLUDE=''
+LB_BOOTSTRAP_QEMU_STATIC=''
+LB_BUILD_WITH_CHROOT='true'
+LB_BUILD_WITH_TMPFS='false'
+LB_CACHE='true'
+LB_CACHE_INDICES='false'
+LB_CACHE_PACKAGES='true'
+LB_CACHE_STAGES='bootstrap'
+LB_CHECKSUMS='md5'
+LB_CHROOT_FILESYSTEM='squashfs'
+LB_COMPRESSION='none'
+LB_DEBCONF_FRONTEND='noninteractive'
+LB_DEBCONF_PRIORITY='critical'
+LB_DEBIAN_INSTALLER='live'
+LB_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_DEBIAN_INSTALLER_GUI='true'
+LB_DEBIAN_INSTALLER_PRESEEDFILE=''
+LB_DERIVATIVE='false'
+LB_DISTRIBUTION='buster'
+LB_FDISK='fdisk'
+LB_FIRMWARE_BINARY='true'
+LB_FIRMWARE_CHROOT='true'
+LB_FIRST_BOOTLOADER='syslinux'
+LB_GRUB_SPLASH=''
+LB_HDD_LABEL='DEBIAN_LIVE'
+LB_HDD_PARTITION_START=''
+LB_HDD_SIZE='auto'
+LB_INITRAMFS='live-boot'
+LB_INITRAMFS_COMPRESSION='gzip'
+LB_INITSYSTEM='systemd'
+LB_INTERACTIVE='false'
+LB_ISO_APPLICATION='Debian Live'
+LB_ISO_PREPARER='live-build 1:20190311; https://debian-live.alioth.debian.org/live-build'
+LB_ISO_PUBLISHER='Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org'
+LB_ISO_VOLUME='Debian buster 20190527-10:19'
+LB_JFFS2_ERASEBLOCK=''
+LB_KEYRING_PACKAGES='debian-archive-keyring'
+LB_LINUX_FLAVOURS='amd64'
+LB_LINUX_PACKAGES='linux-image'
+LB_LOADLIN='true'
+LB_LOSETUP='losetup'
+LB_MEMTEST='none'
+LB_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_MODE='debian'
+LB_NET_COW_FILESYSTEM='nfs'
+LB_NET_COW_MOUNTOPTIONS=''
+LB_NET_COW_PATH=''
+LB_NET_COW_SERVER=''
+LB_NET_ROOT_FILESYSTEM='nfs'
+LB_NET_ROOT_MOUNTOPTIONS=''
+LB_NET_ROOT_PATH='/srv/debian-live'
+LB_NET_ROOT_SERVER='192.168.1.1'
+LB_NET_TARBALL='true'
+LB_ONIE='false'
+LB_ONIE_KERNEL_CMDLINE=''
+LB_PARENT_ARCHIVE_AREAS='main'
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION='buster'
+LB_PARENT_DISTRIBUTION='buster'
+LB_PARENT_MIRROR_BINARY='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_BINARY_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_BOOTSTRAP='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT='http://deb.debian.org/debian/'
+LB_PARENT_MIRROR_CHROOT_SECURITY='http://security.debian.org/'
+LB_PARENT_MIRROR_DEBIAN_INSTALLER='http://deb.debian.org/debian/'
+LB_ROOT='debian-live'
+LB_SECURITY='true'
+LB_SOURCE='false'
+LB_SOURCE_IMAGES='tar'
+LB_SWAP_FILE_PATH=''
+LB_SWAP_FILE_SIZE='512'
+LB_SYSTEM='live'
+LB_TASKSEL='apt'
+LB_UEFI_SECURE_BOOT='auto'
+LB_UNION_FILESYSTEM='overlay'
+LB_UPDATES='true'
+LB_WIN32_LOADER='true'
+LB_ZSYNC='true'
+P: Begin unmounting filesystems...
+P: Saving caches...
+D: Executing: apt-get autoclean
+Reading package lists...
+Building dependency tree...
+Reading state information...

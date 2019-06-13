@@ -1,6 +1,7 @@
 #/bin/bash 
 
-cd live-build-buster
+cd live-build-buster-dwm-ultra-light/
+
 lb config --debian-installer live -d buster \
  --debian-installer-distribution daily \
  --iso-preparer "Jacek Kowalczyk jack82@bsdmail.com" 
@@ -15,7 +16,8 @@ cp -rv suckless.org/dwm config/includes.chroot/opt/
 #sudo lb clean --purge
 
 #build ISO
-lb build --debug --verbose 2>&1 |tee lb-build-buster-xfce-dwm-`date '+%Y-%m-%d_%H%M%S'`.log
+lb build --debug --verbose 2>&1 |tee lb-build-buster-dwm-ultra-light-`date '+%Y-%m-%d_%H%M%S'`.log
+
 
 
 
