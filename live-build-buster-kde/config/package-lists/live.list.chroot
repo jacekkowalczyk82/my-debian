@@ -1,6 +1,10 @@
 live-boot
 live-config
 live-config-systemd
+live-task-recommended
+live-task-standard 
+live-tools
+desktop-base
 
 xorg
 live-task-kde
