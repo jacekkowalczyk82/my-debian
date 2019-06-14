@@ -78,16 +78,16 @@ LB_HDD_PARTITION_START=""
 LB_ISO_APPLICATION="Debian Live"
 
 # $LB_ISO_PREPARER: set iso preparer
-# (Default: Jacek Kowalczyk jack82@bsdmail.com)
-LB_ISO_PREPARER="Jacek Kowalczyk jack82@bsdmail.com"
+# (Default: live-build $VERSION; https://debian-live.alioth.debian.org/live-build)
+LB_ISO_PREPARER="live-build $VERSION; https://debian-live.alioth.debian.org/live-build"
 
 # $LB_ISO_PUBLISHER: set iso publisher
 # (Default: Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org)
 LB_ISO_PUBLISHER="Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org"
 
 # $LB_ISO_VOLUME: set iso volume (max 32 chars)
-# (Default: Debian buster 20190613-12:40)
-LB_ISO_VOLUME="Debian buster 20190613-12:40"
+# (Default: Debian buster $(date +%Y%m%d-%H:%M))
+LB_ISO_VOLUME="Debian buster $(date +%Y%m%d-%H:%M)"
 
 # $LB_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)
