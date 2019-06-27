@@ -181,8 +181,8 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id pasystray & 
 
 exec --no-startup-id compton -b & 
-exec --no-startup-id mate-power-manager & 
-exec --no-startup-id clipit & 
+exec --no-startup-id xfce4-power-manager & 
+#exec --no-startup-id clipit & 
 
 ### additional shortkeys
 #bindsym $mod+Shift+s exec "i3-nagbar -t warning -m 'You pressed the system suspend shortcut. Do you really want to suspend the system?' -b 'Yes, Suspend now' 'systemctl suspend'"
@@ -210,10 +210,10 @@ bindsym $mod+Ctrl+n exec nitrogen
 # printer
 bindsym $mod+Ctrl+p exec system-config-printer
 # mate-system-monitor
-bindsym $mod+Ctrl+x exec mate-system-monitor
+bindsym $mod+Ctrl+x exec xfce4-system-monitor
 # scrot
 bindsym $mod+Ctrl+s exec scrot
 
 # help info 
-bindsym $mod+Ctrl+h exec falkon /opt/help/basic-help.html  
+bindsym $mod+Ctrl+h exec firefox /opt/help/basic-help.html  
 

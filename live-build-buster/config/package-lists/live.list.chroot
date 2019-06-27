@@ -6,16 +6,33 @@ xorg
 xfce4
 live-task-xfce
 
-#DWM
+## DWM
 dwm
 suckless-tools
 #dmenu
 #slock
 
+#for-building DWM 
 stterm
 libx11-dev
 libxft-dev
 libxinerama-dev
+
+## i3
+i3
+i3lock
+conky
+
+
+## Openbox
+openbox
+obconf
+obmenu
+openbox-menu
+obsession
+tint2
+menu
+
 
 lightdm 
 compton
@@ -25,6 +42,7 @@ scrot
 fonts-dejavu
 
 #editors 
+leafpad
 mousepad
 geany
 
@@ -40,11 +58,14 @@ libreoffice
 #terminals
 xterm
 #lxterminal
-#terminator
+terminator
 xfce4-terminal
+rxvt-unicode
+sakura
 
 #web browsers
-#chromium
+falkon
+chromium
 firefox-esr
 
 youtube-dl
@@ -94,7 +115,7 @@ apt-transport-https
 screenfetch
 neofetch
 gmrun
-i3lock
+
 
 #simple firewall
 #gufw                   # package not found 

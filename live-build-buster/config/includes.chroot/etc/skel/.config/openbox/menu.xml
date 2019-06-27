@@ -16,9 +16,19 @@
 				<execute>xterm</execute>
 			</action>
 		</item>
-		<item label="mate-terminal">
+		<item label="xfce4-terminal">
 			<action name="Execute">
-				<execute>mate-terminal</execute>
+				<execute>xfce4-terminal</execute>
+			</action>
+		</item>
+		<item label="urxvt">
+			<action name="Execute">
+				<execute>urxvt</execute>
+			</action>
+		</item>
+		<item label="Sakura">
+			<action name="Execute">
+				<execute>sakura</execute>
 			</action>
 		</item>
 		<separator/>
@@ -39,6 +49,11 @@
 				<execute>firefox.sh</execute>
 			</action>
 		</item>
+		<item label="Firefox">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
 		<item label="Chromium">
 			<action name="Execute">
 				<execute>chromium</execute>
@@ -53,12 +68,17 @@
 		<separator/>
 		<item label="File Manager">
 			<action name="Execute">
-				<execute>caja</execute>
+				<execute>thunar</execute>
 			</action>
 		</item>
-		<item label="Pluma">
+		<item label="mousepad">
 			<action name="Execute">
-				<execute>pluma</execute>
+				<execute>mousepad</execute>
+			</action>
+		</item>
+		<item label="leafpad">
+			<action name="Execute">
+				<execute>leafpad</execute>
 			</action>
 		</item>
 		<item label="Meld">
@@ -73,7 +93,7 @@
 		</item>
 		<item label="Task Manager">
 			<action name="Execute">
-				<execute>mate-system-monitor</execute>
+				<execute>xfce4-system-monitor</execute>
 			</action>
 		</item>
 
@@ -121,7 +141,7 @@
 		</item>
 		<item label="Lock Screen">
 			<action name="Execute">
-				<execute>i3lock -i /usr/share/desktop-base/kali-theme/grub/grub-16x9.png</execute>
+				<execute>i3lock -i /usr/share/desktop-base/futureprototype-theme/grub/grub-16x9.png</execute>
 			</action>
 		</item>
 
