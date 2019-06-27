@@ -34,14 +34,10 @@
 		<separator/>
 		<menu id="root-menu-fevourites-tools" label="Favourite Apps">
 
+		<!--
 		<item label="Toxic">
 			<action name="Execute">
 				<execute>x-terminal-emulator -e /opt/toxic/run_toxic.sh</execute>
-			</action>
-		</item>
-		<item label="Web browser">
-			<action name="Execute">
-				<execute>x-www-browser</execute>
 			</action>
 		</item>
 		<item label="Firefox Developer Edition">
@@ -49,6 +45,14 @@
 				<execute>firefox.sh</execute>
 			</action>
 		</item>
+		
+		--> 
+		<item label="Web browser">
+			<action name="Execute">
+				<execute>x-www-browser</execute>
+			</action>
+		</item>
+
 		<item label="Firefox">
 			<action name="Execute">
 				<execute>firefox</execute>
@@ -76,17 +80,13 @@
 				<execute>mousepad</execute>
 			</action>
 		</item>
-		<item label="leafpad">
-			<action name="Execute">
-				<execute>leafpad</execute>
-			</action>
-		</item>
+		
 		<item label="Meld">
 			<action name="Execute">
 				<execute>meld</execute>
 			</action>
 		</item>
-		<item label="Media Player">
+		<item label="MPV Media Player">
 			<action name="Execute">
 				<execute>mpv --player-operation-mode=pseudo-gui --</execute>
 			</action>

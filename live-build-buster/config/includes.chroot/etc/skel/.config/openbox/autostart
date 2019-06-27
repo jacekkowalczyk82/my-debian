@@ -50,5 +50,6 @@ xset b off &
 conky -c ~/.openbox_conkyrc &
 
 ## Start the plank panel dock
+XDG_SESSION_TYPE=X11
 plank &
 

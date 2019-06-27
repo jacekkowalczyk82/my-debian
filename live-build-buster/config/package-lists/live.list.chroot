@@ -42,7 +42,7 @@ scrot
 fonts-dejavu
 
 #editors 
-leafpad
+#leafpad
 mousepad
 geany
 
