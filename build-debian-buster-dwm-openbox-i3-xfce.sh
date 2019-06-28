@@ -13,7 +13,7 @@ lb config --debian-installer live -d buster \
 #add your customization files to config/includes.chroot/
 
 mkdir -p config/includes.chroot/opt/
-cp -rv suckless.org/dwm config/includes.chroot/opt/
+cp -rv ../suckless.org/dwm config/includes.chroot/opt/
 
 #when rebuilding run also clean
 #sudo lb clean --purge

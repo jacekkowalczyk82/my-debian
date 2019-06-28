@@ -7,9 +7,10 @@ set -e
 #m-a prepare 
 
 
-ls -alh /etc/systemd/system/default.target
+#ls -alh /etc/systemd/system/default.target || true
 
 # trying to disable auto start of gui session
 systemctl set-default multi-user.target || true
 
-ls -alh /etc/systemd/system/default.target
+#ls -alh /etc/systemd/system/default.target || true
+exit 0 
