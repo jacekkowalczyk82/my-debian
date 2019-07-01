@@ -1,0 +1,108 @@
+#!/bin/bash
+#
+# LDD-X Desktop Chooser
+# LDD - Lightweight Debian Distribution
+# Authors: 
+#  eznix
+#  Jacek Kowalczy, jacekkowalczyk82@gmail.com
+#
+
+XINITRC_FILE="/home/$USER/.xinitrc"
+# -------------
+# Functions:
+# -------------
+#
+#
+XFCE4 () { 
+echo "exec startxfce4" > $XINITRC_FILE
+sleep 1
+startx
+}
+#
+#
+OPENBOX () { 
+echo "exec openbox-session" > $XINITRC_FILE
+sleep 1
+startx
+}
+#
+#
+I3WM () { 
+echo "exec i3" > $XINITRC_FILE
+sleep 1
+startx
+}
+#
+#
+DWM () { 
+cat <<EOF > $XINITRC_FILE
+exec nitrogen --restore &
+exec compton -b &
+dropbox_status_string=""
+while true ; do 
+#Uncomment if you want to use Dropbox 
+#    dropbox_status=\$(dropbox-cli status | head -n 1)
+#    if [ "$dropbox_status" == "Up to date" ]; then 
+#        dropbox_status_string="Dropbox: "\$(echo \$dropbox_status)
+#    else 
+#        dropbox_status_string="Dropbox: "\$(echo \$dropbox_status|awk -F " " '{print \$1}')
+#    fi 
+
+    load=\$(cat /proc/loadavg |cut -d " " -f 3 )
+    uptime=\$(uptime -p)
+    load_uptime="Load15: \${load}; \${uptime}"
+
+    xsetroot -name "`date '+%Y-%m-%d %H:%M.%S' ` \$load_uptime \$dropbox_status_string "; sleep 1; 
+done &
+#exec /usr/bin/dropbox & 
+exec /opt/dwm/dwm
+
+EOF
+sleep 1
+startx
+}
+#
+#
+PREVIOUS () { 
+startx
+}
+#
+#
+# -------------
+# Main Menu
+# -------------
+#
+MAINMENU () { while true
+do
+clear
+echo "-------------------"
+echo " LDD (Lightweight Debian Distribution) Desktop Chooser:"
+echo "-------------------"
+echo
+echo " (a) Xfce "
+echo " (b) Openbox "
+echo " (c) i3 "
+echo " (d) DWM "
+echo " (e) Last Session "
+echo " (q) exit to shell "
+echo
+read -p "Please enter your choice: " choice
+case $choice in
+  a|A) XFCE4;;
+  b|B) OPENBOX;;
+  c|C) I3WM;;
+  d|D) DWM;;
+  e|E) PREVIOUS;;
+  q|Q) exit 0;;
+  *) echo "Invalid answer, please try again";;
+#
+esac
+done
+}
+#
+# Begin main program:
+#
+MAINMENU
+#
+done
+#

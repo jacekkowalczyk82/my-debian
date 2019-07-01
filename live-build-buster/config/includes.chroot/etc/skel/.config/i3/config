@@ -214,6 +214,4 @@ bindsym $mod+Ctrl+x exec xfce4-system-monitor
 # scrot
 bindsym $mod+Ctrl+s exec scrot
 
-# help info 
-bindsym $mod+Ctrl+h exec firefox /opt/help/basic-help.html  
 

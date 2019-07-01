@@ -3,8 +3,8 @@
 cd live-build-buster
 lb config --debian-installer live -d buster \
  --debian-installer-distribution daily \
- --iso-application debian-live-wm-edition \
- --iso-volume debian-live-wm-edition \
+ --iso-application debian-live-ldd-xfce \
+ --iso-volume debian-live-ldd-xfce \
  --iso-publisher "Jacek Kowalczyk http://jacekkowalczyk82.github.io" \
  --iso-preparer "Jacek Kowalczyk http://jacekkowalczyk82.github.io" 
  
@@ -19,7 +19,7 @@ cp -rv ../suckless.org/dwm config/includes.chroot/opt/
 #sudo lb clean --purge
 
 #build ISO
-lb build --debug --verbose 2>&1 |tee lb-build-buster-xfce-dwm-`date '+%Y-%m-%d_%H%M%S'`.log
+lb build --debug --verbose 2>&1 |tee debian-live-ldd-xfce-`date '+%Y-%m-%d_%H%M%S'`.log
 
 
 

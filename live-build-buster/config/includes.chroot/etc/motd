@@ -12,11 +12,8 @@ openbox
 i3
 xfce
 
-To star Xsession of your choice run one of these scripts:
-./start-dwm.sh
-./start-openbox.sh
-./start-i3.sh
-./start-xfce.sh
+To star Xsession of your choice run command:
+startgui
 
 or simply to start the latest Xsession run
 startx

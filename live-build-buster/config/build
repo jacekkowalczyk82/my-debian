@@ -6,5 +6,5 @@ Mirror-Bootstrap: http://deb.debian.org/debian/
 
 [FIXME]
 Configuration-Version: 1:20190311
-Name: debian-live-buster-xfce-dwm
+Name: debian-live-ldd-xfce
 Type: iso-hybrid
