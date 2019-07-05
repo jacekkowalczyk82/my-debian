@@ -2,7 +2,7 @@
 
 cd live-build-buster
 lb config --debian-installer live -d buster \
- --debian-installer-distribution daily \
+ --debian-installer-distribution buster \
  --iso-application debian-live-ldd-xfce \
  --iso-volume debian-live-ldd-xfce \
  --iso-publisher "Jacek Kowalczyk http://jacekkowalczyk82.github.io" \

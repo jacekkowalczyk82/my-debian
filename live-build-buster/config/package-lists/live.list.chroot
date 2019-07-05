@@ -21,6 +21,7 @@ libxinerama-dev
 ## i3
 i3
 i3lock
+i3status
 conky
 
 
@@ -47,12 +48,8 @@ mousepad
 geany
 
 ##accessories
-gpicview
-evince
-lxrandr
 galculator
 xarchiver
-lxinput
 libreoffice
 
 #terminals
