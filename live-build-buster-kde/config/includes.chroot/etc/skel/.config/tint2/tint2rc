@@ -172,11 +172,11 @@ launcher_item_app = /usr/share/applications/org.kde.falkon.desktop
 launcher_item_app = /usr/share/applications/terminator.desktop
 launcher_item_app = /usr/share/applications/mpv.desktop
 launcher_item_app = /usr/share/applications/audacious.desktop
-launcher_item_app = /usr/share/applications/dolphin.desktop
-launcher_item_app = /usr/share/applications/kwrite.desktop
+launcher_item_app = /usr/share/applications/org.kde.dolphin.desktop
+launcher_item_app = /usr/share/applications/org.kde.kwrite.desktop
 #launcher_item_app = /usr/share/applications/leafpad.desktop
 launcher_item_app = /usr/share/applications/geany.desktop
-launcher_item_app = /usr/share/applications/konsole.desktop
+launcher_item_app = /usr/share/applications/org.kde.konsole.desktop
 launcher_item_app = /usr/share/applications/sakura.desktop
 launcher_item_app = /usr/share/applications/rxvt-unicode.desktop
 

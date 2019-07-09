@@ -7,11 +7,6 @@ desktop-base
 xorg
 live-task-kde
 
-dragonplayer
-
-calamares
-calamares-settings-debian
-
 ## DWM
 dwm
 suckless-tools
@@ -48,7 +43,7 @@ feh
 scrot
 
 #editors 
-kwrite
+#kwrite
 geany
 
 ##accessories

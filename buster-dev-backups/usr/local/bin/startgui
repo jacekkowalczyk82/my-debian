@@ -86,11 +86,12 @@ echo "-------------------"
 echo " LDD (Lightweight Debian Distribution) Desktop Chooser:"
 echo "-------------------"
 echo
-echo " (a) KDE Plasma "
+echo " (a) XFCE4 "
 echo " (b) Openbox "
 echo " (c) i3 "
 echo " (d) DWM "
-echo " (e) Last Session "
+echo " (e) KDE Plasma"
+echo " (f) Last Session "
 echo " (q) exit to shell "
 echo
 read -p "Please enter your choice: " choice
