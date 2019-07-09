@@ -92,7 +92,6 @@
 				<execute>geany</execute>
 			</action>
 		</item>
-		
 		<item label="Mousepad">
 			<action name="Execute">
 				<execute>mousepad</execute>
@@ -120,7 +119,6 @@
 				<execute>xfce4-taskmanager</execute>
 			</action>
 		</item>
-
 
 		</menu>
 		<menu id="screenshot-menu-754113" label="Screenshot">
