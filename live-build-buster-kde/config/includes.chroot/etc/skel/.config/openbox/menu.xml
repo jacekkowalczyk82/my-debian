@@ -16,9 +16,9 @@
 				<execute>xterm</execute>
 			</action>
 		</item>
-		<item label="xfce4-terminal">
+		<item label="Konsole">
 			<action name="Execute">
-				<execute>xfce4-terminal</execute>
+				<execute>konsole</execute>
 			</action>
 		</item>
 		<item label="urxvt">
@@ -84,7 +84,7 @@
 		<separator/>
 		<item label="File Manager">
 			<action name="Execute">
-				<execute>thunar</execute>
+				<execute>dolphin</execute>
 			</action>
 		</item>
 		<item label="Geany">
@@ -93,9 +93,9 @@
 			</action>
 		</item>
 		
-		<item label="Mousepad">
+		<item label="Kwrite">
 			<action name="Execute">
-				<execute>mousepad</execute>
+				<execute>kwrite</execute>
 			</action>
 		</item>
 		
@@ -117,7 +117,7 @@
 
 		<item label="Task Manager">
 			<action name="Execute">
-				<execute>xfce4-taskmanager</execute>
+				<execute>ksysguard</execute>
 			</action>
 		</item>
 

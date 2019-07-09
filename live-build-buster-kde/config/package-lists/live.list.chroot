@@ -1,9 +1,7 @@
 live-boot
 live-config
 live-config-systemd
-live-task-recommended
-live-task-standard 
-live-tools
+
 desktop-base
 
 xorg
@@ -14,34 +12,61 @@ dragonplayer
 calamares
 calamares-settings-debian
 
-#DWM
+## DWM
 dwm
 suckless-tools
 #dmenu
 #slock
 
+#for-building DWM 
 stterm
 libx11-dev
 libxft-dev
 libxinerama-dev
 
+## i3
+i3
+i3lock
+i3status
+conky
+
+
+## Openbox
+openbox
+obconf
+obmenu
+openbox-menu
+obsession
+tint2
+menu
+
+
+lightdm 
+compton
 nitrogen
 feh
 scrot
 
 #editors 
+kwrite
 geany
 
 ##accessories
+galculator
+xarchiver
 libreoffice
 
 #terminals
 xterm
 #lxterminal
-#terminator
+terminator
+#xfce4-terminal
+rxvt-unicode
+sakura
 
 #web browsers
-#chromium
+falkon
+chromium
 firefox-esr
 
 youtube-dl
@@ -49,12 +74,25 @@ youtube-dl
 #dev tools
 meld
 
+# file manager
+# keep defaults for KDE
 
 breeze
 breeze-icon-theme
 
 
 
+#systray apps
+pulseaudio
+pavucontrol
+pasystray
+udiskie
+network-manager
+network-manager-gnome
+#clipit
+xfce4-power-manager
+xscreensaver
+plank
 
 #utilities
 sudo
@@ -69,7 +107,7 @@ apt-transport-https
 screenfetch
 neofetch
 gmrun
-i3lock
+
 
 #simple firewall
 #gufw                   # package not found 

@@ -195,7 +195,7 @@ bindsym $mod+Ctrl+m exec i3-sensible-terminal -e mc
 # monitor settings
 #bindsym $mod+Ctrl+l exec lxrandr
 # rox-filer 
-bindsym $mod+Ctrl+f exec caja
+bindsym $mod+Ctrl+f exec thunar
 #pcmanfm is also installed currently
 
 # web browser
@@ -210,8 +210,10 @@ bindsym $mod+Ctrl+n exec nitrogen
 # printer
 bindsym $mod+Ctrl+p exec system-config-printer
 # mate-system-monitor
-bindsym $mod+Ctrl+x exec xfce4-system-monitor
+bindsym $mod+Ctrl+x exec xfce4-taskmanager
 # scrot
 bindsym $mod+Ctrl+s exec scrot
 
+# help info 
+#bindsym $mod+Ctrl+h exec falkon /opt/help/basic-help.html  
 
