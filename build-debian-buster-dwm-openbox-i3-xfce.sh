@@ -2,6 +2,7 @@
 
 cd live-build-buster
 lb config --debian-installer live -d buster \
+ --grub-splash grub2.png \
  --debian-installer-distribution buster \
  --iso-application debian-live-ldd-xfce \
  --iso-volume debian-live-ldd-xfce \

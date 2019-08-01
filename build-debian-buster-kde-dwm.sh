@@ -3,6 +3,7 @@
 cd live-build-buster-kde
 
 lb config --debian-installer live -d buster \
+ --grub-splash grub2.png \
  --debian-installer-distribution buster \
  --iso-application debian-live-ldd-kde \
  --iso-volume debian-live-ldd-kde \
