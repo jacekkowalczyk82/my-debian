@@ -11,7 +11,7 @@
       <property name="position-locked" type="bool" value="true"/>
       <property name="size" type="uint" value="30"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="1"/>
+        <value type="int" value="16"/>
         <value type="int" value="3"/>
         <value type="int" value="15"/>
         <value type="int" value="4"/>
@@ -36,7 +36,6 @@
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-1" type="string" value="applicationsmenu"/>
     <property name="plugin-2" type="string" value="actions"/>
     <property name="plugin-3" type="string" value="tasklist"/>
     <property name="plugin-15" type="string" value="separator">
@@ -80,5 +79,6 @@
     <property name="plugin-14" type="string" value="directorymenu">
       <property name="base-directory" type="string" value="/home/kowalczy"/>
     </property>
+    <property name="plugin-16" type="string" value="whiskermenu"/>
   </property>
 </channel>

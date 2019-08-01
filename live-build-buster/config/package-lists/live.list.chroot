@@ -113,20 +113,11 @@ screenfetch
 neofetch
 gmrun
 
-
-#simple firewall
-#gufw                   # package not found 
-
 #live-build
 #cdebootstrap
 
 #printers
 system-config-printer
-
-
-#for firefox developer edition, 
-#firefox-developer-edition is installed in /opt/firefox 
-libdbus-glib-1-2
 
 #multimedia 
 vlc

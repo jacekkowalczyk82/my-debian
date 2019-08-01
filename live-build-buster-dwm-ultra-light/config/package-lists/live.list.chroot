@@ -8,19 +8,19 @@ desktop-base
 
 xorg
 
-calamares
-calamares-settings-debian
-
-#DWM
+## DWM
 dwm
 suckless-tools
 #dmenu
 #slock
 
+#for-building DWM 
 stterm
 libx11-dev
 libxft-dev
 libxinerama-dev
+
+i3lock
 
 nitrogen
 feh
@@ -31,12 +31,19 @@ fonts-dejavu
 mousepad
 geany
 
+##accessories
+galculator
+xarchiver
+
+
 #terminals
 xterm
 rxvt-unicode
+sakura
 
 #web browsers
-#chromium
+falkon
+chromium
 firefox-esr
 
 #dev tools
@@ -50,8 +57,9 @@ thunar
 udiskie
 network-manager
 network-manager-gnome
-clipit
-
+#clipit
+xfce4-power-manager
+xscreensaver
 plank
 
 #utilities
@@ -67,10 +75,9 @@ apt-transport-https
 screenfetch
 neofetch
 gmrun
-i3lock
 
-live-build
-debootstrap
+#live-build
+#cdebootstrap
 
 #printers
 system-config-printer

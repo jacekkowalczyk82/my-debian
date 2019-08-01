@@ -182,7 +182,7 @@ exec --no-startup-id pasystray &
 
 exec --no-startup-id compton -b & 
 exec --no-startup-id xfce4-power-manager & 
-exec --no-startup-id clipit & 
+#exec --no-startup-id clipit & 
 
 ### additional shortkeys
 #bindsym $mod+Shift+s exec "i3-nagbar -t warning -m 'You pressed the system suspend shortcut. Do you really want to suspend the system?' -b 'Yes, Suspend now' 'systemctl suspend'"
@@ -215,5 +215,5 @@ bindsym $mod+Ctrl+x exec xfce4-taskmanager
 bindsym $mod+Ctrl+s exec scrot
 
 # help info 
-bindsym $mod+Ctrl+h exec falkon /opt/help/basic-help.html  
+#bindsym $mod+Ctrl+h exec falkon /opt/help/basic-help.html  
 

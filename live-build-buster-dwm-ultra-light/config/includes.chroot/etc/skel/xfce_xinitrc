@@ -1,0 +1,4 @@
+#~/.xinitrc
+
+exec startxfce4
+
