@@ -59,7 +59,7 @@ LB_DEBIAN_INSTALLER_GUI="true"
 
 # $LB_GRUB_SPLASH: set custom grub splash
 # (Default: empty)
-LB_GRUB_SPLASH=""
+LB_GRUB_SPLASH="grub2.png"
 
 # $LB_HDD_LABEL: set hdd label
 # (Default: DEBIAN_LIVE)
