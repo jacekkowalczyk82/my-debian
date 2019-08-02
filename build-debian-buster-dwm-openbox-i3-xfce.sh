@@ -4,8 +4,8 @@ cd live-build-buster
 lb config --debian-installer live -d buster \
  --grub-splash grub2.png \
  --debian-installer-distribution buster \
- --iso-application debian-live-ldd-xfce \
- --iso-volume debian-live-ldd-xfce \
+ --iso-application debian-live-10-ldd-xfce \
+ --iso-volume debian-live-10-ldd-xfce \
  --iso-publisher "Jacek Kowalczyk http://jacekkowalczyk82.github.io" \
  --iso-preparer "Jacek Kowalczyk http://jacekkowalczyk82.github.io" 
  
@@ -14,13 +14,12 @@ lb config --debian-installer live -d buster \
 #add your customization files to config/includes.chroot/
 
 mkdir -p config/includes.chroot/opt/
-cp -rv ../suckless.org/dwm config/includes.chroot/opt/
+cp -rv ../suckless.org/dwm ./config/includes.chroot/opt/
+cp -rv ../bootloaders ./config/
 
 #when rebuilding run also clean
 #sudo lb clean --purge
 
 #build ISO
-lb build --debug --verbose 2>&1 |tee debian-live-ldd-xfce-`date '+%Y-%m-%d_%H%M%S'`.log
-
-
+lb build --debug --verbose 2>&1 |tee debian-live-10-ldd-xfce-`date '+%Y-%m-%d_%H%M%S'`.log
 
