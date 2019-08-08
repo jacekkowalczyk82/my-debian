@@ -74,8 +74,8 @@ LB_HDD_SIZE="auto"
 LB_HDD_PARTITION_START=""
 
 # $LB_ISO_APPLICATION: set iso author
-# (Default: debian-live-10-ldd-xfce)
-LB_ISO_APPLICATION="debian-live-10-ldd-xfce"
+# (Default: debian-live-10-ldd-mate)
+LB_ISO_APPLICATION="debian-live-10-ldd-mate"
 
 # $LB_ISO_PREPARER: set iso preparer
 # (Default: Jacek Kowalczyk http://jacekkowalczyk82.github.io)
@@ -86,8 +86,8 @@ LB_ISO_PREPARER="Jacek Kowalczyk http://jacekkowalczyk82.github.io"
 LB_ISO_PUBLISHER="Jacek Kowalczyk http://jacekkowalczyk82.github.io"
 
 # $LB_ISO_VOLUME: set iso volume (max 32 chars)
-# (Default: debian-live-10-ldd-xfce)
-LB_ISO_VOLUME="debian-live-10-ldd-xfce"
+# (Default: debian-live-10-ldd-mate)
+LB_ISO_VOLUME="debian-live-10-ldd-mate"
 
 # $LB_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)
