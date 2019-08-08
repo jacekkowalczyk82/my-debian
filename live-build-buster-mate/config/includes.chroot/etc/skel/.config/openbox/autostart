@@ -1,0 +1,55 @@
+## Openbox autostart.sh
+# This configuration file is based on the configs from CrunchBang++ 
+
+## PolicyKit
+#gnome-keyring-daemon
+#polkit-mate-authentication-agent-1
+
+## Set root window colour
+hsetroot -solid "#2E3436" &
+
+## Group start:
+## 1. nitrogen - restores wallpaper
+## 2. compositor - start
+## 3. sleep - give compositor time to start
+## 4. tint2 panel
+(\
+nitrogen --restore && \
+
+#compton -b && \
+sleep 2s && \
+tint2 \
+) &
+
+## Start nm-applet for systray
+nm-applet &
+
+#automount cd/dvd, usb disks and show notifications
+udiskie -ant & 
+
+#Pulse audio systray
+#pasystray & # it is already started by some magic
+
+## Enable power management
+xfce4-power-manager &
+
+## Start xscreensaver
+#xscreensaver -no-splash &
+
+## Start Clipboard manager
+#(sleep 3s && clipit) &
+
+## Set keyboard settings - 250 ms delay and 25 cps (characters per second) repeat rate.
+## Adjust the values according to your preferances.
+xset r rate 250 25 &
+
+## Turn on/off system beep
+xset b off &
+
+## Run the conky
+conky -c ~/.openbox_conkyrc &
+
+## Start the plank panel dock
+XDG_SESSION_TYPE=X11
+plank &
+
