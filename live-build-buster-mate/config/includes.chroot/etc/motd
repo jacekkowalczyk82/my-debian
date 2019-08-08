@@ -10,7 +10,7 @@ This system supports multiple GUI sessions:
   - dwm
   - openbox
   - i3
-  - xfce
+  - mate
 
 To star Xsession of your choice run command:
   startgui

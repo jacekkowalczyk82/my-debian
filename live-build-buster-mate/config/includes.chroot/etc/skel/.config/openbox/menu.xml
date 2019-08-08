@@ -16,9 +16,9 @@
 				<execute>xterm</execute>
 			</action>
 		</item>
-		<item label="xfce4-terminal">
+		<item label="mate-terminal">
 			<action name="Execute">
-				<execute>xfce4-terminal</execute>
+				<execute>mate-terminal</execute>
 			</action>
 		</item>
 		<item label="urxvt">
@@ -84,7 +84,7 @@
 		<separator/>
 		<item label="File Manager">
 			<action name="Execute">
-				<execute>thunar</execute>
+				<execute>caja</execute>
 			</action>
 		</item>
 		<item label="Geany">
@@ -92,9 +92,9 @@
 				<execute>geany</execute>
 			</action>
 		</item>
-		<item label="Mousepad">
+		<item label="Pluma">
 			<action name="Execute">
-				<execute>mousepad</execute>
+				<execute>pluma</execute>
 			</action>
 		</item>
 		
@@ -116,7 +116,7 @@
 
 		<item label="Task Manager">
 			<action name="Execute">
-				<execute>xfce4-taskmanager</execute>
+				<execute>mate-system-monitor</execute>
 			</action>
 		</item>
 

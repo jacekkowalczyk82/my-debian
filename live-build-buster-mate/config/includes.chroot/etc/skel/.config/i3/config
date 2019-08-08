@@ -181,7 +181,7 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id pasystray & 
 
 exec --no-startup-id compton -b & 
-exec --no-startup-id xfce4-power-manager & 
+exec --no-startup-id mate-power-manager & 
 #exec --no-startup-id clipit & 
 
 ### additional shortkeys
@@ -195,7 +195,7 @@ bindsym $mod+Ctrl+m exec i3-sensible-terminal -e mc
 # monitor settings
 #bindsym $mod+Ctrl+l exec lxrandr
 # rox-filer 
-bindsym $mod+Ctrl+f exec thunar
+bindsym $mod+Ctrl+f exec caja
 #pcmanfm is also installed currently
 
 # web browser
@@ -210,7 +210,7 @@ bindsym $mod+Ctrl+n exec nitrogen
 # printer
 bindsym $mod+Ctrl+p exec system-config-printer
 # mate-system-monitor
-bindsym $mod+Ctrl+x exec xfce4-taskmanager
+bindsym $mod+Ctrl+x exec mate-system-monitor
 # scrot
 bindsym $mod+Ctrl+s exec scrot
 

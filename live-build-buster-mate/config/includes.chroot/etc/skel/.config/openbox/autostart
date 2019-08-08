@@ -31,7 +31,7 @@ udiskie -ant &
 #pasystray & # it is already started by some magic
 
 ## Enable power management
-xfce4-power-manager &
+mate-power-manager &
 
 ## Start xscreensaver
 #xscreensaver -no-splash &

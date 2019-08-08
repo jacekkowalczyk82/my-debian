@@ -3,8 +3,8 @@ live-config
 live-config-systemd
 
 xorg
-xfce4
-live-task-xfce
+
+live-task-mate
 
 ## DWM
 dwm
@@ -44,7 +44,8 @@ fonts-dejavu
 
 #editors 
 #leafpad
-mousepad
+#mousepad
+pluma
 geany
 
 ##accessories
@@ -56,7 +57,8 @@ libreoffice
 xterm
 #lxterminal
 terminator
-xfce4-terminal
+#xfce4-terminal
+mate-terminal
 rxvt-unicode
 sakura
 
@@ -71,11 +73,16 @@ youtube-dl
 meld
 
 # file manager
-thunar
+#thunar
+caja
+mate-themes
+greybird-gtk-theme
+
 tango-icon-theme
 adwaita-icon-theme
 hicolor-icon-theme
 
+mate-icon-theme-faenza
 
 breeze-icon-theme
 faba-icon-theme
@@ -95,7 +102,8 @@ udiskie
 network-manager
 network-manager-gnome
 #clipit
-xfce4-power-manager
+#xfce4-power-manager
+mate-power-manager
 xscreensaver
 plank
 

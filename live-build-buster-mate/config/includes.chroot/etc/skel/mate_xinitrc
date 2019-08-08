@@ -1,0 +1,4 @@
+#~/.xinitrc
+
+exec mate-session
+
