@@ -73,7 +73,6 @@ youtube-dl
 meld
 
 # file manager
-#thunar
 caja
 mate-themes
 greybird-gtk-theme
@@ -102,7 +101,6 @@ udiskie
 network-manager
 network-manager-gnome
 #clipit
-#xfce4-power-manager
 mate-power-manager
 xscreensaver
 plank
@@ -139,4 +137,11 @@ build-essential
 module-assistant
 
 
-
+# resue tools for passwords and disks
+ntfs-3g
+mtools
+gparted
+fdisk
+e2fsprogs
+chntpw
+		

@@ -131,4 +131,11 @@ build-essential
 module-assistant
 
 
-
+# resue tools for passwords and disks
+ntfs-3g
+mtools
+gparted
+fdisk
+e2fsprogs
+chntpw
+		
