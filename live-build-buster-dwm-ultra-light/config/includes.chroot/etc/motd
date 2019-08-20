@@ -1,0 +1,20 @@
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+
+
+This system supports multiple GUI sessions:
+  - dwm
+  - openbox
+  - i3
+
+
+To star Xsession of your choice run command:
+  startgui
+
+or simply to start the last Xsession run:
+  startx
+

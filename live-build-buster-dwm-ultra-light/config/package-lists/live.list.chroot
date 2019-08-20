@@ -20,8 +20,25 @@ libx11-dev
 libxft-dev
 libxinerama-dev
 
+## i3
+i3
 i3lock
+i3status
+conky
 
+
+## Openbox
+openbox
+obconf
+obmenu
+openbox-menu
+obsession
+tint2
+menu
+
+
+lightdm 
+compton
 nitrogen
 feh
 scrot
@@ -38,6 +55,9 @@ xarchiver
 
 #terminals
 xterm
+#lxterminal
+terminator
+xfce4-terminal
 rxvt-unicode
 sakura
 
@@ -54,11 +74,15 @@ thunar
 
 
 #systray apps
+pulseaudio
+pavucontrol
+pasystray
 udiskie
 network-manager
 network-manager-gnome
 #clipit
 xfce4-power-manager
+xfce4-taskmanager
 xscreensaver
 plank
 
@@ -81,6 +105,13 @@ gmrun
 
 #printers
 system-config-printer
+
+#multimedia 
+vlc
+mpv
+smplayer
+audacious
+audacious-plugins
 
 #packages for virtualbox guest additions
 build-essential
