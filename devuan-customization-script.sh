@@ -8,6 +8,10 @@ cp -v ${BUILD_TOOLS_ROOT}/config-devuan/functions.sh new_chroot/
 mkdir -p new_chroot/opt/
 cp -rv ${BUILD_TOOLS_ROOT}/suckless.org/dwm new_chroot/opt/
 cp -rv ${BUILD_TOOLS_ROOT}/config-devuan/etc/skel new_chroot/etc/
+cp -rv ${BUILD_TOOLS_ROOT}/config-devuan/usr/local new_chroot/usr/
+cp -rv ${BUILD_TOOLS_ROOT}/config-devuan/usr/share new_chroot/usr/
+cp -rv ${BUILD_TOOLS_ROOT}/config-devuan/opt/backgrounds new_chroot/opt/
+
 
 mkdir -p new_chroot/usr/share/xsessions/
 cp -rv ${BUILD_TOOLS_ROOT}/config-mint-xfce/usr/share/xsessions/custom-dwm.desktop new_chroot/usr/share/xsessions/
