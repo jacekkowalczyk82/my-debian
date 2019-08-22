@@ -1,10 +1,10 @@
-#already there
+##Already_there
 #xorg
 #xfce4
 
 #
 #
-## Utilities
+##Utilities
 htop
 git
 git-gui
@@ -18,7 +18,7 @@ openssh-server
 apt-transport-https
 gmrun
 #
-## GUI apps
+##GUI_apps
 rxvt-unicode
 sakura
 terminator
@@ -26,24 +26,24 @@ meld
 geany
 scrot
 #
-## DWM
+##DWM
 dwm
 suckless-tools
 #dmenu
 #slock
-#for-building DWM 
+#for_building_DWM 
 stterm
 libx11-dev
 libxft-dev
 libxinerama-dev
 #
-## i3
+##i3
 i3
 i3lock
 i3status
 conky
 #
-## Openbox
+##Openbox
 openbox
 obconf
 obmenu
@@ -58,7 +58,7 @@ feh
 scrot
 fonts-dejavu
 #
-## Editors 
+##Editors 
 #leafpad
 mousepad
 geany
@@ -68,7 +68,7 @@ galculator
 xarchiver
 libreoffice
 #
-## terminals
+##terminals
 xterm
 #lxterminal
 terminator
@@ -76,16 +76,16 @@ xfce4-terminal
 rxvt-unicode
 sakura
 #
-## web browsers
+##web_browsers
 falkon
 chromium
 firefox-esr
 youtube-dl
 #
-#dev tools
+##dev_tools
 meld
 #
-# file manager
+##file_manager
 thunar
 tango-icon-theme
 adwaita-icon-theme
@@ -98,7 +98,7 @@ tango-icon-theme
 numix-icon-theme
 papirus-icon-theme
 #
-## systray apps
+##systray_apps
 pulseaudio
 pavucontrol
 pasystray
@@ -111,21 +111,21 @@ xfce4-taskmanager
 xscreensaver
 plank
 #
-## printers
+##printers
 system-config-printer
 #
-## multimedia 
+##multimedia 
 vlc
 mpv
 smplayer
 audacious
 audacious-plugins
 #
-## packages for virtualbox guest additions
+##packages_for_virtualbox_guest_additions
 build-essential
 module-assistant
 #
-## rescue tools for passwords and disks
+##rescue_tools_for_passwords_and_disks
 ntfs-3g
 mtools
 gparted
