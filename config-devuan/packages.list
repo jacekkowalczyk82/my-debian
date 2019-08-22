@@ -1,0 +1,134 @@
+#already there
+#xorg
+#xfce4
+
+#
+#
+## Utilities
+htop
+git
+git-gui
+mc
+vim
+curl
+screenfetch
+neofetch
+sudo
+openssh-server
+apt-transport-https
+gmrun
+#
+## GUI apps
+rxvt-unicode
+sakura
+terminator
+meld
+geany
+scrot
+#
+## DWM
+dwm
+suckless-tools
+#dmenu
+#slock
+#for-building DWM 
+stterm
+libx11-dev
+libxft-dev
+libxinerama-dev
+#
+## i3
+i3
+i3lock
+i3status
+conky
+#
+## Openbox
+openbox
+obconf
+obmenu
+openbox-menu
+obsession
+tint2
+menu
+lightdm 
+compton
+nitrogen
+feh
+scrot
+fonts-dejavu
+#
+## Editors 
+#leafpad
+mousepad
+geany
+#
+##accessories
+galculator
+xarchiver
+libreoffice
+#
+## terminals
+xterm
+#lxterminal
+terminator
+xfce4-terminal
+rxvt-unicode
+sakura
+#
+## web browsers
+falkon
+chromium
+firefox-esr
+youtube-dl
+#
+#dev tools
+meld
+#
+# file manager
+thunar
+tango-icon-theme
+adwaita-icon-theme
+hicolor-icon-theme
+breeze-icon-theme
+faba-icon-theme
+faenza-icon-theme
+moka-icon-theme
+tango-icon-theme
+numix-icon-theme
+papirus-icon-theme
+#
+## systray apps
+pulseaudio
+pavucontrol
+pasystray
+udiskie
+network-manager
+network-manager-gnome
+#clipit
+xfce4-power-manager
+xfce4-taskmanager
+xscreensaver
+plank
+#
+## printers
+system-config-printer
+#
+## multimedia 
+vlc
+mpv
+smplayer
+audacious
+audacious-plugins
+#
+## packages for virtualbox guest additions
+build-essential
+module-assistant
+#
+## rescue tools for passwords and disks
+ntfs-3g
+mtools
+gparted
+fdisk
+e2fsprogs
+chntpw

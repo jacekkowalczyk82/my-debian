@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Custom-DWM
+Exec=/etc/X11/Xsession
+
