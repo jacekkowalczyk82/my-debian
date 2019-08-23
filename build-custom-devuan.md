@@ -1,4 +1,3 @@
-
 # LiveCDCustomization way for Linux Mint 19.1 XFCE 
 
 * Based on https://nathanpfry.com/how-to-customize-an-ubuntu-installation-disc/
@@ -12,6 +11,7 @@ cd my-debian
 
 BUILD_TOOLS_ROOT=`pwd`
 cd ~/
+mkdir -p ~/Downloads || true
 
 #https://ftp.fau.de/devuan-cd/devuan_ascii/desktop-live/devuan_ascii_2.0.0_amd64_desktop-live.iso
 
@@ -99,12 +99,12 @@ umount /dev/pts
 exit
 sudo umount new_chroot/dev
 
-#Generate a new file manifest:
-sudo chmod +w iso_image_disk/live/filesystem.manifest ||true 
-sudo chroot new_chroot dpkg-query -W --showformat='${Package} ${Version}\n' | sudo tee iso_image_disk/live/filesystem.manifest
-sudo cp iso_image_disk/live/filesystem.manifest iso_image_disk/live/filesystem.manifest-desktop
-sudo sed -i '/ubiquity/d' iso_image_disk/live/filesystem.manifest-desktop
-sudo sed -i '/live/d' iso_image_disk/live/filesystem.manifest-desktop
+###Generate a new file manifest:
+#sudo chmod +w iso_image_disk/live/filesystem.manifest ||true 
+#sudo chroot new_chroot dpkg-query -W --showformat='${Package} ${Version}\n' | sudo tee iso_image_disk/live/filesystem.manifest
+#sudo cp iso_image_disk/live/filesystem.manifest iso_image_disk/live/filesystem.manifest-desktop
+#sudo sed -i '/ubiquity/d' iso_image_disk/live/filesystem.manifest-desktop
+#sudo sed -i '/live/d' iso_image_disk/live/filesystem.manifest-desktop
 
 #Compress the filesystem:
 sudo mksquashfs new_chroot iso_image_disk/live/filesystem.squashfs -b 1048576
@@ -114,11 +114,11 @@ printf $(sudo du -sx --block-size=1 new_chroot | cut -f1) | sudo tee iso_image_d
 
 #Delete the old md5sum:
 cd iso_image_disk
-sudo rm MD5SUMS
+#sudo rm MD5SUMS
 
 #…and generate a fresh one: (single command, copy and paste in one piece)
 
-find -type f -print0 | sudo xargs -0 md5sum | grep -v isolinux/boot.cat | sudo tee MD5SUMS
+#find -type f -print0 | sudo xargs -0 md5sum | grep -v isolinux/boot.cat | sudo tee MD5SUMS
 
 #And finally, create the ISO. This is a single long command, be sure to copy and paste it in one piece and don’t forget the period at the end, it’s important:
 
