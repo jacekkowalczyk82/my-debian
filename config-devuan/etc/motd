@@ -1,0 +1,21 @@
+
+The programs included with the Devuan GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Devuan GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+
+
+This system supports multiple GUI sessions:
+  - dwm
+  - openbox
+  - i3
+  - xfce
+
+To star Xsession of your choice run command:
+  startgui
+
+or simply to start the last Xsession run:
+  startx
+
