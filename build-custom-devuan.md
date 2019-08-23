@@ -1,4 +1,4 @@
-# LiveCDCustomization way for Linux Mint 19.1 XFCE 
+# LiveCDCustomization way for GNU/Linux Devuan 
 
 * Based on https://nathanpfry.com/how-to-customize-an-ubuntu-installation-disc/
 
