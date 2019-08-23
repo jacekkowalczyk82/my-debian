@@ -11,8 +11,6 @@ cp -rv ${BUILD_TOOLS_ROOT}/config-devuan/etc/skel new_chroot/etc/
 cp -rv ${BUILD_TOOLS_ROOT}/config-devuan/etc/skel/* new_chroot/home/devuan/
 cp -rv ${BUILD_TOOLS_ROOT}/config-devuan/etc/skel/.* new_chroot/home/devuan/
 
-chown -R devuan:devuan new_chroot/home/devuan/
-
 cp -v ${BUILD_TOOLS_ROOT}/config-devuan/etc/motd new_chroot/etc/
 cp -rv ${BUILD_TOOLS_ROOT}/config-devuan/etc/X11 new_chroot/etc/
 
