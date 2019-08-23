@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # LDD-X Desktop Chooser
-# LDD - Lightweight Debian Distribution
+# LDD - Lightweight Debian/Devuan Distribution
 # Authors: 
 #  eznix
 #  Jacek Kowalczy, jacekkowalczyk82@gmail.com
@@ -83,7 +83,7 @@ MAINMENU () { while true
 do
 clear
 echo "-------------------"
-echo " LDD (Lightweight Debian Distribution) Desktop Chooser:"
+echo " LDD (Lightweight Debian/Devuan Distribution) Desktop Chooser:"
 echo "-------------------"
 echo
 echo " (a) Xfce "
