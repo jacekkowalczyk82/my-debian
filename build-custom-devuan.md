@@ -72,6 +72,7 @@ dbus-uuidgen > /var/lib/dbus/machine-id
 dpkg-divert --local --rename --add /sbin/init
 ln -s /bin/true /sbin/init
 
+chown -R devuan:devuan /home/devuan
 
 apt-get update && apt-get -y upgrade
 
