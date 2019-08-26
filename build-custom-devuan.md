@@ -49,17 +49,14 @@ sudo unsquashfs mnt/live/filesystem.squashfs
 sudo rm -rf new_chroot || true 
 mv squashfs-root new_chroot
 
-#sudo cp -rv ${BUILD_TOOLS_ROOT}/includes.chroot/* new_chroot/
 
 sudo bash ${BUILD_TOOLS_ROOT}/devuan-customization-script.sh ${BUILD_TOOLS_ROOT}
 
-#????????
 sudo cp /etc/resolv.conf new_chroot/etc/
 
 sudo mount --bind /dev/ new_chroot/dev/
-
-
 sudo chroot new_chroot
+
 
 mount -t proc none /proc
 mount -t sysfs none /sys
@@ -74,12 +71,12 @@ ln -s /bin/true /sbin/init
 
 chown -R devuan:devuan /home/devuan
 
-apt-get update && apt-get -y upgrade
-
-dpkg --configure -a 
-apt-get install -f 
-
-apt-get update && apt-get -y upgrade
+apt-get update
+##apt-get update && apt-get -y upgrade
+#
+#dpkg --configure -a 
+#apt-get install -f 
+#apt-get update && apt-get -y upgrade
 
 
 source /functions.sh
@@ -98,6 +95,9 @@ umount /proc || umount -lf /proc
 umount /sys
 umount /dev/pts
 exit
+
+
+
 sudo umount new_chroot/dev
 
 ###Generate a new file manifest:
@@ -123,12 +123,16 @@ cd iso_image_disk
 
 #And finally, create the ISO. This is a single long command, be sure to copy and paste it in one piece and don’t forget the period at the end, it’s important:
 
-DATE_TIME=`date '+%Y-%m-%d_%H%M'`
+DATE_TIME=`date '+%Y-%m-%d-%H%M'`
 sudo genisoimage -D -r -V "$IMAGE_NAME" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../my-devuan-ldd-xfce-${DATE_TIME}.iso . 
 
 
 cd ..
 ls -alh `pwd`/my-devuan-ldd-xfce-${DATE_TIME}.iso
+
+
+
+
 exit 0 
 
 ```
