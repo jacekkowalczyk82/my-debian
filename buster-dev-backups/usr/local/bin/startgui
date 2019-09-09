@@ -48,6 +48,16 @@ exec compton -b &
 dropbox_status_string=""
 while true ; do 
 #Uncomment if you want to use Dropbox 
+    dropbox_status=$(dropbox-status.sh | head -n 1)
+    if [ "$dropbox_status" == "Up to date" ]; then 
+        dropbox_status_string="Dropbox: "$(echo $dropbox_status)
+    elif [ "$dropbox_status" == "Dropbox isn't running!" ]; then 
+        dropbox_status_string="$dropbox_status"
+    else 
+        dropbox_status_string="Dropbox: "$(echo $dropbox_status|awk -F " " '{print $1}')
+fi 
+
+# at Arch there is dropbox-cli app
 #    dropbox_status=\$(dropbox-cli status | head -n 1)
 #    if [ "$dropbox_status" == "Up to date" ]; then 
 #        dropbox_status_string="Dropbox: "\$(echo \$dropbox_status)
