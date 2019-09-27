@@ -41,7 +41,7 @@ scrot
 fonts-dejavu
 
 #editors 
-leafpad
+#leafpad
 #mousepad
 geany
 
@@ -52,7 +52,7 @@ libreoffice
 
 #terminals
 xterm
-lxterminal
+#lxterminal
 terminator
 #xfce4-terminal
 rxvt-unicode
@@ -71,7 +71,7 @@ meld
 # file manager
 xfe
 #thunar
-pcmanfm-qt
+#pcmanfm-qt
 tango-icon-theme
 adwaita-icon-theme
 hicolor-icon-theme
