@@ -16,9 +16,9 @@
 				<execute>xterm</execute>
 			</action>
 		</item>
-		<item label="LXterminal">
+		<item label="Qterminal">
 			<action name="Execute">
-				<execute>lxterminal</execute>
+				<execute>qterminal</execute>
 			</action>
 		</item>
 		<item label="urxvt">
@@ -84,7 +84,7 @@
 		<separator/>
 		<item label="File Manager">
 			<action name="Execute">
-				<execute>thunar</execute>
+				<execute>pcmanfm-qt</execute>
 			</action>
 		</item>
 		<item label="Geany">
@@ -92,9 +92,9 @@
 				<execute>geany</execute>
 			</action>
 		</item>
-		<item label="Leafpad">
+		<item label="FeatherPad">
 			<action name="Execute">
-				<execute>leafpad</execute>
+				<execute>featherpad</execute>
 			</action>
 		</item>
 		
@@ -116,7 +116,7 @@
 
 		<item label="Task Manager">
 			<action name="Execute">
-				<execute>lxtask</execute>
+				<execute>qps</execute>
 			</action>
 		</item>
 

@@ -181,7 +181,7 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id pasystray & 
 
 exec --no-startup-id compton -b & 
-#exec --no-startup-id xfce4-power-manager & 
+exec --no-startup-id lxqt-powermanagement  & 
 #exec --no-startup-id clipit & 
 
 ### additional shortkeys
@@ -210,7 +210,7 @@ bindsym $mod+Ctrl+n exec nitrogen
 # printer
 bindsym $mod+Ctrl+p exec system-config-printer
 # mate-system-monitor
-bindsym $mod+Ctrl+x exec lxtask
+bindsym $mod+Ctrl+x exec qps
 # scrot
 bindsym $mod+Ctrl+s exec scrot
 
