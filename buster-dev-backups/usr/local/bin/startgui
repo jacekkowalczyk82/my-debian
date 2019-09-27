@@ -115,6 +115,7 @@ echo " (o) Openbox "
 echo " (i) i3 "
 echo " (d) DWM "
 echo " (k) KDE Plasma"
+echo " (l) LXQT"
 echo " (p) Previous Session "
 echo " (q) exit to shell "
 echo
