@@ -12,6 +12,13 @@ XINITRC_FILE="/home/$USER/.xinitrc"
 # Functions:
 # -------------
 #
+LXQT () { 
+echo "exec startlxqt" > $XINITRC_FILE
+sleep 1
+startx
+}
+#
+#
 MATE () { 
 echo "exec mate-session" > $XINITRC_FILE
 sleep 1
@@ -102,20 +109,20 @@ echo "-------------------"
 echo " LDD (Lightweight Debian Distribution) Desktop Chooser:"
 echo "-------------------"
 echo
-echo " (a) Mate "
-echo " (b) Openbox "
-echo " (c) i3 "
+echo " (m) Mate "
+echo " (o) Openbox "
+echo " (i) i3 "
 echo " (d) DWM "
-echo " (e) Last Session "
+echo " (p) Previous Session "
 echo " (q) exit to shell "
 echo
 read -p "Please enter your choice: " choice
 case $choice in
-  a|A) MATE;;
-  b|B) OPENBOX;;
-  c|C) I3WM;;
+  m|M) MATE;;
+  o|O) OPENBOX;;
+  i|I) I3WM;;
   d|D) DWM;;
-  e|E) PREVIOUS;;
+  p|P) PREVIOUS;;
   q|Q) exit 0;;
   *) echo "Invalid answer, please try again";;
 #

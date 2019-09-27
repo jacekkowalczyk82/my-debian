@@ -13,6 +13,20 @@ XINITRC_FILE="/home/$USER/.xinitrc"
 # -------------
 #
 #
+LXQT () { 
+echo "exec startlxqt" > $XINITRC_FILE
+sleep 1
+startx
+}
+#
+#
+MATE () { 
+echo "exec mate-session" > $XINITRC_FILE
+sleep 1
+startx
+}
+#
+#
 XFCE4 () { 
 echo "exec startxfce4" > $XINITRC_FILE
 sleep 1
@@ -96,22 +110,24 @@ echo "-------------------"
 echo " LDD (Lightweight Debian Distribution) Desktop Chooser:"
 echo "-------------------"
 echo
-echo " (a) XFCE4 "
-echo " (b) Openbox "
-echo " (c) i3 "
+echo " (x) XFCE4 "
+echo " (o) Openbox "
+echo " (i) i3 "
 echo " (d) DWM "
-echo " (e) KDE Plasma"
-echo " (f) Last Session "
+echo " (k) KDE Plasma"
+echo " (p) Previous Session "
 echo " (q) exit to shell "
 echo
 read -p "Please enter your choice: " choice
 case $choice in
-  a|A) XFCE4;;
-  b|B) OPENBOX;;
-  c|C) I3WM;;
+  x|X) XFCE4;;
+  o|O) OPENBOX;;
+  i|i) I3WM;;
   d|D) DWM;;
-  e|E) KDE_PLASMA;;
-  f|F) PREVIOUS;;
+  k|K) KDE_PLASMA;;
+  m|M) MATE;;
+  l|L) LXQT;;
+  p|P) PREVIOUS;;
   q|Q) exit 0;;
   *) echo "Invalid answer, please try again";;
 #
