@@ -69,7 +69,7 @@ while true ; do
     uptime=\$(uptime -p)
     load_uptime="Load15: \${load}; \${uptime}"
 
-    xsetroot -name "`date '+%Y-%m-%d %H:%M.%S' ` \$load_uptime \$dropbox_status_string "; sleep 1; 
+    xsetroot -name "\`date '+%Y-%m-%d %H:%M.%S' \` \$load_uptime \$dropbox_status_string "; sleep 1; 
 done &
 #exec python3 ~/bin/dropbox.py start & 
 exec /opt/dwm/dwm
