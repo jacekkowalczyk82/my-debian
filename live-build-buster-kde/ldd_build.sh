@@ -29,6 +29,8 @@ GENERATED_NAME="debian-live-10-ldd-kde-amd64"
 RELEASE_NAME="debian-live-10-ldd-kde-`date '+%Y-%m-%d_%H%M%S'`-x64"
 RELEASE_DATE=`date '+%Y%m%d'`
 
+if [[ -e "$GENERATED_NAME" ]]; then 
+
 mv ${GENERATED_NAME}.hybrid.iso  ${RELEASE_NAME}.iso
 sha256sum ${RELEASE_NAME}.iso | tee -a ${RELEASE_NAME}.sha256sum.txt
 
@@ -44,3 +46,6 @@ aws s3 --region us-east-2 cp ${GENERATED_NAME}.files         s3://jacekkowalczyk
 aws s3 --region us-east-2 cp ${GENERATED_NAME}.hybrid.iso.zsync  s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
 aws s3 --region us-east-2 cp ${GENERATED_NAME}.packages      s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
 
+else 
+	echo "ERROR: failed to build ISO"
+fi 
