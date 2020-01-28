@@ -3,6 +3,7 @@ live-config
 live-config-systemd
 
 live-task-lxqt
+calamares-settings-debian
 
 ## DWM
 dwm
@@ -60,7 +61,7 @@ sakura
 
 #web browsers
 falkon
-chromium
+#chromium
 firefox-esr
 
 youtube-dl
@@ -71,7 +72,7 @@ meld
 # file manager
 xfe
 #thunar
-#pcmanfm-qt
+pcmanfm-qt
 tango-icon-theme
 adwaita-icon-theme
 hicolor-icon-theme
@@ -89,7 +90,7 @@ papirus-icon-theme
 
 #systray apps
 pulseaudio
-pavucontrol
+pavucontrol-qt
 pasystray
 udiskie
 network-manager
@@ -100,19 +101,26 @@ network-manager-gnome
 xscreensaver
 plank
 
-#utilities
+## utilities
 sudo
 git
 git-gui
 curl
+wget
 mc
+nano
 vim
+emacs
 htop
 openssh-server
 apt-transport-https
 screenfetch
 neofetch
 gmrun
+zip
+unzip
+rsync 
+tmux
 
 #live-build
 #cdebootstrap
@@ -120,12 +128,14 @@ gmrun
 #printers
 system-config-printer
 
-#multimedia 
+## multimedia 
 vlc
+mplayer
 mpv
-smplayer
 audacious
 audacious-plugins
+imagemagick
+gimp
 
 #packages for virtualbox guest additions
 build-essential
@@ -139,4 +149,10 @@ gparted
 fdisk
 e2fsprogs
 chntpw
+
+# for connecting USB android devices and development work 
+python3
+usb-modeswitch
+adb
+openjdk-11-jdk
 
