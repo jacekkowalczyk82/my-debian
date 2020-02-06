@@ -1,5 +1,4 @@
 
-
 # My Custom Kali/Debian Linux Distribution 
 
 * The goal of this project is to create custom debian or debian based distribution iso
@@ -34,7 +33,9 @@ I did my first setup based on the official Kali documentation for [live-build-co
 ```
 root@kali:~# apt install curl git live-build cdebootstrap
 
-root@kali:~# git clone git://git.kali.org/live-build-config.git
+#root@kali:~# git clone git://git.kali.org/live-build-config.git
+# it seams that the url got changed
+root@kali:~# git clone https://gitlab.com/kalilinux/build-scripts/live-build-config
 
 ...
 
