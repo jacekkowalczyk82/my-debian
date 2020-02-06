@@ -71,8 +71,8 @@ cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/i3_xinitrc ${
 
 # DWM REPO and compiled binaries
 #cp -v -r /opt/dwm ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
-cp -rv ${MY_DEBIAN_ROOT_DIR}/suckless.org/dwm ./config/includes.chroot/opt/
-cp -rv ${MY_DEBIAN_ROOT_DIR}/my-debian/live-build-buster/config/includes.chroot/opt/backgrounds ./config/includes.chroot/opt/
+cp -rv ${MY_DEBIAN_ROOT_DIR}/suckless.org/dwm ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
+cp -rv ${MY_DEBIAN_ROOT_DIR}/my-debian/live-build-buster/config/includes.chroot/opt/backgrounds ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
 
 #firefox
 #cp -v -r /opt/firefox ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
