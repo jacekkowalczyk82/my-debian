@@ -23,6 +23,7 @@ kali-linux-top10
 kali-desktop-common
 xorg
 
+
 openbox
 obconf
 obmenu
@@ -37,19 +38,34 @@ i3
 # to allow reboot and poweroff directly from window manager 
 mate-polkit
 
-#DWM
+## DWM
 dwm
 suckless-tools
 #dmenu
 #slock
 
+#for-building DWM 
 stterm
 libx11-dev
 libxft-dev
 libxinerama-dev
 
-
+## i3
+i3
+i3lock
+i3status
 conky
+
+
+## Openbox
+openbox
+obconf
+obmenu
+openbox-menu
+obsession
+tint2
+menu
+
 
 lightdm 
 compton
@@ -60,7 +76,7 @@ fonts-dejavu
 
 #editors 
 #leafpad
-#scite
+#mousepad
 pluma
 geany
 
@@ -68,39 +84,55 @@ geany
 gpicview
 evince
 lxrandr
+lxinput
 galculator
 xarchiver
-lxinput
+libreoffice
 
 #terminals
 xterm
 #lxterminal
 terminator
-#sakura
-mate-terminal
 
+mate-terminal
+rxvt-unicode
+sakura
 
 #web browsers
-#chromium
 firefox-esr
-falkon
+
 youtube-dl
 
 #dev tools
 meld
 
-# gksudo                 # package not found 
-
 # file manager
 ranger
+xfe
 caja
 #rox-filer
 #thunar
 #pcmanfm                 # installs whole lxqt desktops, I do not know why yet
+
+mate-themes
+greybird-gtk-theme
+
+tango-icon-theme
 oxygen-icon-theme
 obsidian-icon-theme
 adwaita-icon-theme
 hicolor-icon-theme
+
+mate-icon-theme-faenza
+
+breeze-icon-theme
+faba-icon-theme
+faenza-icon-theme
+moka-icon-theme
+tango-icon-theme
+numix-icon-theme
+papirus-icon-theme
+
 
 
 #systray apps
@@ -126,11 +158,8 @@ htop
 openssh-server
 apt-transport-https
 screenfetch
+neofetch
 gmrun
-i3lock
-
-#simple firewall
-#gufw                   # package not found 
 
 #live-build
 #cdebootstrap
@@ -141,12 +170,23 @@ system-config-printer
 #simple tasks manager 
 mate-system-monitor
 
-#for firefox developer edition, 
-#firefox-developer-edition is installed in /opt/firefox 
-libdbus-glib-1-2
-
 #multimedia 
+vlc
 mpv
 smplayer
 audacious
+audacious-plugins
 
+#packages for virtualbox guest additions
+build-essential
+module-assistant
+
+
+# resue tools for passwords and disks
+ntfs-3g
+mtools
+gparted
+fdisk
+e2fsprogs
+chntpw
+		
