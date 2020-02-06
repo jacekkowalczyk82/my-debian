@@ -1,9 +1,10 @@
 #/usr/bin/env bash 
 
-LIVE_BUILD_ROOT_DIR="/opt/live-build-config"
-MY_DEBIAN_ROOT_DIR="/opt/my-debian"
+LIVE_BUILD_ROOT_DIR="/home/ec2-user/live-build-config"
+MY_DEBIAN_ROOT_DIR="/home/ec2-user/my-debian"
 CUSTOMIZATIONS_DIR="dwm_openbox_i3"
-KALI_VARIANT_NAME="light-wm-edition-by-Jacek-multi-user-target"
+#KALI_VARIANT_NAME="light-wm-edition-by-Jacek-multi-user-target"
+KALI_VARIANT_NAME="light-wm-edition"
 CUSTOMIZATIONS_KALI_VARIANT_DIR="variant-dwm_openbox_i3"
 KALI_VARIANT_DIR="variant-${KALI_VARIANT_NAME}"
 KALI_ARCH="amd64"
@@ -69,19 +70,20 @@ cp -v -r ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/etc/skel/i3_xinitrc ${LIVE_
 
 
 # DWM REPO and compiled binaries
-cp -v -r /opt/dwm ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
+#cp -v -r /opt/dwm ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
+cp -rv ${MY_DEBIAN_ROOT_DIR}/suckless.org/dwm ./config/includes.chroot/opt/
+cp -rv ${MY_DEBIAN_ROOT_DIR}/my-debian/live-build-buster/config/includes.chroot/opt/backgrounds ./config/includes.chroot/opt/
 
 #firefox
-cp -v -r /opt/firefox ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
+#cp -v -r /opt/firefox ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
 
 sleep 5
 
-cp -v ${MY_DEBIAN_ROOT_DIR}/opt/firefox/firefox.sh ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/bin/firefox.sh
-
-cp -v ${MY_DEBIAN_ROOT_DIR}/opt/firefox/firefox-developer-edition.desktop ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/firefox/firefox-developer-edition.desktop
+#cp -v ${MY_DEBIAN_ROOT_DIR}/opt/firefox/firefox.sh ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/bin/firefox.sh
+#cp -v ${MY_DEBIAN_ROOT_DIR}/opt/firefox/firefox-developer-edition.desktop ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/firefox/firefox-developer-edition.desktop
 
 #toxic
-cp -v -r  /opt/toxic ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
+#cp -v -r  /opt/toxic ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
 
 #i3lock 
 cp -v -r  ${MY_DEBIAN_ROOT_DIR}/${CUSTOMIZATIONS_DIR}/kali-lock.sh ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/bin/kali-lock.sh

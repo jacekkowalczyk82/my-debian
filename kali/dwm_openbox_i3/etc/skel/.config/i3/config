@@ -215,5 +215,5 @@ bindsym $mod+Ctrl+x exec mate-system-monitor
 bindsym $mod+Ctrl+s exec scrot
 
 # help info 
-bindsym $mod+Ctrl+h exec falkon /opt/help/basic-help.html  
+bindsym $mod+Ctrl+h exec firefox /opt/help/basic-help.html  
 
