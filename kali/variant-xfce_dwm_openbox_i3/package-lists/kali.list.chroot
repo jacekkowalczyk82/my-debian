@@ -1,31 +1,18 @@
 # You always want those
-kali-linux
+#kali-linux-core
 kali-desktop-live
 
 # Kali applications
-
-# You can customize the set of Kali applications to install
-# (-full is the default, -all is absolutely everything, the rest
-# corresponds to various subsets)
-# kali-linux-full
-# kali-linux-all
-# kali-linux-sdr
-# kali-linux-gpu
-# kali-linux-wireless
-# kali-linux-web
-# kali-linux-forensic
-# kali-linux-voip
-# kali-linux-pwtools
-kali-linux-top10
-# kali-linux-rfid
+#<package>
+# You can customize the set of Kali metapackages (groups of tools) to install
+# For the complete list see: https://tools.kali.org/kali-metapackages
+kali-linux-light
+# kali-tools-top10
 
 # Graphical desktop
-kali-desktop-common
-xorg
+kali-desktop-xfce
 
-
-# to allow reboot and poweroff directly from window manager 
-mate-polkit
+policykit-1-gnome
 
 ## DWM
 dwm
@@ -65,8 +52,6 @@ fonts-dejavu
 
 #editors 
 #leafpad
-#mousepad
-pluma
 geany
 
 #accessories
@@ -83,7 +68,6 @@ xterm
 #lxterminal
 terminator
 
-mate-terminal
 rxvt-unicode
 sakura
 
@@ -98,11 +82,11 @@ meld
 # file manager
 ranger
 xfe
-caja
+thunar
 #rox-filer
+
 #pcmanfm                 # installs whole lxqt desktops, I do not know why yet
 
-mate-themes
 greybird-gtk-theme
 
 tango-icon-theme
@@ -111,7 +95,6 @@ obsidian-icon-theme
 adwaita-icon-theme
 hicolor-icon-theme
 
-mate-icon-theme-faenza
 
 breeze-icon-theme
 faba-icon-theme
@@ -131,7 +114,7 @@ udiskie
 network-manager
 network-manager-gnome
 clipit
-mate-power-manager
+
 xscreensaver
 plank
 

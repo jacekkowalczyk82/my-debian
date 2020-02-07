@@ -87,7 +87,7 @@ echo "-------------------"
 echo " LDD (Lightweight Debian Distribution) Desktop Chooser:"
 echo "-------------------"
 echo
-
+echo " (x) XFCE4 "
 echo " (o) Openbox "
 echo " (i) i3 "
 echo " (d) DWM "
@@ -96,6 +96,7 @@ echo " (q) exit to shell "
 echo
 read -p "Please enter your choice: " choice
 case $choice in
+  x|X) XFCE4;;
   o|O) OPENBOX;;
   i|I) I3WM;;
   d|D) DWM;;

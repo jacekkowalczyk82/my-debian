@@ -171,10 +171,10 @@ launcher_item_app = google-chrome.desktop
 launcher_item_app = /usr/share/applications/terminator.desktop
 launcher_item_app = /usr/share/applications/mpv.desktop
 launcher_item_app = /usr/share/applications/audacious.desktop
-launcher_item_app = /usr/share/applications/caja-browser.desktop
-launcher_item_app = /usr/share/applications/pluma.desktop
+launcher_item_app = /usr/share/applications/thunar.desktop
+launcher_item_app = /usr/share/applications/mousepad.desktop
 launcher_item_app = /usr/share/applications/geany.desktop
-launcher_item_app = /usr/share/applications/mate-terminal.desktop
+launcher_item_app = /usr/share/applications/xfce4-terminal.desktop
 
 #-------------------------------------
 # Clock

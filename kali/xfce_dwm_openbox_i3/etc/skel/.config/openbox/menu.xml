@@ -16,9 +16,9 @@
 				<execute>xterm</execute>
 			</action>
 		</item>
-		<item label="mate-terminal">
+		<item label="xfce4-terminal">
 			<action name="Execute">
-				<execute>mate-terminal</execute>
+				<execute>xfce4-terminal</execute>
 			</action>
 		</item>
 		<separator/>
@@ -44,12 +44,12 @@
 		<separator/>
 		<item label="File Manager">
 			<action name="Execute">
-				<execute>caja</execute>
+				<execute>thunar</execute>
 			</action>
 		</item>
-		<item label="Pluma">
+		<item label="Mousepad">
 			<action name="Execute">
-				<execute>pluma</execute>
+				<execute>mousepad</execute>
 			</action>
 		</item>
 		<item label="Meld">
@@ -64,7 +64,7 @@
 		</item>
 		<item label="Task Manager">
 			<action name="Execute">
-				<execute>mate-system-monitor</execute>
+				<execute>xfce4-taskmanager</execute>
 			</action>
 		</item>
 
