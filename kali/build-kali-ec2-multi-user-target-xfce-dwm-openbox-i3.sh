@@ -94,7 +94,6 @@ rm -rf config/
 ./build.sh --distribution kali-rolling --variant ${KALI_VARIANT_NAME} --arch "${KALI_ARCH}" --verbose
 date
 cd ${LIVE_BUILD_ROOT_DIR}/images
-
 chown -R ${USER}:${USER} ${LIVE_BUILD_ROOT_DIR}
 
 ls -alh 
@@ -111,7 +110,10 @@ if [[ -e "kali-linux-rolling-live-${KALI_VARIANT_NAME}-amd64.iso" ]]; then
     aws s3 --region us-east-2 cp ${RELEASE_NAME}.iso s3://jacekkowalczyk82.private.s3/kali-images/${RELEASE_DATE}/
     aws s3 --region us-east-2 cp ${RELEASE_NAME}.sha256sum.txt s3://jacekkowalczyk82.private.s3/kali-images/${RELEASE_DATE}/
     aws s3 --region us-east-2 cp ${RELEASE_NAME}.log s3://jacekkowalczyk82.private.s3/kali-images/${RELEASE_DATE}/
-
+    
+    mv -v ${RELEASE_NAME}.* ${MY_DEBIAN_ROOT_DIR}/kali/
+    cd ${MY_DEBIAN_ROOT_DIR}/kali/
+    ls -alh 
 else 
 	echo "ERROR: failed to build ISO"
 fi 
