@@ -108,9 +108,9 @@ if [[ -e "kali-linux-rolling-live-${KALI_VARIANT_NAME}-amd64.iso" ]]; then
     mv ${GENERATED_NAME}.log  ${RELEASE_NAME}.log
     sha256sum ${RELEASE_NAME}.iso | tee  ${RELEASE_NAME}.sha256sum.txt
     
-    aws s3 --region us-east-2 cp ${RELEASE_NAME}.iso s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
-    aws s3 --region us-east-2 cp ${RELEASE_NAME}.sha256sum.txt s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
-    aws s3 --region us-east-2 cp ${RELEASE_NAME}.log s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
+    aws s3 --region us-east-2 cp ${RELEASE_NAME}.iso s3://jacekkowalczyk82.private.s3/kali-images/${RELEASE_DATE}/
+    aws s3 --region us-east-2 cp ${RELEASE_NAME}.sha256sum.txt s3://jacekkowalczyk82.private.s3/kali-images/${RELEASE_DATE}/
+    aws s3 --region us-east-2 cp ${RELEASE_NAME}.log s3://jacekkowalczyk82.private.s3/kali-images/${RELEASE_DATE}/
 
 else 
 	echo "ERROR: failed to build ISO"
