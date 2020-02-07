@@ -3,8 +3,8 @@
 
 |Feature           |Description                                                                         |
 |------------------|------------------------------------------------------------------------------------|
-|Livecd user/pass  |root/toor                                                                           |
-|GUI sessions      |All variants have: DWM (stock), Custom-DWM, Openbox or i3                           |
+|Livecd user/pass  |root/toor (kali/kali)                                                               |
+|GUI sessions      |DWM (stock), Custom-DWM, Openbox, i3, XFCE                                          |
 |DWM stock ModKey  |Alt                                                                                 |
 |DWM custom ModKey |Win                                                                                 |
 |i3wm ModKey       |Win                                                                                 |
@@ -20,17 +20,17 @@
 |i3wm Dmenu        |Win + d                                                                             |
 |Network Manager   |nmtui, nm-applet                                                                    |
 |Volume Control    |pavucontrol                                                                         |
-|Power Manager     |mate-power-manager, upower -i /org/freedesktop/UPower/devices/battery_BAT0          |
-|WWW browser       |Firefox Developer Edition, run Dmenu and type firefox.sh                            |
-|tox client        |toxic (only 64 bit ISO)                                                             |
+|Power Manager     |xfce4-power-manager, upower -i /org/freedesktop/UPower/devices/battery_BAT0         |
+|WWW browser       |Firefox, run Dmenu and type firefox                                                 |
 |Kali tools        |only meta package kali-linux-top10 is installed                                     |
 
 * ISO Variants
 
 |Variant           |Description                                                                         |
 |------------------|------------------------------------------------------------------------------------|
-|live_dwm          |In LiveCD mode only one session can be used. Switching of sessions in livecd doees not work always, it is not stable, At installed system you can switch Xsessions at Lightdm Login screen |
-|dwm_openbox_i3_no_lightdm |There is no lightdm installed but you can switch Xsessions of installed system using startup scripts: ./start-dwm.sh,./start-openbox.sh, ./start-i3.sh, Live cd mode is running Openbox by default   |
+
+Switching of sessions in with lightdm does not work always, it is not stable. Lightdm is installed but this system is booting to multi user mode and user can 
+start X11 using startgui command. 
 
 * Customization manual for DWM is [here](./debian-dwm.md).
 * More information/help about dwm can be found at [http://suckless.org](http://suckless.org).
@@ -40,7 +40,6 @@
 
 ```
 #text editors
-pluma
 geany
 
 #office apps
@@ -51,13 +50,11 @@ xarchiver
 
 #terminals
 xterm 
-mate-terminal
+xfce4-terminal
 terminator
 
 #web apps
-#chromium
 firefox-esr
-falkon
 youtube-dl
 
 #development
@@ -65,8 +62,7 @@ meld
 git
 
 #file managers
-ranger
-caja
+thunar
 
 #system tools 
 lxrandr
@@ -76,9 +72,9 @@ udiskie
 network-manager
 network-manager-gnome
 clipit
-mate-power-manager
+xfce4-power-manager
 xscreensaver
-mate-system-monitor
+xfce4-taskmanager
 
 #audio video
 mpv
@@ -91,12 +87,12 @@ plank
 
 ```
 
-* Full list of packages for variant: [dwm_openbox_i3](./variant-dwm_openbox_i3/package-lists/kali.list.chroot)
+* Full list of packages for variant: [xfce_dwm_openbox_i3](./variant-xfce_dwm_openbox_i3/package-lists/kali.list.chroot)
 
 
 ## Download
 
-* ISO images of this comunity edition are published at [Kali-Linux-openbox project at OSDN.net](https://osdn.net/projects/kali-lnux-openbox/storage/kali-linux-community-releases/)
+* ISO images of this comunity edition are published at [my-Kali-Linux project at sourceforge.net](https://my-kali-linux.sourceforge.io)
 
 
 
