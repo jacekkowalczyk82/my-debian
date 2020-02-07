@@ -24,17 +24,6 @@ kali-desktop-common
 xorg
 
 
-openbox
-obconf
-#obmenu
-openbox-menu
-obsession
-tint2
-menu
-
-# i3wm will be also available in openbox edition 
-i3
-
 # to allow reboot and poweroff directly from window manager 
 mate-polkit
 
@@ -60,7 +49,7 @@ conky
 ## Openbox
 openbox
 obconf
-obmenu
+#obmenu
 openbox-menu
 obsession
 tint2
