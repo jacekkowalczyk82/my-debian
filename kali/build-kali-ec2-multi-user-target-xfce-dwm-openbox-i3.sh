@@ -21,17 +21,15 @@ rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/hooks/live/live-kali-multi-user-
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/${KALI_VARIANT_DIR}/package-lists/
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.config/
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/.config/
-#mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/firefox/
-#mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/toxic/
+mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/dwm/
+mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/backgrounds/
+
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/bin/
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/local/bin/
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/share/xsessions/
 
 cp -v ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.openbox_conkyrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.openbox_conkyrc
 cp -v ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.openbox_conkyrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/.openbox_conkyrc
-
-#cp -v ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.dwm_conkyrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.dwm_conkyrc
-#cp -v ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.dwm_conkyrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/.dwm_conkyrc
 
 cp -v ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.i3wm_conkyrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.i3wm_conkyrc
 cp -v ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.i3wm_conkyrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/.i3wm_conkyrc
@@ -69,28 +67,25 @@ cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/openbox_xinit
 cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/i3_xinitrc ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/
 
 
-#cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.xsession ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
-#cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.xsession ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/
-
-
 # DWM REPO and compiled binaries
 #cp -v -r /opt/dwm ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
-cp -rv ${MY_DEBIAN_ROOT_DIR}/suckless.org/dwm ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
 cp -rv ${MY_DEBIAN_ROOT_DIR}/live-build-buster/config/includes.chroot/opt/backgrounds ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
+cp -rv ${MY_DEBIAN_ROOT_DIR}/suckless.org/dwm/* ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/dwm/
 
-#firefox
-#cp -v -r /opt/firefox ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
+if [ -e ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/dwm/ ]; then 
+    echo "DWM binaries installed ast should be to chroot"
+else 
+    echo "ERROR DWM binaries not installed to chroot "
+    exit 1
+fi 
+cp -rv ${MY_DEBIAN_ROOT_DIR}/live-build-buster/config/includes.chroot/opt/backgrounds ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
 
 sleep 5
 
-#cp -v ${MY_DEBIAN_ROOT_DIR}/opt/firefox/firefox.sh ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/bin/firefox.sh
-#cp -v ${MY_DEBIAN_ROOT_DIR}/opt/firefox/firefox-developer-edition.desktop ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/firefox/firefox-developer-edition.desktop
-
-#toxic
-#cp -v -r  /opt/toxic ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
-
 #i3lock 
 cp -v -r  ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/kali-lock.sh ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/local/bin/kali-lock.sh
+
+chown -R kali:kali ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/
 
 cd ${LIVE_BUILD_ROOT_DIR}/
 date
