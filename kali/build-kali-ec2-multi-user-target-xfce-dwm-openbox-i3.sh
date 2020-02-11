@@ -78,7 +78,6 @@ else
     echo "ERROR DWM binaries not installed to chroot "
     exit 1
 fi 
-cp -rv ${MY_DEBIAN_ROOT_DIR}/live-build-buster/config/includes.chroot/opt/backgrounds ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
 
 sleep 5
 
