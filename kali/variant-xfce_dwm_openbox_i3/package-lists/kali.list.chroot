@@ -6,13 +6,19 @@ kali-desktop-live
 #<package>
 # You can customize the set of Kali metapackages (groups of tools) to install
 # For the complete list see: https://tools.kali.org/kali-metapackages
-kali-linux-light
-# kali-tools-top10
+# kali-linux-light
+kali-tools-top10
 
 # Graphical desktop
 kali-desktop-xfce
 
 policykit-1-gnome
+
+# Calamres installer
+calamares
+calamares-settings-debian
+
+
 
 ## DWM
 dwm
