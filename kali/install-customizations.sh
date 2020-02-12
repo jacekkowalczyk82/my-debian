@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-function installCustomizations() {
+function installPackages() {
     
     ## DWM 
     sudo apt install dwm suckless-tools stterm libx11-dev libxft-dev libxinerama-dev 
@@ -61,6 +61,61 @@ function installConfigs() {
     # cd ~/
     # git clone https://gitlab.com/jacekkowalczyk82/my-debian.git
     # cd my-debian/kali
+    # ./install-customizations.sh
     
-    
+MY_DEBIAN_ROOT_DIR="~/my-debian"
+CUSTOMIZATIONS_DIR="xfce_dwm_openbox_i3"
+
+sudo mkdir -p /etc/skel/.config/
+mkdir -p ~/.config/
+sudo mkdir -p /usr/local/bin/
+sudo mkdir -p /usr/share/xsessions/
+
+sudo cp -v ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.openbox_conkyrc /etc/skel/.openbox_conkyrc
+cp -v ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.openbox_conkyrc ~/.openbox_conkyrc
+
+sudo cp -v ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.i3wm_conkyrc /etc/skel/.i3wm_conkyrc
+cp -v ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.i3wm_conkyrc ~/.i3wm_conkyrc
+
+sudo cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.config /etc/skel/
+cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/.config ~/
+
+#sudo cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/openbox_xinitrc /etc/skel/.xinitrc
+#cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/openbox_xinitrc ~/.xinitrc
+
+#sudo cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/start*.sh /etc/skel/
+#sudo cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/dwm_xinitrc /etc/skel/
+#sudo cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/openbox_xinitrc /etc/skel/
+#sudo cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/i3_xinitrc /etc/skel/
+
+#cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/start*.sh ~/
+#cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/dwm_xinitrc ~/
+#cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/openbox_xinitrc ~/
+#cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/skel/i3_xinitrc ~/
+
+
+#Custom Xsession 
+sudo cp -v ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/custom-dwm.desktop /usr/share/xsessions/
+sudo cp -v ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/usr/local/bin/startgui /usr/local/bin/startgui
+
+sudo chmod 755 /usr/local/bin/startgui
+sudo cp -v -r ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/etc/motd /etc/motd
+
+#/etc/systemd/system/default.target -> multi-user.target
+sudo systemctl set-default multi-user.target
+
+
+# DWM REPO and compiled binaries
+#cp -v -r /opt/dwm ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
+sudo cp -rv ${MY_DEBIAN_ROOT_DIR}/suckless.org/dwm /opt/
+sudo cp -rv ${MY_DEBIAN_ROOT_DIR}/live-build-buster/config/includes.chroot/opt/backgrounds /opt/
+
+#i3lock 
+sudo cp -v -r  ${MY_DEBIAN_ROOT_DIR}/kali/${CUSTOMIZATIONS_DIR}/kali-lock.sh /usr/local/bin/kali-lock.sh
+sudo chmod 755 /usr/local/bin/kali-lock.sh
 }
+
+installPackages
+installConfigs
+
+
