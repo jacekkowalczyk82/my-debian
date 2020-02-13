@@ -11,11 +11,17 @@ KALI_ARCH="amd64"
 
 rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.xinitrc
 rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.xsession
+rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
 #must keep this file : kali-config/common/includes.chroot/home/kali/.bashrc
 rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/.xinitrc
 rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/.xsession
 rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
 rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/hooks/live/live-kali-multi-user-hook.chroot || true 
+rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/local/bin/
+rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/motd
+rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/share/xsessions/
+rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/lib/live/config/
+
 
 
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/${KALI_VARIANT_DIR}/package-lists/
