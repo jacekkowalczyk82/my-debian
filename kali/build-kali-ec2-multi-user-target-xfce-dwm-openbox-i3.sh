@@ -9,19 +9,22 @@ CUSTOMIZATIONS_KALI_VARIANT_DIR="variant-xfce_dwm_openbox_i3"
 KALI_VARIANT_DIR="variant-${KALI_VARIANT_NAME}"
 KALI_ARCH="amd64"
 
-rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.xinitrc
-rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.xsession
-rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
+rm -f  ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.xinitrc
+rm -f  ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/.xsession
+rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/skel/
 #must keep this file : kali-config/common/includes.chroot/home/kali/.bashrc
-rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/.xinitrc
-rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/.xsession
-rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
-rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/hooks/live/live-kali-multi-user-hook.chroot || true 
-rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/local/bin/
-rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/motd
-rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/share/xsessions/
-rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/lib/live/config/
+rm -f  ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/.xinitrc
+rm -f  ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/.xsession
+rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/home/kali/
 
+rm -f  ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/etc/motd
+rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/
+rm -f  ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/lib/live/config/
+rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/local/bin/
+rm -rf ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/usr/share/xsessions/
+
+
+rm -f ${LIVE_BUILD_ROOT_DIR}/kali-config/common/hooks/live/live-kali-multi-user-hook.chroot || true 
 
 
 mkdir -p ${LIVE_BUILD_ROOT_DIR}/kali-config/${KALI_VARIANT_DIR}/package-lists/
