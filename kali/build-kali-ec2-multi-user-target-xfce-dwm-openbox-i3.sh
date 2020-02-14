@@ -86,7 +86,7 @@ cp -rv ${MY_DEBIAN_ROOT_DIR}/live-build-buster/config/includes.chroot/opt/backgr
 cp -rv ${MY_DEBIAN_ROOT_DIR}/suckless.org/dwm/* ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/dwm/
 
 if [ -e ${LIVE_BUILD_ROOT_DIR}/kali-config/common/includes.chroot/opt/dwm/ ]; then 
-    echo "DWM binaries installed ast should be to chroot"
+    echo "DWM binaries installed as should be to chroot"
 else 
     echo "ERROR DWM binaries not installed to chroot "
     exit 1
