@@ -61,8 +61,8 @@ rxvt-unicode
 sakura
 
 #web browsers
-falkon
-chromium
+#falkon
+#chromium
 firefox-esr
 
 youtube-dl
@@ -101,19 +101,26 @@ xfce4-taskmanager
 xscreensaver
 plank
 
-#utilities
+## utilities
 sudo
 git
 git-gui
 curl
+wget
 mc
-vim
+nano
+vim-gtk3
+emacs
 htop
 openssh-server
 apt-transport-https
 screenfetch
 neofetch
 gmrun
+zip
+unzip
+rsync 
+tmux
 
 #live-build
 #cdebootstrap

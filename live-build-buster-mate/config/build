@@ -6,5 +6,5 @@ Mirror-Bootstrap: http://deb.debian.org/debian/
 
 [FIXME]
 Configuration-Version: 1:20190311
-Name: debian-live-10.2-ldd-mate
+Name: debian-live-10-ldd-mate
 Type: iso-hybrid

@@ -57,14 +57,15 @@ libreoffice
 xterm
 #lxterminal
 terminator
+tilix
 #xfce4-terminal
 mate-terminal
 rxvt-unicode
 sakura
 
 #web browsers
-falkon
-chromium
+#falkon
+#chromium
 firefox-esr
 
 youtube-dl
@@ -106,19 +107,26 @@ mate-power-manager
 xscreensaver
 plank
 
-#utilities
+## utilities
 sudo
 git
 git-gui
 curl
+wget
 mc
-vim
+nano
+vim-gtk3
+emacs
 htop
 openssh-server
 apt-transport-https
 screenfetch
 neofetch
 gmrun
+zip
+unzip
+rsync 
+tmux
 
 #live-build
 #cdebootstrap

@@ -11,6 +11,11 @@
 				<execute>terminator</execute>
 			</action>
 		</item>
+		<item label="Tilix">
+			<action name="Execute">
+				<execute>tilix</execute>
+			</action>
+		</item>
 		<item label="XTerm">
 			<action name="Execute">
 				<execute>xterm</execute>

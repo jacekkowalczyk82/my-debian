@@ -1,0 +1,5 @@
+Your existing configuration for openbox '/home/kowalczy/.config/openbox/rc.xml' was used to
+fill the LXQt's openbox configuration '/home/kowalczy/.config/openbox/lxqt-rc.xml'.
+If you want to use the predefined LXQt's openbox configuration, run:
+  cp '/etc/xdg/openbox/lxqt-rc.xml' '/home/kowalczy/.config/openbox'
+  
