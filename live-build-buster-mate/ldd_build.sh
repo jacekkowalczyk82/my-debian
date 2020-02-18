@@ -20,7 +20,7 @@ cp -rv ../bootloaders ./config/
 #sudo lb clean --purge
 
 #build ISO
-lb build --debug --verbose 2>&1 |tee debian-live-10-ldd-xfce-`date '+%Y-%m-%d_%H%M%S'`.log
+lb build --debug --verbose 2>&1 |tee debian-live-10-ldd-mate-`date '+%Y-%m-%d_%H%M%S'`.log
 
 #`date '+%Y-%m-%d_%H%M%S'`
 GENERATED_NAME="debian-live-10-ldd-mate-amd64"
