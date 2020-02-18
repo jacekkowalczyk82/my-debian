@@ -27,7 +27,7 @@ GENERATED_NAME="debian-live-10-ldd-mate-amd64"
 RELEASE_NAME="debian-live-10-ldd-mate-`date '+%Y-%m-%d_%H%M%S'`-amd64"
 RELEASE_DATE=`date '+%Y%m%d'`
 
-if [[ -e "${GENERATED_NAME}.hybrid.iso" ]]; then 
+if [ -e "${GENERATED_NAME}.hybrid.iso" ]; then 
 
     mv ${GENERATED_NAME}.hybrid.iso  ${RELEASE_NAME}.iso
     sha256sum ${RELEASE_NAME}.iso | tee -a ${RELEASE_NAME}.sha256sum.txt
