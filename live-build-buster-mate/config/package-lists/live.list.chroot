@@ -158,8 +158,9 @@ fdisk
 e2fsprogs
 chntpw
 
-#for connecting USB android devices and development work 
+# for connecting USB android devices and development work 
 python3
 usb-modeswitch
 adb
-openjdk-11-jdk		
+openjdk-11-jdk
+
