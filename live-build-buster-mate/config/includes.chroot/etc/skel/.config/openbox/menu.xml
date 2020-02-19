@@ -83,6 +83,7 @@
 				<execute>firefox</execute>
 			</action>
 		</item>
+<!--
 		<item label="Chromium">
 			<action name="Execute">
 				<execute>chromium</execute>
@@ -93,6 +94,7 @@
 				<execute>falkon</execute>
 			</action>
 		</item>
+<!--
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<separator/>
 		

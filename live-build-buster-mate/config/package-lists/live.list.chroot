@@ -2,9 +2,12 @@ live-boot
 live-config
 live-config-systemd
 
+live-task-mate
+
 xorg
 
-live-task-mate
+calamares
+calamares-settings-debian
 
 ## DWM
 dwm
