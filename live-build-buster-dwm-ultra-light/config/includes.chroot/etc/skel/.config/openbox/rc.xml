@@ -354,7 +354,7 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>thunar</name>
+          <name>File manager</name>
         </startupnotify>
         <command>thunar</command>
       </action>

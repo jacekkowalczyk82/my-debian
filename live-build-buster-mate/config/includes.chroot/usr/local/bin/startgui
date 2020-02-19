@@ -5,12 +5,13 @@
 # Authors: 
 #  eznix
 #  Jacek Kowalczy, jacekkowalczyk82@gmail.com
-#
+# Version: 0.5
 
 XINITRC_FILE="/home/$USER/.xinitrc"
 # -------------
 # Functions:
 # -------------
+#
 #
 LXQT () { 
 echo "exec startlxqt" > $XINITRC_FILE
@@ -70,13 +71,6 @@ while true ; do
 #        dropbox_status_string="Dropbox: "\$(echo \$dropbox_status|awk -F " " '{print \$1}')
 #    fi 
 
-# at Arch there is dropbox-cli app
-#    dropbox_status=\$(dropbox-cli status | head -n 1)
-#    if [ "\$dropbox_status" == "Up to date" ]; then 
-#        dropbox_status_string="Dropbox: "\$(echo \$dropbox_status)
-#    else 
-#        dropbox_status_string="Dropbox: "\$(echo \$dropbox_status|awk -F " " '{print \$1}')
-#    fi 
 
     load=\$(cat /proc/loadavg |cut -d " " -f 3 )
     uptime=\$(uptime -p)
@@ -106,13 +100,14 @@ MAINMENU () { while true
 do
 clear
 echo "-------------------"
-echo " LDD (Lightweight Debian Distribution) Desktop Chooser:"
+echo " LDD (Lightweight Debian Distribution) Desktop Chooser"
 echo "-------------------"
 echo
-echo " (m) Mate "
-echo " (o) Openbox "
-echo " (i) i3 "
 echo " (d) DWM "
+echo " (i) i3 "
+echo " (o) Openbox "
+echo " (m) Mate "
+
 echo " (p) Previous Session "
 echo " (q) exit to shell "
 echo

@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+# # Prepare system for installing virtualbox guest additions
+#apt update
+#m-a prepare 
+
+
+#ls -alh /etc/systemd/system/default.target || true
+
+# trying to disable auto start of gui session
+systemctl set-default multi-user.target || true
+
+#ls -alh /etc/systemd/system/default.target || true
+exit 0 

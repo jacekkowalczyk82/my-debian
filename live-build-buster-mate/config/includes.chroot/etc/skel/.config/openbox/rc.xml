@@ -354,7 +354,7 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>caja</name>
+          <name>File manager</name>
         </startupnotify>
         <command>caja</command>
       </action>

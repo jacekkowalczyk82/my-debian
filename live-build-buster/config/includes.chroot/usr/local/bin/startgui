@@ -5,7 +5,7 @@
 # Authors: 
 #  eznix
 #  Jacek Kowalczy, jacekkowalczyk82@gmail.com
-#
+# Version: 0.5
 
 XINITRC_FILE="/home/$USER/.xinitrc"
 # -------------

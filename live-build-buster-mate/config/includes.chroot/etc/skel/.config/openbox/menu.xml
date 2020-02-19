@@ -21,11 +21,19 @@
 				<execute>xterm</execute>
 			</action>
 		</item>
+
 		<item label="mate-terminal">
 			<action name="Execute">
 				<execute>mate-terminal</execute>
 			</action>
 		</item>
+<!--
+		<item label="xfce4-terminal">
+			<action name="Execute">
+				<execute>xfce4-terminal</execute>
+			</action>
+		</item>
+-->
 		<item label="urxvt">
 			<action name="Execute">
 				<execute>urxvt</execute>
@@ -87,17 +95,35 @@
 		</item>
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<separator/>
-		<item label="File Manager">
+		
+		<menu id="file-managers-menu-1" label="File Managers">
+			<item label="xfe">
+			<action name="Execute">
+				<execute>xfe</execute>
+			</action>
+			</item>
+			<item label="caja">
 			<action name="Execute">
 				<execute>caja</execute>
 			</action>
-		</item>
+			</item>
+			<item label="ranger">
+			<action name="Execute">
+				<execute>x-terminal-emulator -e ranger</execute>
+			</action>
+			</item>
+			<item label="mc">
+			<action name="Execute">
+				<execute>x-terminal-emulator -e mc</execute>
+			</action>
+			</item>
+		</menu>
 		<item label="Geany">
 			<action name="Execute">
 				<execute>geany</execute>
 			</action>
 		</item>
-		<item label="Pluma">
+		<item label="Editor">
 			<action name="Execute">
 				<execute>pluma</execute>
 			</action>
