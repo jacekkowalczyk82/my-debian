@@ -2,21 +2,24 @@
 #ldd-process-manager
 
 #xfce4-power-manager or mate-power-manager or 
-echo "This is a wrapper for some other task /process manager like xfce4-power-manager or mate-power-manager or gnome-power-manager"
+echo "This is a wrapper for some other task /process manager like xfce4-taskmanager mate-system-monitor gnome-system-monitor ksysguard qps lxtask"
 
-PATH_TO_PROCESS_MANAGER=$(which xfce4-taskmanager)
-if [ "$PATH_TO_PROCESS_MANAGER" == "" ]; then 
-    PATH_TO_PROCESS_MANAGER=$(which mate-system-monitor)
-elif [ "$PATH_TO_PROCESS_MANAGER" == "" ]; then 
-    PATH_TO_PROCESS_MANAGER=$(which gnome-system-monitor)
-elif [ "$PATH_TO_PROCESS_MANAGER" == "" ]; then 
-    PATH_TO_PROCESS_MANAGER=$(which ksysguard)
-elif [ "$PATH_TO_PROCESS_MANAGER" == "" ]; then 
-    PATH_TO_PROCESS_MANAGER=$(which qps)
-elif [ "$PATH_TO_PROCESS_MANAGER" == "" ]; then 
-    PATH_TO_PROCESS_MANAGER=$(which lxtask)
-elif [ "$PATH_TO_PROCESS_MANAGER" == "" ]; then 
-    echo "No Process manager installed "
+PROCESS_MANAGERS=("xfce4-taskmanager" "mate-system-monitor" "gnome-system-monitor" "ksysguard" "qps" "lxtask")
+for process_manager in ${PROCESS_MANAGERS[@]}; do
+     PATH_TO_PROCESS_MANAGER=$(which $process_manager)
+     INSTALLED_PATH_TO_PROCESS_MANAGER=""
+	 if [ "$PATH_TO_PROCESS_MANAGER" == "" ]; then 
+		echo "$process_manager not found"
+     else 
+        echo "Found $process_manager"
+		INSTALLED_PATH_TO_PROCESS_MANAGER="$PATH_TO_PROCESS_MANAGER"
+		break
+     fi        
+done        
+
+
+if  [ "$INSTALLED_PATH_TO_PROCESS_MANAGER" == "" ]; then 
+    echo -e "\nNo Process manager installed "
     echo "You can install one of the packages: "
     echo "   ksysguard from KDE"
     echo "   lxtask from LXDE"
