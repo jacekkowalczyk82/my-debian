@@ -8,38 +8,38 @@
 # Version: 1.0
 
 LXQT_SESSION=$(which startlxqt)
-if [ -z $LXQT_SESSION ]; then 
+if [ "$LXQT_SESSION" == "" ]; then 
     LXQT_INSTALLED="( not installed )"
 else 
-    LXQT_INSTALLED=1
+    LXQT_INSTALLED="yes"
 fi 
 
 GNOME_SESSION=$(which gnome-session)
-if [ -z $GNOME_SESSION ]; then 
+if [ "$GNOME_SESSION" == "" ]; then 
     GNOME_INSTALLED="( not installed )"
 else 
-    GNOME_INSTALLED=1
+    GNOME_INSTALLED="yes"
 fi 
 
 MATE_SESSION=$(which mate-session)
-if [ -z $MATE_SESSION ]; then 
+if [ "$MATE_SESSION" == "" ]; then 
     MATE_INSTALLED="( not installed )"
 else 
-    MATE_INSTALLED=1
+    MATE_INSTALLED="yes"
 fi 
 
 XFCE_SESSION=$(which startxfce4)
-if [ -z $XFCE_SESSION ]; then 
+if [ "$XFCE_SESSION" == "" ]; then 
     XFCE_INSTALLED="( not installed )"
 else 
-    XFCE_INSTALLED=1
+    XFCE_INSTALLED="yes"
 fi 
 
 KDE_SESSION=$(which startkde)
-if [ -z $KDE_SESSION ]; then 
+if [ "$KDE_SESSION" == "" ]; then 
     KDE_INSTALLED="( not installed )"
 else 
-    KDE_INSTALLED=1
+    KDE_INSTALLED="yes"
 fi 
 
 
@@ -54,10 +54,11 @@ XINITRC_FILE="/home/$USER/.xinitrc"
 LXQT () { 
 echo "exec startlxqt" > $XINITRC_FILE
 sleep 1
-if [ $LXQT_INSTALLED -eq 1 ]; then 
+if [ ""$LXQT_INSTALLED" == "yes" ]; then 
     startx
 else 
     echo "LXQT is not installed yet"
+    read -p "Press any key: " any_key
 fi 
 }
 #
@@ -67,10 +68,11 @@ echo "export XDG_SESSION_TYPE=x11" > $XINITRC_FILE
 echo "export GDK_BACKEND=x11" > $XINITRC_FILE
 echo "exec gnome-session" > $XINITRC_FILE
 sleep 1
-if [ $GNOME_INSTALLED -eq 1 ]; then 
+if [ "$GNOME_INSTALLED" == "yes" ]; then 
     startx
 else 
     echo "Gnome is not installed yet"
+    read -p "Press any key: " any_key
 fi 
 }
 #
@@ -78,10 +80,11 @@ fi
 MATE () { 
 echo "exec mate-session" > $XINITRC_FILE
 sleep 1
-if [ $MATE_INSTALLED -eq 1 ]; then 
+if [ "$MATE_INSTALLED" == "yes" ]; then 
     startx
 else 
     echo "MATE is not installed yet"
+    read -p "Press any key: " any_key
 fi 
 }
 #
@@ -89,10 +92,11 @@ fi
 XFCE4 () { 
 echo "exec startxfce4" > $XINITRC_FILE
 sleep 1
-if [ $XFCE_INSTALLED -eq 1 ]; then 
+if [ "$XFCE_INSTALLED" == "yes" ]; then 
     startx
 else 
     echo "XFCE is not installed yet"
+    read -p "Press any key: " any_key
 fi 
 }
 #
@@ -100,10 +104,11 @@ fi
 KDE_PLASMA () { 
 echo "exec startkde" > $XINITRC_FILE
 sleep 1
-if [ $KDE_INSTALLED -eq 1 ]; then 
+if [ "$KDE_INSTALLED" == "yes" ]; then 
     startx
 else 
     echo "KDE Plasma is not installed yet"
+    read -p "Press any key: " any_key
 fi 
 }
 #
