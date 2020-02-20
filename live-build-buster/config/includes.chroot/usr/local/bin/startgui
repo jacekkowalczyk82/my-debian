@@ -54,7 +54,7 @@ XINITRC_FILE="/home/$USER/.xinitrc"
 LXQT () { 
 echo "exec startlxqt" > $XINITRC_FILE
 sleep 1
-if [ ""$LXQT_INSTALLED" == "yes" ]; then 
+if [ "$LXQT_INSTALLED" == "yes" ]; then 
     startx
 else 
     echo "LXQT is not installed yet"
