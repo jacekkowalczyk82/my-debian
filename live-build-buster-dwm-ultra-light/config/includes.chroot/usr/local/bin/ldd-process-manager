@@ -1,25 +1,21 @@
-#/bin/bash 
+#!/bin/bash 
 #ldd-process-manager
-
-
-
 
 #xfce4-power-manager or mate-power-manager or 
 echo "This is a wrapper for some other task /process manager like xfce4-power-manager or mate-power-manager or gnome-power-manager"
 
 PATH_TO_PROCESS_MANAGER=$(which xfce4-taskmanager)
-if [ -z $PATH_TO_PROCESS_MANAGER ]; then 
+if [ "$PATH_TO_PROCESS_MANAGER" == "" ]; then 
     PATH_TO_PROCESS_MANAGER=$(which mate-system-monitor)
-elif [ -z $PATH_TO_PROCESS_MANAGER ]; then 
+elif [ "$PATH_TO_PROCESS_MANAGER" == "" ]; then 
     PATH_TO_PROCESS_MANAGER=$(which gnome-system-monitor)
-elif [ -z $PATH_TO_PROCESS_MANAGER ]; then 
+elif [ "$PATH_TO_PROCESS_MANAGER" == "" ]; then 
     PATH_TO_PROCESS_MANAGER=$(which ksysguard)
-elif [ -z $PATH_TO_PROCESS_MANAGER ]; then 
+elif [ "$PATH_TO_PROCESS_MANAGER" == "" ]; then 
     PATH_TO_PROCESS_MANAGER=$(which qps)
-elif [ -z $PATH_TO_PROCESS_MANAGER ]; then 
+elif [ "$PATH_TO_PROCESS_MANAGER" == "" ]; then 
     PATH_TO_PROCESS_MANAGER=$(which lxtask)
-            
-elif [ -z $PATH_TO_PROCESS_MANAGER ]; then 
+elif [ "$PATH_TO_PROCESS_MANAGER" == "" ]; then 
     echo "No Process manager installed "
     echo "You can install one of the packages: "
     echo "   ksysguard from KDE"
