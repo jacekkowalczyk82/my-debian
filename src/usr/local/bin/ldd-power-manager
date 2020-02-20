@@ -1,0 +1,22 @@
+#!/bin/bash 
+#ldd-power-manager
+
+#xfce4-power-manager or mate-power-manager or 
+echo "This is a wrapper for some other task /process manager like xfce4-power-manager or mate-power-manager or gnome-power-manager"
+
+PATH_TO_POWER_MANAGER=$(which xfce4-power-manager)
+if [ "$PATH_TO_POWER_MANAGER" == "" ]; then 
+    PATH_TO_POWER_MANAGER=$(which mate-power-manager)
+elif [ "$PATH_TO_POWER_MANAGER" == "" ]; then 
+    PATH_TO_POWER_MANAGER=$(which gnome-power-manager)
+
+elif [ "$PATH_TO_POWER_MANAGER" == "" ]; then 
+    echo "No Power manager installed "
+    echo "You can install one of the packages: xfce4-power-manager or mate-power-manager or gnome-power-manager"
+    read -p "Press any key to exit " any_key
+else 
+    exec $PATH_TO_POWER_MANAGER
+fi 
+
+
+

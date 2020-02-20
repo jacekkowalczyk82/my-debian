@@ -1,0 +1,216 @@
+#!/bin/bash
+#
+# LDD-X Desktop Chooser
+# LDD - Lightweight Debian Distribution
+# Authors: 
+#  eznix
+#  Jacek Kowalczy, jacekkowalczyk82@gmail.com
+# Version: 1.0
+
+LXQT_SESSION=$(which startlxqt)
+if [ "$LXQT_SESSION" == "" ]; then 
+    LXQT_INSTALLED="( not installed )"
+else 
+    LXQT_INSTALLED="yes"
+fi 
+
+GNOME_SESSION=$(which gnome-session)
+if [ "$GNOME_SESSION" == "" ]; then 
+    GNOME_INSTALLED="( not installed )"
+else 
+    GNOME_INSTALLED="yes"
+fi 
+
+MATE_SESSION=$(which mate-session)
+if [ "$MATE_SESSION" == "" ]; then 
+    MATE_INSTALLED="( not installed )"
+else 
+    MATE_INSTALLED="yes"
+fi 
+
+XFCE_SESSION=$(which startxfce4)
+if [ "$XFCE_SESSION" == "" ]; then 
+    XFCE_INSTALLED="( not installed )"
+else 
+    XFCE_INSTALLED="yes"
+fi 
+
+KDE_SESSION=$(which startkde)
+if [ "$KDE_SESSION" == "" ]; then 
+    KDE_INSTALLED="( not installed )"
+else 
+    KDE_INSTALLED="yes"
+fi 
+
+
+
+
+XINITRC_FILE="/home/$USER/.xinitrc"
+# -------------
+# Functions:
+# -------------
+#
+#
+LXQT () { 
+echo "exec startlxqt" > $XINITRC_FILE
+sleep 1
+if [ "$LXQT_INSTALLED" == "yes" ]; then 
+    startx
+else 
+    echo "LXQT is not installed yet"
+    read -p "Press any key: " any_key
+fi 
+}
+#
+#
+GNOME_X11 () { 
+echo "export XDG_SESSION_TYPE=x11" > $XINITRC_FILE
+echo "export GDK_BACKEND=x11" > $XINITRC_FILE
+echo "exec gnome-session" > $XINITRC_FILE
+sleep 1
+if [ "$GNOME_INSTALLED" == "yes" ]; then 
+    startx
+else 
+    echo "Gnome is not installed yet"
+    read -p "Press any key: " any_key
+fi 
+}
+#
+#
+MATE () { 
+echo "exec mate-session" > $XINITRC_FILE
+sleep 1
+if [ "$MATE_INSTALLED" == "yes" ]; then 
+    startx
+else 
+    echo "MATE is not installed yet"
+    read -p "Press any key: " any_key
+fi 
+}
+#
+#
+XFCE4 () { 
+echo "exec startxfce4" > $XINITRC_FILE
+sleep 1
+if [ "$XFCE_INSTALLED" == "yes" ]; then 
+    startx
+else 
+    echo "XFCE is not installed yet"
+    read -p "Press any key: " any_key
+fi 
+}
+#
+#
+KDE_PLASMA () { 
+echo "exec startkde" > $XINITRC_FILE
+sleep 1
+if [ "$KDE_INSTALLED" == "yes" ]; then 
+    startx
+else 
+    echo "KDE Plasma is not installed yet"
+    read -p "Press any key: " any_key
+fi 
+}
+#
+#
+OPENBOX () { 
+echo "exec openbox-session" > $XINITRC_FILE
+sleep 1
+startx
+}
+#
+#
+I3WM () { 
+echo "exec i3" > $XINITRC_FILE
+sleep 1
+startx
+}
+#
+#
+DWM () { 
+cat <<EOF > $XINITRC_FILE
+exec nitrogen --restore &
+exec compton -b &
+dropbox_status_string=""
+while true ; do 
+#Uncomment if you want to use Dropbox 
+#    dropbox_status=\$(dropbox-status.sh | head -n 1)
+#    if [ "\$dropbox_status" == "Up to date" ]; then 
+#        dropbox_status_string="Dropbox: "\$(echo \$dropbox_status)
+#    elif [ "\$dropbox_status" == "Dropbox isn't running!" ]; then 
+#        dropbox_status_string="\$dropbox_status"
+#    else 
+#        dropbox_status_string="Dropbox: "\$(echo \$dropbox_status|awk -F " " '{print \$1}')
+#    fi 
+
+
+    load=\$(cat /proc/loadavg |cut -d " " -f 3 )
+    uptime=\$(uptime -p)
+    load_uptime="Load15: \${load}; \${uptime}"
+
+    xsetroot -name "\`date '+%Y-%m-%d %H:%M.%S' \` \$load_uptime \$dropbox_status_string "; sleep 1; 
+done &
+#exec python3 ~/bin/dropbox.py start & 
+exec /opt/dwm/dwm
+
+EOF
+sleep 1
+startx
+}
+#
+#
+PREVIOUS () { 
+startx
+}
+#
+#
+# -------------
+# Main Menu
+# -------------
+#
+MAINMENU () { while true
+do
+clear
+echo "-------------------"
+echo " LDD (Lightweight Debian Distribution) Desktop Chooser"
+echo " It is NOT recommended to install many Desktop Environments"
+echo "-------------------"
+echo
+echo " (d) DWM "
+echo " (i) i3 "
+echo " (o) Openbox "
+
+echo " (g) GNOME $GNOME_INSTALLED"
+echo " (m) MATE $MATE_INSTALLED"
+echo " (x) XFCE4 $XFCE_INSTALLED"
+echo " (k) KDE Plasma $KDE_INSTALLED"
+echo " (l) LxQT $LXQT_INSTALLED"
+
+echo " (p) Previous Session "
+echo " (q) exit to shell "
+echo
+read -p "Please enter your choice: " choice
+case $choice in
+  d|D) DWM;;
+  i|I) I3WM;;
+  o|O) OPENBOX;;
+  g|G) GNOME_X11;;
+  m|M) MATE;;
+  x|X) XFCE4;;
+  k|K) KDE_PLASMA;;
+  l|L) LXQT;;
+
+  p|P) PREVIOUS;;
+  q|Q) exit 0;;
+  *) echo "Invalid answer, please try again";;
+#
+esac
+done
+}
+#
+# Begin main program:
+#
+MAINMENU
+#
+done
+#
