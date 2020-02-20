@@ -58,6 +58,7 @@ if [ $LXQT_INSTALLED -eq 1 ]; then
     startx
 else 
     echo "LXQT is not installed yet"
+    read -p "Press any key: " any_key
 fi 
 }
 #
@@ -71,6 +72,7 @@ if [ $GNOME_INSTALLED -eq 1 ]; then
     startx
 else 
     echo "Gnome is not installed yet"
+    read -p "Press any key: " any_key
 fi 
 }
 #
@@ -82,6 +84,7 @@ if [ $MATE_INSTALLED -eq 1 ]; then
     startx
 else 
     echo "MATE is not installed yet"
+    read -p "Press any key: " any_key
 fi 
 }
 #
@@ -93,6 +96,7 @@ if [ $XFCE_INSTALLED -eq 1 ]; then
     startx
 else 
     echo "XFCE is not installed yet"
+    read -p "Press any key: " any_key
 fi 
 }
 #
@@ -104,6 +108,7 @@ if [ $KDE_INSTALLED -eq 1 ]; then
     startx
 else 
     echo "KDE Plasma is not installed yet"
+    read -p "Press any key: " any_key
 fi 
 }
 #
