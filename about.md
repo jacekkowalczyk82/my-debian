@@ -1,12 +1,13 @@
 # About LDD Linux 
 
 * Project Home page - https://jacekkowalczyk82.github.io/my-debian/
-* LDD Linux - Lightweight Debian Distribution is custom Live build of Debian Linux with DWM, Openbox, i3wm, XFCE 
+* LDD Linux - Lightweight Debian Distribution is custom Live build of Debian Linux with DWM, Openbox, i3wm, 
+* Desktop environments XFCE, MATE, LXQT, KDE are optional and are preinstalled in dedicated editions. 
 * The goal of this project is to create custom debian live cd image and lightweight OS that can be used on VM or older hardware. 
 * [Linux Mint based custom ISO](https://sourceforge.net/projects/my-debian/files/my-mint-dwm-openbox-i3-xfce/)
 
 * [my-debian - LDD Linux at sourceforge.net](https://sourceforge.net/projects/my-debian/)
-* [Download files](https://sourceforge.net/projects/my-debian/files/live-buster-dwm-openbox-i3-xfce/)
+* [Download files](https://sourceforge.net/projects/my-debian/files/)
 * To start X session run `startgui` command after login in terminal 
 
 
@@ -14,7 +15,11 @@
 |Feature           |Description                                                                         |
 |------------------|------------------------------------------------------------------------------------|
 |Livecd user/pass  |user/live                                                                           |
-|GUI sessions      |Custom-DWM, Openbox, i3, XFCE                                                       |
+|ULTRA sessions    |Custom-DWM, Openbox, i3                                                             |
+|XFCE sessions     |Custom-DWM, Openbox, i3, XFCE                                                       |
+|MATE sessions     |Custom-DWM, Openbox, i3, MATE                                                       |
+|LXQT sessions     |Custom-DWM, Openbox, i3, LXQT                                                       |
+|KDE sessions      |Custom-DWM, Openbox, i3, KDE                                                        |
 |DWM custom ModKey |Win                                                                                 |
 |i3wm ModKey       |Win                                                                                 |
 |Openbox ModKey    |Win                                                                                 |
@@ -32,26 +37,42 @@
 |i3wm Dmenu        |Win + d                                                                             |
 |Network Manager   |nmtui, nm-applet                                                                    |
 |Volume Control    |pavucontrol                                                                         |
-|Power Manager     |xfce4-power-manager, upower -i /org/freedesktop/UPower/devices/battery_BAT0         |
-|WWW browser       |Firefox, chromium, falkon                                                           |
+|ULTRA Power Manager|upower -i /org/freedesktop/UPower/devices/battery_BAT0                             |
+|XFCE Power Manager|xfce4-power-manager, upower -i /org/freedesktop/UPower/devices/battery_BAT0         |
+|MATE Power Manager|mate-power-manager, upower -i /org/freedesktop/UPower/devices/battery_BAT0          |
+|WWW browser       |Firefox,                                                                            |
+
 
 
 * More information/help about dwm can be found at [http://suckless.org](http://suckless.org).
 
 ## Editions /variants
 
-All LDD editiosn have DWM, Openbox, i3wm window managers. There are also some other editions that comes with preinstalled and configured Desktop Environments.
+All LDD editions have DWM, Openbox, i3wm window managers. There are also some other editions that comes with preinstalled and configured Desktop Environments.
 
 * ULTRA wich does not have any DE. 
 * XFCE
 * MATE
 * KDE
+* LXQT
 
 There is also Devuan Linux based LDD iso. 
 
+## Instal 
+
+You have three options:
+* Debian installer
+* Graphical debian installer 
+* Start Live cd mode and run in terminal 
+
+```
+sudo calamares 
+```
 
 ## Changelog
 
+* 2020-02-19 fixed startgui script in ultra edition.
+* 2020-02-18 Added development tools, java, python3, adb. 
 * 2019-08-26 Created working and installable Devuan based ISO. 
 * 2019-08-19 Added few rescue tools (ntfsutils, chntpw) to all LDD variants. 
 * 2019-07-04 Added Mint based ISO with (DWM, Openbox, i3wm, XFCE)
