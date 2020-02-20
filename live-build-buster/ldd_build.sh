@@ -14,7 +14,10 @@ lb config --debian-installer live -d buster \
 
 mkdir -p config/includes.chroot/opt/
 cp -rv ../suckless.org/dwm ./config/includes.chroot/opt/
+cp -rv ../src/usr ./config/includes.chroot/
 cp -rv ../bootloaders ./config/
+
+read -p "Press any key: " any_key
 
 #when rebuilding run also clean
 #sudo lb clean --purge
