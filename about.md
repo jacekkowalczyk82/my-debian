@@ -79,6 +79,6 @@ sudo calamares
 
 ## Download
 
-* ISO images are published at [My-debian project at sourceforge.net](https://sourceforge.net/projects/my-debian/files/live-buster-dwm-openbox-i3-xfce/)
+* ISO images are published at [My-debian project at sourceforge.net](https://sourceforge.net/projects/my-debian/files/)
 
 
