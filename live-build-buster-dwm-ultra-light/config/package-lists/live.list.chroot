@@ -65,6 +65,9 @@ xfce4-terminal
 rxvt-unicode
 sakura
 
+# because of the bug related to exo-utils
+libexo-1-0
+
 #web browsers
 #falkon
 #chromium
