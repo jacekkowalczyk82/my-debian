@@ -61,7 +61,7 @@ xterm
 #lxterminal
 terminator
 tilix
-#xfce4-terminal
+xfce4-terminal
 rxvt-unicode
 sakura
 

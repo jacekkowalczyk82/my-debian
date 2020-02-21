@@ -27,12 +27,13 @@
 				<execute>mate-terminal</execute>
 			</action>
 		</item>
+-->
 		<item label="xfce4-terminal">
 			<action name="Execute">
 				<execute>xfce4-terminal</execute>
 			</action>
 		</item>
--->
+
 		<item label="urxvt">
 			<action name="Execute">
 				<execute>urxvt</execute>
