@@ -78,6 +78,7 @@ meld
 # file manager
 xfe
 caja
+caja-open-terminal
 mate-themes
 greybird-gtk-theme
 
