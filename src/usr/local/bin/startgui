@@ -65,7 +65,7 @@ LXQT () {
 echo "exec startlxqt" > $XINITRC_FILE
 sleep 1
 if [ "$LXQT_INSTALLED" == "yes" ]; then 
-    echo "startx"
+    startx
 else 
     echo "LXQT is not installed yet"
     read -p "Press any key: " any_key
@@ -79,7 +79,7 @@ echo "export GDK_BACKEND=x11" > $XINITRC_FILE
 echo "exec gnome-session" > $XINITRC_FILE
 sleep 1
 if [ "$GNOME_INSTALLED" == "yes" ]; then 
-    echo "startx"
+    startx
 else 
     echo "Gnome is not installed yet"
     read -p "Press any key: " any_key
@@ -91,7 +91,7 @@ MATE () {
 echo "exec mate-session" > $XINITRC_FILE
 sleep 1
 if [ "$MATE_INSTALLED" == "yes" ]; then 
-    echo "startx"
+    startx
 else 
     echo "MATE is not installed yet"
     read -p "Press any key: " any_key
@@ -100,10 +100,10 @@ fi
 #
 #
 XFCE4 () { 
-echo "exec echo "startx"fce4" > $XINITRC_FILE
+echo "exec startxfce4" > $XINITRC_FILE
 sleep 1
 if [ "$XFCE_INSTALLED" == "yes" ]; then 
-    echo "startx"
+    startx
 else 
     echo "XFCE is not installed yet"
     read -p "Press any key: " any_key
@@ -115,7 +115,7 @@ KDE_PLASMA () {
 echo "exec startkde" > $XINITRC_FILE
 sleep 1
 if [ "$KDE_INSTALLED" == "yes" ]; then 
-    echo "startx"
+    startx
 else 
     echo "KDE Plasma is not installed yet"
     read -p "Press any key: " any_key
@@ -126,14 +126,14 @@ fi
 OPENBOX () { 
 echo "exec openbox-session" > $XINITRC_FILE
 sleep 1
-echo "startx"
+startx
 }
 #
 #
 I3WM () { 
 echo "exec i3" > $XINITRC_FILE
 sleep 1
-echo "startx"
+startx
 }
 #
 #
@@ -165,12 +165,12 @@ exec /opt/dwm/dwm
 
 EOF
 sleep 1
-echo "startx"
+startx
 }
 #
 #
 PREVIOUS () { 
-echo "startx"
+startx
 }
 #
 #
