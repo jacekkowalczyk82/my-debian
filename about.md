@@ -58,6 +58,14 @@ All LDD editions have DWM, Openbox, i3wm window managers. There are also some ot
 
 There is also Devuan Linux based LDD iso. 
 
+## Packages
+
+* [Ultra edition](https://gitlab.com/jacekkowalczyk82/my-debian/-/blob/master/live-build-buster-dwm-ultra-light/config/package-lists/live.list.chroot)
+* [Mate edition](https://gitlab.com/jacekkowalczyk82/my-debian/-/blob/master/live-build-buster-mate/config/package-lists/live.list.chroot)
+* [XFCE edition](https://gitlab.com/jacekkowalczyk82/my-debian/-/blob/master/live-build-buster/config/package-lists/live.list.chroot)
+* [KDE edition](https://gitlab.com/jacekkowalczyk82/my-debian/-/blob/master/live-build-buster-kde/config/package-lists/live.list.chroot)
+* [LXQT edition](https://gitlab.com/jacekkowalczyk82/my-debian/-/blob/master/live-build-buster-lxqt/config/package-lists/live.list.chroot)
+
 ## Instal 
 
 You have three options:
