@@ -13,7 +13,7 @@ lb config --debian-installer live -d buster \
 #add your customization files to config/includes.chroot/
 
 mkdir -p config/includes.chroot/opt/
-cp -rv ../suckless.org/dwm ./config/includes.chroot/opt/
+cp -rv ../suckless.org/dwm-gaps ./config/includes.chroot/opt/
 cp -rv ../src/usr ./config/includes.chroot/
 cp -rv ../bootloaders ./config/
 
