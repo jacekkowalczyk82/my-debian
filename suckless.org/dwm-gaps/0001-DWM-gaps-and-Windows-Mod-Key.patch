@@ -1,12 +1,12 @@
-From 695618924a2667c946e608e01304fc2624fcb7c4 Mon Sep 17 00:00:00 2001
+From 99d52d0e717116f49c9289b7a7cd2c212a7cb291 Mon Sep 17 00:00:00 2001
 From: Jacek Kowalczyk <jacekkowalczyk82@gmail.com>
 Date: Thu, 27 Feb 2020 12:48:04 +0100
-Subject: [PATCH] DWM gaps
+Subject: [PATCH] DWM gaps and Windows Mod Key
 
 ---
  config.def.h |  5 +++--
- dwm.c        | 30 ++++++++++++++++++++----------
- 2 files changed, 23 insertions(+), 12 deletions(-)
+ dwm.c        | 23 +++++++++++++----------
+ 2 files changed, 16 insertions(+), 12 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 1c0b587..72d0561 100644
@@ -32,7 +32,7 @@ index 1c0b587..72d0561 100644
  	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
  	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
 diff --git a/dwm.c b/dwm.c
-index 4465af1..b37189e 100644
+index 4465af1..b93be07 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -1269,7 +1269,7 @@ void
@@ -44,12 +44,11 @@ index 4465af1..b37189e 100644
  }
  
  void
-@@ -1673,26 +1673,36 @@ tagmon(const Arg *arg)
+@@ -1673,26 +1673,29 @@ tagmon(const Arg *arg)
  void
  tile(Monitor *m)
  {
 -	unsigned int i, n, h, mw, my, ty;
-+	//unsigned int i, n, h, mw, my, ty;
 +	unsigned int i, n, h, r, g = 0, mw, my, ty;
  	Client *c;
  
@@ -61,7 +60,6 @@ index 4465af1..b37189e 100644
 -		mw = m->nmaster ? m->ww * m->mfact : 0;
 -	else
 +	if (n > m->nmaster) {
-+		//mw = m->nmaster ? m->ww * m->mfact : 0;
 +		mw = m->nmaster ? (m->ww - (g = gappx)) * m->mfact : 0;
 +	} else {
  		mw = m->ww;
@@ -69,20 +67,15 @@ index 4465af1..b37189e 100644
  	for (i = my = ty = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
  		if (i < m->nmaster) {
 -			h = (m->wh - my) / (MIN(n, m->nmaster) - i);
-+			//h = (m->wh - my) / (MIN(n, m->nmaster) - i);
 +			r = MIN(n, m->nmaster) - i;
 +			h = (m->wh - my - gappx * (r - 1)) / r;
  			resize(c, m->wx, m->wy + my, mw - (2*c->bw), h - (2*c->bw), 0);
 -			my += HEIGHT(c);
-+			//my += HEIGHT(c);
 +			my += HEIGHT(c) + gappx;
  		} else {
 -			h = (m->wh - ty) / (n - i);
 -			resize(c, m->wx + mw, m->wy + ty, m->ww - mw - (2*c->bw), h - (2*c->bw), 0);
 -			ty += HEIGHT(c);
-+			//h = (m->wh - ty) / (n - i);
-+			//resize(c, m->wx + mw, m->wy + ty, m->ww - mw - (2*c->bw), h - (2*c->bw), 0);
-+			//ty += HEIGHT(c);
 +			r = n - i;
 +			h = (m->wh - ty - gappx * (r - 1)) / r;
 +			resize(c, m->wx + mw + g, m->wy + ty, m->ww - mw - g - (2*c->bw), h - (2*c->bw), False);
