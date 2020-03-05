@@ -2,8 +2,13 @@
 # This configuration file is based on the configs from CrunchBang++ 
 
 ## PolicyKit
-#gnome-keyring-daemon
-#polkit-mate-authentication-agent-1
+# If using Gnome or XFCE ucomment it
+#gnome-keyring-daemon --start --components=pkcs11,secrets,ssh & 
+#/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 & 
+
+# If using Mate
+#polkit-mate-authentication-agent-1 & 
+
 
 ## Set root window colour
 hsetroot -solid "#2E3436" &
@@ -31,7 +36,7 @@ udiskie -ant &
 #pasystray & # it is already started by some magic
 
 ## Enable power management
-xfce4-power-manager &
+#xfce4-power-manager &
 
 ## Start xscreensaver
 #xscreensaver -no-splash &

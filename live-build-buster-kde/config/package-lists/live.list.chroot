@@ -3,9 +3,12 @@ live-config
 live-config-systemd
 
 desktop-base
+live-task-kde
 
 xorg
-live-task-kde
+
+calamares
+calamares-settings-debian
 
 ## DWM
 dwm
@@ -41,9 +44,10 @@ compton
 nitrogen
 feh
 scrot
+fonts-dejavu
 
 #editors 
-#kwrite
+kwrite
 geany
 
 ##accessories
@@ -55,13 +59,14 @@ libreoffice
 xterm
 #lxterminal
 terminator
+tilix
 #xfce4-terminal
 rxvt-unicode
 sakura
 
 #web browsers
 falkon
-chromium
+#chromium
 firefox-esr
 
 youtube-dl
@@ -86,27 +91,30 @@ udiskie
 network-manager
 network-manager-gnome
 #clipit
-xfce4-power-manager
+
 xscreensaver
 plank
 
-#utilities
+## utilities
 sudo
 git
 git-gui
 curl
+wget
 mc
-vim
+nano
+vim-gtk3
+emacs
 htop
 openssh-server
 apt-transport-https
 screenfetch
 neofetch
 gmrun
-
-
-#simple firewall
-#gufw                   # package not found 
+zip
+unzip
+rsync 
+tmux
 
 #live-build
 #cdebootstrap
@@ -114,17 +122,14 @@ gmrun
 #printers
 system-config-printer
 
-
-#for firefox developer edition, 
-#firefox-developer-edition is installed in /opt/firefox 
-libdbus-glib-1-2
-
-#multimedia 
+## multimedia 
 vlc
+mplayer
 mpv
-smplayer
 audacious
 audacious-plugins
+imagemagick
+gimp
 
 #packages for virtualbox guest additions
 build-essential
@@ -138,4 +143,10 @@ gparted
 fdisk
 e2fsprogs
 chntpw
-		
+
+# for connecting USB android devices and development work 
+python3
+usb-modeswitch
+adb
+openjdk-11-jdk
+

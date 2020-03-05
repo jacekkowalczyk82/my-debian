@@ -194,7 +194,7 @@ bindsym $mod+Shift+p exec "i3-nagbar -t warning -m 'You pressed the system power
 bindsym $mod+Ctrl+m exec i3-sensible-terminal -e mc
 # monitor settings
 #bindsym $mod+Ctrl+l exec lxrandr
-# rox-filer 
+# file manager
 bindsym $mod+Ctrl+f exec dolphin
 #pcmanfm is also installed currently
 
