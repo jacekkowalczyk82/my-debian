@@ -88,7 +88,7 @@ curl
 mc
 vim
 htop
-openssh-server
+# openssh-server needs to be installed manuallay after installing system to hard disk
 apt-transport-https
 screenfetch
 neofetch
