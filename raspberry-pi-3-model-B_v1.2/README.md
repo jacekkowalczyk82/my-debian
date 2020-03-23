@@ -16,3 +16,7 @@ sudo apt install usb-modeswitch
 ```
 
 * Configure `/etc/udev/rules.d/` to be able to connect to Android devices. 
+
+**Unfortunately connecting Android device to pi with raspbian breaks the wifi connection, so no ssh, no internet when android USB device is connected. 
+This does not happen for ubuntu server running at Pi. Ubuntu is using different network control mechanism.** 
+
