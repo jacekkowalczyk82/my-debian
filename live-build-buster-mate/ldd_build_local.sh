@@ -41,14 +41,14 @@ if [ -e "${GENERATED_NAME}.hybrid.iso" ]; then
 
     FILES_PATTERN="debian-live-10-ldd-${LDD_EDITION}"
 
-    aws s3 --region us-east-2 cp ${FILES_PATTERN}-*.log  s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
-    aws s3 --region us-east-2 cp ${RELEASE_NAME}.iso s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
-    aws s3 --region us-east-2 cp ${RELEASE_NAME}.sha256sum.txt s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
+    #aws s3 --region us-east-2 cp ${FILES_PATTERN}-*.log  s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
+    #aws s3 --region us-east-2 cp ${RELEASE_NAME}.iso s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
+    #aws s3 --region us-east-2 cp ${RELEASE_NAME}.sha256sum.txt s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
 
-    aws s3 --region us-east-2 cp ${GENERATED_NAME}.contents         s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
-    aws s3 --region us-east-2 cp ${GENERATED_NAME}.files         s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
-    aws s3 --region us-east-2 cp ${GENERATED_NAME}.hybrid.iso.zsync  s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
-    aws s3 --region us-east-2 cp ${GENERATED_NAME}.packages      s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
+    #aws s3 --region us-east-2 cp ${GENERATED_NAME}.contents         s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
+    #aws s3 --region us-east-2 cp ${GENERATED_NAME}.files         s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
+    #aws s3 --region us-east-2 cp ${GENERATED_NAME}.hybrid.iso.zsync  s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
+    #aws s3 --region us-east-2 cp ${GENERATED_NAME}.packages      s3://jacekkowalczyk82.private.s3/my-debian-images/${RELEASE_DATE}/
 
 else 
 	echo "ERROR: failed to build ISO"
