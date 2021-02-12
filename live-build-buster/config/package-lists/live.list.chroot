@@ -6,6 +6,8 @@ xorg
 xfce4
 live-task-xfce
 
+
+
 ## DWM
 dwm
 suckless-tools
@@ -153,4 +155,5 @@ chntpw
 python3
 usb-modeswitch
 adb
-openjdk-11-jdk		
+openjdk-11-jdk
+

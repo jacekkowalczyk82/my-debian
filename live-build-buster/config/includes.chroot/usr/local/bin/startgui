@@ -9,37 +9,47 @@
 
 LXQT_SESSION=$(which startlxqt)
 if [ "$LXQT_SESSION" == "" ]; then 
-    LXQT_INSTALLED="( not installed )"
+    LXQT_INSTALLED="no"
+    LXQT_INSTALLED_DESC="( not installed )"
 else 
-    LXQT_INSTALLED="yes"
+    LXQT_INSTALLED="yes" 
+    LXQT_INSTALLED_DESC="( installed )"
 fi 
 
 GNOME_SESSION=$(which gnome-session)
 if [ "$GNOME_SESSION" == "" ]; then 
-    GNOME_INSTALLED="( not installed )"
+    GNOME_INSTALLED="no"
+    GNOME_INSTALLED_DESC="( not installed )"
 else 
     GNOME_INSTALLED="yes"
+    GNOME_INSTALLED_DESC="( installed )"
 fi 
 
 MATE_SESSION=$(which mate-session)
 if [ "$MATE_SESSION" == "" ]; then 
-    MATE_INSTALLED="( not installed )"
+    MATE_INSTALLED="no"
+    MATE_INSTALLED_DESC="( not installed )"
 else 
     MATE_INSTALLED="yes"
+    MATE_INSTALLED_DESC="( installed )"
 fi 
 
 XFCE_SESSION=$(which startxfce4)
 if [ "$XFCE_SESSION" == "" ]; then 
-    XFCE_INSTALLED="( not installed )"
+    XFCE_INSTALLED="no"
+    XFCE_INSTALLED_DESC="( not installed )"
 else 
     XFCE_INSTALLED="yes"
+    XFCE_INSTALLED_DESC="( installed )"
 fi 
 
 KDE_SESSION=$(which startkde)
 if [ "$KDE_SESSION" == "" ]; then 
-    KDE_INSTALLED="( not installed )"
+    KDE_INSTALLED="no"
+    KDE_INSTALLED_DESC="( not installed )"
 else 
     KDE_INSTALLED="yes"
+    KDE_INSTALLED_DESC="( installed )"
 fi 
 
 

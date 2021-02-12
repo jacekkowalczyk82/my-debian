@@ -2,6 +2,7 @@
 LDD_EDITION="xfce"
 lb config --debian-installer live -d buster \
  --grub-splash grub2.png \
+ --firmware-chroot true \
  --debian-installer-distribution buster \
  --iso-application debian-live-10-ldd-${LDD_EDITION} \
  --iso-volume debian-live-10-ldd-${LDD_EDITION} \
