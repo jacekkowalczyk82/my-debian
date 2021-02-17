@@ -111,7 +111,7 @@ wget
 mc
 nano
 vim-gtk3
-emacs
+#emacs
 htop
 # openssh-server needs to be installed manuallay after installing system to hard disk
 apt-transport-https
@@ -131,12 +131,12 @@ system-config-printer
 
 ## multimedia 
 vlc
-mplayer
-mpv
+#mplayer
+#mpv
 audacious
 audacious-plugins
-imagemagick
-gimp
+#imagemagick
+#gimp
 
 #packages for virtualbox guest additions
 build-essential
@@ -154,6 +154,13 @@ chntpw
 #for connecting USB android devices and development work 
 python3
 usb-modeswitch
-adb
-openjdk-11-jdk
+#adb
+#openjdk-11-jdk
+
+net-tools
+task-ssh-server
+
+firmware-linux-nonfree
+firmware-iwlwifi
+
 

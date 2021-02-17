@@ -3,13 +3,25 @@ LDD_EDITION="xfce"
 lb config --debian-installer live -d buster \
  --grub-splash grub2.png \
  --firmware-chroot true \
+ --firmware-binary true \
+ --archive-areas "main contrib non-free" \
  --debian-installer-distribution buster \
  --iso-application debian-live-10-ldd-${LDD_EDITION} \
  --iso-volume debian-live-10-ldd-${LDD_EDITION} \
  --iso-publisher "Jacek Kowalczyk http://jacekkowalczyk82.github.io" \
  --iso-preparer "Jacek Kowalczyk http://jacekkowalczyk82.github.io" 
  
- 
+lb clean 
+
+mkdir -p binary/firmware
+cd binary/firmware
+wget http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/buster/10.8.0/firmware.tar.gz
+tar -xvzf firmware.tar.gz 
+rm firmware.tar.gz 
+cd ../.. 
+read -p "Press any key: " any_key
+
+
 #add your packages to config/package-lists/live.list.chroot
 #add your customization files to config/includes.chroot/
 
@@ -24,8 +36,6 @@ read -p "Press any key: " any_key
 #when rebuilding run also clean
 #sudo lb clean --purge
 
-#build ISO
-lb clean
 
 lb build --debug --verbose 2>&1 |tee debian-live-10-ldd-${LDD_EDITION}-`date '+%Y-%m-%d_%H%M%S'`.log
 
