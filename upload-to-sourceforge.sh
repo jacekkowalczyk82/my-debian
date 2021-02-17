@@ -12,3 +12,9 @@ rsync -e ssh debian-live-ldd-xfce-amd64.hybrid.20190701.iso jacekkowalczyk8@frs.
 rsync -e ssh debian-live-ldd-xfce-amd64.hybrid.20190701.iso.sha256sum.txt jacekkowalczyk8@frs.sourceforge.net:/home/frs/project/my-debian/live-buster-dwm-openbox-i3-xfce/
 
 
+
+
+
+rsync -e ssh debian-live-10-ldd-xfce-2021-02-12_174930-amd64.iso jacekkowalczyk8@frs.sourceforge.net:/home/frs/project/my-debian/live-buster-dwm-openbox-i3-xfce/
+
+rsync -e ssh debian-live-10-ldd-xfce-2021-02-12_174930-amd64.sha256sum.txt  jacekkowalczyk8@frs.sourceforge.net:/home/frs/project/my-debian/live-buster-dwm-openbox-i3-xfce/
