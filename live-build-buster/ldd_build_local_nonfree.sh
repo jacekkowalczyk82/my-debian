@@ -1,5 +1,5 @@
 #/bin/bash 
-LDD_EDITION="xfce"
+LDD_EDITION="xfce-nonfree"
 lb config --debian-installer live -d buster \
  --grub-splash grub2.png \
  --firmware-chroot true \
