@@ -21,7 +21,7 @@ rm firmware.tar.gz
 cd ../.. 
 read -p "Press any key: " any_key
 
-cp -v live.list.chrootnonfree ./config/package-lists/live.list.chroot
+cp -v live.list.chroot_nonfree ./config/package-lists/live.list.chroot
 
 #add your packages to config/package-lists/live.list.chroot
 #add your customization files to config/includes.chroot/

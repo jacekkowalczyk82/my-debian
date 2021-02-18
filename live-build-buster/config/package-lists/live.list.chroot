@@ -111,7 +111,7 @@ wget
 mc
 nano
 vim-gtk3
-#emacs
+emacs
 htop
 # openssh-server needs to be installed manuallay after installing system to hard disk
 apt-transport-https
@@ -123,6 +123,9 @@ unzip
 rsync 
 tmux
 
+net-tools
+task-ssh-server
+
 #live-build
 #cdebootstrap
 
@@ -131,12 +134,13 @@ system-config-printer
 
 ## multimedia 
 vlc
-#mplayer
-#mpv
+mplayer
+mpv
 audacious
 audacious-plugins
-#imagemagick
-#gimp
+imagemagick
+gimp
+ristretto
 
 #packages for virtualbox guest additions
 build-essential
@@ -154,13 +158,41 @@ chntpw
 #for connecting USB android devices and development work 
 python3
 usb-modeswitch
-#adb
-#openjdk-11-jdk
+adb
+openjdk-11-jdk
 
-net-tools
-task-ssh-server
 
-firmware-linux-nonfree
+firmware-adi
+firmware-amd-graphics
+firmware-ath9k-htc
+firmware-ath9k-htc-dbgsym
+firmware-atheros
+firmware-bnx2
+firmware-bnx2x
+firmware-brcm80211
+firmware-cavium
+firmware-intel-sound
+firmware-intelwimax
+firmware-ipw2x00
+firmware-ivtv
 firmware-iwlwifi
+firmware-libertas
+firmware-linux
+firmware-linux-free
+firmware-linux-nonfree
+firmware-microbit-micropython
+firmware-microbit-micropython-doc
+firmware-misc-nonfree
+firmware-myricom
+firmware-netronome
+firmware-netxen
+firmware-qcom-media
+firmware-qlogic
+firmware-ralink
+firmware-realtek
+firmware-samsung
+firmware-siano
+firmware-ti-connectivity
+firmware-zd1211
 
 
