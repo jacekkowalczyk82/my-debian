@@ -2,7 +2,9 @@
 LDD_EDITION="xfce"
 lb config --debian-installer live -d buster \
  --grub-splash grub2.png \
- --archive-areas "main" \
+ --firmware-chroot true \
+ --firmware-binary true \
+ --archive-areas "main contrib non-free" \
  --debian-installer-distribution buster \
  --iso-application debian-live-10-ldd-${LDD_EDITION} \
  --iso-volume debian-live-10-ldd-${LDD_EDITION} \
@@ -11,11 +13,15 @@ lb config --debian-installer live -d buster \
  
 lb clean 
 
+mkdir -p binary/firmware
+cd binary/firmware
+wget http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/buster/10.8.0/firmware.tar.gz
+tar -xvzf firmware.tar.gz 
+rm firmware.tar.gz 
+cd ../.. 
+read -p "Press any key: " any_key
 
-rm -rf binary/firmware || true
-
-
-cp -v live.list.chroot_standard ./config/package-lists/live.list.chroot
+cp -v live.list.chrootnonfree ./config/package-lists/live.list.chroot
 
 #add your packages to config/package-lists/live.list.chroot
 #add your customization files to config/includes.chroot/
